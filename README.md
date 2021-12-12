@@ -1,25 +1,6 @@
-# Champion-Feats
-Stack the deck in your favour, if you want
+# Random Enemies & Loot
 
-Adds a series of "Champion" feats that will stack the game in your favour, in exchange for paying a feat slot for them. Obviously not based in tabletop. Or any strong sense of game balance.
-
-Specifically adds:
-
-Champion Protection - adds a +1/+2/+3 AC bonus depending on whether you're wearing light, medium, or heavy armour. Scales as you increase in character level, up to +24 AC when wearing Heavy Armour with a level 40 character.
-
-Champion Guard - adds a +5 DR/- bonus. Every 5th level increases it by another +5.
-
-Champion Aim - adds a +1 attack bonus to any weapon. Increases by +2 for every two levels starting at level 3.
-
-Champion Strikes - adds +1 damage to any weapon attacks. Increases by +1 for every three levels starting at level 4.
-
-Champion Spell Blasts - adds +1 damage to spell attacks. Increases by +1 for every three levels starting at caster level 4.
-
-Champion Spell Force - adds +1 to the DCs of your spells. Increases by +1 for every caster level.
-
-Champion Spell Penetration - adds half your caster level to the spell penetration stat of your spells. If you also take the basic Spell Penetration feat, this increases to a full caster level bonus.
-
-You can adjust whether these should be considered normal feats or Mythic feats if you want to make it a bit harder for you in a playthrough you're using this mod in.
+TBA
 
 **How to install**
 
