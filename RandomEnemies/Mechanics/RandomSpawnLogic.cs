@@ -64,7 +64,7 @@ namespace RandomEnemies.Mechanics
                         {
                             //Main.LogDebug("Passed unitCheck");
                             // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
-                            if (UnitAllowedList.allowedEnemiesList.Contains(__instance.Blueprint)) // 
+                            if (Units.UnitLists.allowedEnemiesList.Contains(__instance.Blueprint)) // 
                             {
                                 // Main.LogDebug("Passed listChecks");
                                 BlueprintUnit result = RandomSpawnLogic.TryCreateEncounter(__instance.Blueprint);

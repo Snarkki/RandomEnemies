@@ -52,7 +52,7 @@ namespace RandomEnemies.Mechanics
                 if (result == null) { result = chooseResultUnitByTheme(backupTheme, MinCR, MaxCR); }
                 if (result == null)
                 {
-                    foreach (List<BlueprintUnit> p in Units.Units.allLists)
+                    foreach (List<BlueprintUnit> p in Units.UnitLists.allLists)
                     {
                         if (p == chosenTheme || p == backupTheme) { continue; }
                         result = chooseResultUnitByTheme(p, MinCR, MaxCR);
@@ -100,15 +100,15 @@ namespace RandomEnemies.Mechanics
             List<BlueprintUnit> resultTheme = new List<BlueprintUnit>();
             int rollForTheme = UnityEngine.Random.Range(1, 100);
 
-            if (rollForTheme <= 30) { resultTheme = Units.ListForHumanoids.HumanoidList; }
-            else if (rollForTheme <= 50) { resultTheme = Units.ListForAnimals.AnimalList; }
-            else if (rollForTheme <= 65) { resultTheme = Units.ListForUndeads.UndeadList; }
-            else if (rollForTheme <= 70) { resultTheme = Units.ListForElementals.ElementalList; }
-            else if (rollForTheme <= 75) { resultTheme = Units.ListForGolems.GolemList; }
-            else if (rollForTheme <= 90) { resultTheme = Units.ListForOutsiders.OutsiderList; }
-            else if (rollForTheme <= 100) { resultTheme = Units.ListForOthers.OtherList; }
+            if (rollForTheme <= 30) { resultTheme = Units.UnitLists.HumanoidList; }
+            else if (rollForTheme <= 50) { resultTheme = Units.UnitLists.AnimalList; }
+            else if (rollForTheme <= 65) { resultTheme = Units.UnitLists.UndeadList; }
+            else if (rollForTheme <= 70) { resultTheme = Units.UnitLists.ElementalList; }
+            else if (rollForTheme <= 75) { resultTheme = Units.UnitLists.GolemList; }
+            else if (rollForTheme <= 90) { resultTheme = Units.UnitLists.OutsiderList; }
+            else if (rollForTheme <= 100) { resultTheme = Units.UnitLists.OtherList; }
             //fallback as demon as its longest list
-            else resultTheme = Units.ListForOutsiders.OutsiderList;
+            else resultTheme = Units.UnitLists.OutsiderList;
 
             return resultTheme;
         }
@@ -116,14 +116,14 @@ namespace RandomEnemies.Mechanics
         public static List<BlueprintUnit> ChooseBackupTheme(List<BlueprintUnit> chosenTheme)
         {
             // Gives a secondary theme to try before just trying any theme. e.g animals & magical beasts go together.
-            if (chosenTheme == Units.ListForHumanoids.HumanoidList) { return Units.ListForOutsiders.OutsiderList; }
-            else if (chosenTheme == Units.ListForOutsiders.OutsiderList) { return Units.ListForOthers.OtherList; }
-            else if (chosenTheme == Units.ListForGolems.GolemList) { return Units.ListForOthers.OtherList; }
-            else if (chosenTheme == Units.ListForAnimals.AnimalList) { return Units.ListForOthers.OtherList; }
-            else if (chosenTheme == Units.ListForUndeads.UndeadList) { return Units.ListForOthers.OtherList; }
-            else if (chosenTheme == Units.ListForOthers.OtherList) { return Units.ListForHumanoids.HumanoidList; }
-            else if (chosenTheme == Units.ListForElementals.ElementalList) { return Units.ListForOthers.OtherList; }
-            else return Units.ListForOutsiders.OutsiderList;
+            if (chosenTheme == Units.UnitLists.HumanoidList) { return Units.UnitLists.OutsiderList; }
+            else if (chosenTheme == Units.UnitLists.OutsiderList) { return Units.UnitLists.OtherList; }
+            else if (chosenTheme == Units.UnitLists.GolemList) { return Units.UnitLists.OtherList; }
+            else if (chosenTheme == Units.UnitLists.AnimalList) { return Units.UnitLists.OtherList; }
+            else if (chosenTheme == Units.UnitLists.UndeadList) { return Units.UnitLists.OtherList; }
+            else if (chosenTheme == Units.UnitLists.OtherList) { return Units.UnitLists.HumanoidList; }
+            else if (chosenTheme == Units.UnitLists.ElementalList) { return Units.UnitLists.OtherList; }
+            else return Units.UnitLists.OutsiderList;
         }
 
         public static string getEncounterType()
