@@ -1,0 +1,12 @@
+{
+  "Id": "RandomEnemies",
+  "DisplayName": "RandomEnemies",
+  "Author": "Ossi",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.23.0.0",
+  "GameVersion": "1.0.0s",
+  "Requirements": [],
+  "AssemblyName": "RandomEnemies.dll",
+  "HomePage": "",
+  "EntryMethod": "RandomEnemies.Main.Load"
+}
