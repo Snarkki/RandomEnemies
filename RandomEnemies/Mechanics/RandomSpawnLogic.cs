@@ -144,6 +144,7 @@ namespace RandomEnemies.Mechanics
             if (lootType == LootType.None) { return; }
             UnityEngine.RangeInt range = LootHandler.CreateRangeForLoot(entityData);
             BlueprintItem Loot = LootHandler.CreateLootItem(lootType, range);
+            Main.LogDebug("Adding loot " + Loot.Name + "to entity " + entityData.CharacterName);
             if (Loot != null)
             {
                 entityData.Inventory.Add(Loot);

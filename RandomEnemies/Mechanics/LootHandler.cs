@@ -118,6 +118,7 @@ namespace RandomEnemies.Mechanics
 			// Lower the cost so player doesnt get shit ton of money from these items. The cost is divided later by multiplier by the game. 
 			if (result != null) { result.m_Cost = 500; }
 			if (result == null) { result = Equipment.Weapons.AmiriSword; }
+
 			return result;
 		}
 	}
