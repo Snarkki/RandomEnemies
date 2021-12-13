@@ -33,7 +33,7 @@ namespace RandomEnemies.Mechanics
         public static int OrigUnitCR = 0;
         public static List<string> createdUnitID = new List<string>();
 
-        public static void CalculateCRs(string encounterType, BlueprintUnit origUnit)
+        public static void CalculateCRs(string encounterType, UnitEntityData origUnit)
         {
             OrigUnitCR = origUnit.CR;
             MinCR = SpawnUnitHelper.CalculateMinSingleCR(encounterType, OrigUnitCR, PlayerLevel);
@@ -45,28 +45,18 @@ namespace RandomEnemies.Mechanics
         public static BlueprintUnit chooseResultUnit(List<BlueprintUnit> chosenTheme, List<BlueprintUnit> backupTheme, int MinCR, int MaxCR)
         {
             // first tries to get result unit type by main theme, then secondary theme, then just loops through all lists until result found (mostly humanoid/demon as they are top of list)
-            try
+            BlueprintUnit result = chooseResultUnitByTheme(chosenTheme, MinCR, MaxCR);
+            if (result == null) { result = chooseResultUnitByTheme(backupTheme, MinCR, MaxCR); }
+            if (result == null)
             {
-                BlueprintUnit result = chooseResultUnitByTheme(chosenTheme, MinCR, MaxCR);
-                //BlueprintUnit result = Units.SummonedEarthElementalLarge; //testing
-                if (result == null) { result = chooseResultUnitByTheme(backupTheme, MinCR, MaxCR); }
-                if (result == null)
+                foreach (List<BlueprintUnit> p in Units.UnitLists.allLists)
                 {
-                    foreach (List<BlueprintUnit> p in Units.UnitLists.allLists)
-                    {
-                        if (p == chosenTheme || p == backupTheme) { continue; }
-                        result = chooseResultUnitByTheme(p, MinCR, MaxCR);
-                        if (!result) { break; }
-                    }
+                    if (p == chosenTheme || p == backupTheme) { continue; }
+                    result = chooseResultUnitByTheme(p, MinCR, MaxCR);
+                    if (!result) { break; }
                 }
-                return result;
             }
-            catch (Exception ex)
-            {
-                Main.LogDebug("Error creating enemy" + ex);
-                return null;
-            }
-
+            return result;
         }
 
         public static BlueprintUnit chooseResultUnitByTheme(List<BlueprintUnit> chosenTheme, int MinCR, int MaxCR) //, bool useMaxCR = default
@@ -212,7 +202,20 @@ namespace RandomEnemies.Mechanics
             { return true; }
             else return false;
         }
-
+        public static UnityEngine.Vector3 FindRandomPositionNearbyWithSelector(UnityEngine.Vector3 startPosition, UnitEntityData entityData, float roll1, float roll2)
+        {
+            UnityEngine.Vector3 test = new UnityEngine.Vector3(roll1, 0, roll2);
+            UnityEngine.Vector3 vector = startPosition + test;//new UnityEngine.Vector3((float)UnityEngine.Random.Range(-distance, distance), 0f, -1f);
+            UnitEntityView unitEntityView = entityData.Blueprint.Prefab.Load(false);
+            float radius = 1.0f;
+            bool flag = unitEntityView != null;
+            if (flag)
+            {
+                radius = unitEntityView.Corpulence;
+            }
+            FreePlaceSelector.PlaceSpawnPlaces(3, radius, vector);
+            return ObstacleAnalyzer.GetNearestNode(vector, null).position;
+        }
     }
     
 }
