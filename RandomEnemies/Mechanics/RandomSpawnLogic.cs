@@ -20,6 +20,7 @@ using Kingmaker.View.Spawners;
 using Kingmaker.UnitLogic;
 using Kingmaker.Blueprints.Classes.Experience;
 using RandomEnemies.Extensions;
+using Kingmaker.Items;
 
 namespace RandomEnemies.Mechanics
 {
@@ -46,6 +47,20 @@ namespace RandomEnemies.Mechanics
             //entityData.Group.Remove(entityData);
             newUnit.Descriptor.SwitchFactions(Factions.FactionMobs);
             newUnit.Descriptor.Faction = Factions.FactionMobs;
+            if (entityData.BonusExperience > 0)
+            {
+                newUnit.BonusExperience = entityData.BonusExperience;
+            }
+            //if (entityData.Descriptor.Inventory != null)
+            //{
+                foreach (ItemEntity Item in entityData.Descriptor.Inventory)
+                {
+                    newUnit.Descriptor.Inventory.Add(Item);
+                    Main.LogDebug("Added item " + Item.Name + " from unit " + entityData.CharacterName + " to " + newUnit.CharacterName);
+                }    
+            //}
+
+            newUnit.GiveExperienceOnDeath = true;
             entityData.MarkForDestroy();
             
             return newUnit;
