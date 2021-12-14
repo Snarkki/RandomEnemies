@@ -51,14 +51,12 @@ namespace RandomEnemies.Mechanics
             {
                 newUnit.BonusExperience = entityData.BonusExperience;
             }
-            //if (entityData.Descriptor.Inventory != null)
-            //{
-                foreach (ItemEntity Item in entityData.Descriptor.Inventory)
-                {
-                    newUnit.Descriptor.Inventory.Add(Item);
-                    Main.LogDebug("Added item " + Item.Name + " from unit " + entityData.CharacterName + " to " + newUnit.CharacterName);
-                }    
-            //}
+
+            // give guaranteed loot on harder encounters. (we are missing inventories of original mobs so some additional loot should be fine)
+            if (encounterType == Settings.RareEncounterName || encounterType == Settings.PowerfulEncounterName) 
+            {
+                TryCreateLoot(newUnit, true);
+            }
 
             newUnit.GiveExperienceOnDeath = true;
             entityData.MarkForDestroy();
@@ -89,12 +87,14 @@ namespace RandomEnemies.Mechanics
             }
         }
 
-    public static void TryCreateLoot(UnitEntityData entityData)
+    public static void TryCreateLoot(UnitEntityData entityData, bool skipLootCheck = false)
         {
-            LootType lootType = LootHandler.RollForLootType();
-            if (lootType == LootType.None) { return; }
-            UnityEngine.RangeInt range = LootHandler.CreateRangeForLoot(entityData);
-            BlueprintItem Loot = LootHandler.CreateLootItem(lootType, range);
+
+            LootType loottype = LootHandler.RollForLootType(skipLootCheck);
+            if (loottype == LootType.None) { return; }
+
+            RangeInt range = LootHandler.CreateRangeForLoot(entityData);
+            BlueprintItem Loot = LootHandler.CreateLootItem(loottype, range);
             Main.LogDebug("Adding loot " + Loot.Name + "to entity " + entityData.CharacterName);
             if (Loot != null)
             {

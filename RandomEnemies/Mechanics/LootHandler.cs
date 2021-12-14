@@ -17,11 +17,14 @@ namespace RandomEnemies.Mechanics
 {
 	public class LootHandler
 	{
-		public static LootType RollForLootType()
+		public static LootType RollForLootType(bool skipLootCheck = false)
 		{
-			int lootCheck = UnityEngine.Random.Range(1, 100);
-			if (lootCheck > (int)Main.settings.ChanceForLootDrop)
-			{ return LootType.None; }
+			if (skipLootCheck)
+            {
+				int lootCheck = UnityEngine.Random.Range(1, 100);
+				if (lootCheck > (int)Main.settings.ChanceForLootDrop)
+				{ return LootType.None; }
+			}
 			// rolls for what kind of loot - NONE is valid here, if none -> no loot created.
 			int lootRoll = UnityEngine.Random.Range(1, 100);
 
@@ -43,13 +46,13 @@ namespace RandomEnemies.Mechanics
 			// but list still contains mostly low lvl items
 			int rangeRoll = UnityEngine.Random.Range(1, 100);
 			if (rangeRoll <= 60) { multiplier = 1; }
-			else if (rangeRoll <= 80) { multiplier = 2; }
-			else if (rangeRoll <= 90) { multiplier = 3; }
-			else if (rangeRoll <= 99) { multiplier = 4; }
-			else if (rangeRoll <= 100) { multiplier = 20; }
+			else if (rangeRoll <= 80) { multiplier = 10; }
+			else if (rangeRoll <= 90) { multiplier = 20; }
+			else if (rangeRoll <= 99) { multiplier = 50; }
+			else if (rangeRoll <= 100) { multiplier = 150; }
 
-			int minRange = entityData.CR * 100;
-			int maxRange = entityData.CR * 1500 * multiplier;
+			int minRange = entityData.CR * 10 * multiplier;
+			int maxRange = entityData.CR * 100 * multiplier;
 			resultRange = new UnityEngine.RangeInt(minRange, maxRange);
 			return resultRange;
 		}
