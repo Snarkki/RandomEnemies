@@ -9,6 +9,9 @@ Also all monsters have a chance to drop a random loot. Loot level is based on th
 The mod has blacklisted the tutorial areas (and couple other). Also some mobs are blacklisted, but i have only played upto ~ending of act2 atm so i do not know for sure what happens in later acts with the mod on. 
 
 I actually have three different models for this and this seemed most stable (other ones were replacing unit groups / units with new units, but i couldnt figure out how to have them spawn in realistic places).
+
+You can contact me on Discord Pathfinder channel with name Ode
+
 **How to install**
 
 1. Download and install [Unity Mod Manager](https://github.com/newman55/unity-mod-manager), make sure it is at least version 0.23.0
