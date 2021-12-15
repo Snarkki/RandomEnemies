@@ -59,8 +59,10 @@ namespace RandomEnemies.Mechanics
             }
 
             newUnit.GiveExperienceOnDeath = true;
+            //entityData.Unsubscribe();
             entityData.MarkForDestroy();
-            
+            //entityData.Descriptor.State.IsFinallyDead = true;
+
             return newUnit;
 
         }
@@ -77,7 +79,7 @@ namespace RandomEnemies.Mechanics
             try
             {
                 UnitEntityData newUnit = Game.Instance.EntityCreator.SpawnUnit(result, vector, UnityEngine.Quaternion.LookRotation(OriginalUnit.OrientationDirection), Game.Instance.State.LoadedAreaState.MainState, null);
-                Main.LogDebug("Created enemy" + newUnit.CharacterName + " in area:" + Game.Instance.CurrentlyLoadedArea.AreaName);
+                Main.LogDebug("Created enemy" + newUnit.CharacterName + " in area: " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
                 return newUnit;
             }
             catch (Exception ex)
@@ -95,7 +97,7 @@ namespace RandomEnemies.Mechanics
 
             RangeInt range = LootHandler.CreateRangeForLoot(entityData);
             BlueprintItem Loot = LootHandler.CreateLootItem(loottype, range);
-            Main.LogDebug("Adding loot " + Loot.Name + "to entity " + entityData.CharacterName);
+            Main.LogDebug("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName);
             if (Loot != null)
             {
                 entityData.Inventory.Add(Loot);

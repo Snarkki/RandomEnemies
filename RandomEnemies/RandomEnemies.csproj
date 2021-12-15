@@ -131,6 +131,9 @@
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="xunit.assert, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.4.1\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContentAdder.cs" />
@@ -164,6 +167,7 @@
     <Compile Include="Utilities\Items.cs" />
     <Compile Include="Equipment\LootTypes.cs" />
     <Compile Include="Units\UnitLists.cs" />
+    <Compile Include="Utilities\SetWrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Config\Blueprints.json" />
@@ -174,6 +178,7 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <Import Project="..\..\WrathModMaker\ModMaker\ModMaker.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

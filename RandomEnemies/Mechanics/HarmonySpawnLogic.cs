@@ -25,6 +25,10 @@ using static RandomEnemies.Equipment.LootTypes;
 using Kingmaker.Blueprints.JsonSystem;
 using Kingmaker.View.Spawners;
 using Kingmaker.Blueprints.Area;
+using Owlcat.Runtime.Core.Utils;
+using System.Runtime.CompilerServices;
+using UnityEngine;
+using Xunit.Sdk;
 
 namespace RandomEnemies.Mechanics
 {
@@ -47,26 +51,36 @@ namespace RandomEnemies.Mechanics
         {
 
             public static void Postfix(UnitSpawnerBase __instance)
-            {
+            { //            if (Game.Instance.CurrentlyLoadedArea.GetComponent<CombatRandomEncounterAreaSettings>() == null && (!HasSpawned || (SpawnedUnitHasDied && m_RespawnIfDead)) && m_SpawnOnSceneInit && CheckConditions())
+                if (__instance == null) { return; }
+
+
                 UnitEntityData entityData = __instance.Data.SpawnedUnit.Value;
-                if (entityData != null)
+                if (entityData != null && !__instance.Data.HasDied && __instance.Data.IsInGame &&  !__instance.SpawnedUnitHasDied && __instance.Data.HasSpawned && !__instance.m_Blueprint.IsEmpty()) 
+                Main.LogDebug("__instance.Data.HasDied " + __instance.Data.HasDied + " __instance.Data.IsInGame " + __instance.Data.IsInGame 
+                    + " !__instance.SpawnedUnitHasDied " + !__instance.SpawnedUnitHasDied + " __instance.Data.HasSpawned " + __instance.Data.HasSpawned);
                 {
-                    Main.LogDebug(" Loaded area" + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
+                    
                     bool cutsceneCheck = !Game.Instance.CutsceneLock.Active && !AreaEdits.ProceduralSpawnAreaBlacklist.Any((BlueprintArea x) => x.name == Game.Instance.CurrentlyLoadedArea.name);
+                    Main.LogDebug(" Loaded area" + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
                     if (cutsceneCheck)
                     {
                         // Main.LogDebug("Passed CutsCeneCheck");
-                        bool factionCheck = (entityData.Faction == Factions.FactionMobs || entityData.Faction == Factions.FactionWildAnimals);
+                        bool factionCheck = (entityData.Faction == Factions.FactionMobs || entityData.Faction == Factions.FactionWildAnimals) && entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null;
                         if (factionCheck)
                         {
+
+                            //(Descriptor.State.IsFinallyDead && !entityData.Descriptor.State.Features.SuppressedDecomposition && !IsDeadAndHasLoot && !IsPlayerFaction && !Descriptor.State.Features.Immortality)
                             // Main.LogDebug("Passed factionCheck");
                             bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5);
                             if (unitCheck)
                             {
                                 //Main.LogDebug("Passed unitCheck");
                                 // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
+    
                                 if (Units.UnitLists.allowedEnemiesList.Contains(entityData.Blueprint)) // 
                                 {
+                                    
                                     // Main.LogDebug("Passed listChecks");
                                     UnitEntityData result = RandomSpawnLogic.TryCreateEncounter(entityData);
                                     if (result != null)
@@ -85,9 +99,11 @@ namespace RandomEnemies.Mechanics
                         }
                         else { Main.LogDebug(entityData + "Faction is not mobs, they are " + __instance.Blueprint.Faction); }
                     }
-                    else { Main.LogDebug(entityData + "Cutscene active or blacklisted area" + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key); }
+                    else { Main.LogDebug(entityData + "Cutscene active or blacklisted area " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key); }
                 }
             }
         }
+
+
     }
 }
