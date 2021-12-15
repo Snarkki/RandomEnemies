@@ -37,10 +37,8 @@ namespace RandomEnemies.Mechanics
         [HarmonyPatch(typeof(Game), "OnAreaLoaded")]
         internal static class UnitSpawner1_Spawn_Patch
         {
-            public static void Prefix()
+            public static void Postfix()
             {
-                // Set Theme on area load. 
-
 
                 Main.LogDebug("Loaded area" + Game.Instance.CurrentlyLoadedArea.AreaName);
                 bool cutsceneCheck = !Game.Instance.CutsceneLock.Active && !AreaEdits.ProceduralSpawnAreaBlacklist.Any((BlueprintArea x) => x.name == Game.Instance.CurrentlyLoadedArea.name);
