@@ -40,70 +40,115 @@ namespace RandomEnemies.Mechanics
             public static void Prefix()
             {
                 // Set Theme on area load. 
-                SpawnUnitHelper.chosenTheme = SpawnUnitHelper.ChooseTheme();
-                SpawnUnitHelper.backupTheme = SpawnUnitHelper.ChooseBackupTheme(SpawnUnitHelper.chosenTheme);
-            }
-        }
 
 
-        [HarmonyPatch(typeof(UnitSpawnerBase), "Spawn")]
-        internal static class UnitSpawner2_Spawn_Patch
-        {
-
-            public static void Postfix(UnitSpawnerBase __instance)
-            { //            if (Game.Instance.CurrentlyLoadedArea.GetComponent<CombatRandomEncounterAreaSettings>() == null && (!HasSpawned || (SpawnedUnitHasDied && m_RespawnIfDead)) && m_SpawnOnSceneInit && CheckConditions())
-                if (__instance == null) { return; }
-
-
-                UnitEntityData entityData = __instance.Data.SpawnedUnit.Value;
-                if (entityData != null && !__instance.Data.HasDied && __instance.Data.IsInGame &&  !__instance.SpawnedUnitHasDied && __instance.Data.HasSpawned && !__instance.m_Blueprint.IsEmpty()) 
-                Main.LogDebug("__instance.Data.HasDied " + __instance.Data.HasDied + " __instance.Data.IsInGame " + __instance.Data.IsInGame 
-                    + " !__instance.SpawnedUnitHasDied " + !__instance.SpawnedUnitHasDied + " __instance.Data.HasSpawned " + __instance.Data.HasSpawned);
+                Main.LogDebug("Loaded area" + Game.Instance.CurrentlyLoadedArea.AreaName);
+                bool cutsceneCheck = !Game.Instance.CutsceneLock.Active && !AreaEdits.ProceduralSpawnAreaBlacklist.Any((BlueprintArea x) => x.name == Game.Instance.CurrentlyLoadedArea.name);
+                if (cutsceneCheck)
                 {
-                    
-                    bool cutsceneCheck = !Game.Instance.CutsceneLock.Active && !AreaEdits.ProceduralSpawnAreaBlacklist.Any((BlueprintArea x) => x.name == Game.Instance.CurrentlyLoadedArea.name);
-                    Main.LogDebug(" Loaded area" + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
-                    if (cutsceneCheck)
+                    foreach (UnitGroup unitgroup in Game.Instance.UnitGroups)
                     {
-                        // Main.LogDebug("Passed CutsCeneCheck");
-                        bool factionCheck = (entityData.Faction == Factions.FactionMobs || entityData.Faction == Factions.FactionWildAnimals) && entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null;
-                        if (factionCheck)
+                        Main.LogDebug("Current unitgroup " + unitgroup + " " + unitgroup.Id + " " + unitgroup.ToString());
+                        if (unitgroup.Count == 0 || Main.unitGroupId.Contains(unitgroup.Id) || Main.unitGroupByName.Contains(unitgroup.ToString()))
                         {
-
-                            //(Descriptor.State.IsFinallyDead && !entityData.Descriptor.State.Features.SuppressedDecomposition && !IsDeadAndHasLoot && !IsPlayerFaction && !Descriptor.State.Features.Immortality)
-                            // Main.LogDebug("Passed factionCheck");
-                            bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5);
-                            if (unitCheck)
-                            {
-                                //Main.LogDebug("Passed unitCheck");
-                                // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
-    
-                                if (Units.UnitLists.allowedEnemiesList.Contains(entityData.Blueprint)) // 
-                                {
-                                    
-                                    // Main.LogDebug("Passed listChecks");
-                                    UnitEntityData result = RandomSpawnLogic.TryCreateEncounter(entityData);
-                                    if (result != null)
-                                    {
-                                        Main.LogDebug(entityData + " CR: " + entityData.CR + " changed blueprint to " + result + " , CR: " + result.CR);
-                                        RandomSpawnLogic.TryCreateLoot(entityData);
-                                    }
-
-                                }
-                                else {
-                                    RandomSpawnLogic.TryCreateLoot(entityData);
-                                    Main.LogDebug(entityData + "Not valid unit blueprint"); 
-                                }
-                            }
-                            else { Main.LogDebug(entityData + "Unit bp was fake/cheater"); }
+                            continue;
                         }
-                        else { Main.LogDebug(entityData + "Faction is not mobs, they are " + __instance.Blueprint.Faction); }
+                        Main.unitGroupId.Add(unitgroup.Id);
+                        SpawnUnitHelper.chosenTheme = SpawnUnitHelper.ChooseTheme();
+                        SpawnUnitHelper.backupTheme = SpawnUnitHelper.ChooseBackupTheme(SpawnUnitHelper.chosenTheme);
+                        foreach (UnitEntityData entityData in unitgroup)
+                        {
+                            bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs && Units.UnitLists.allowedEnemiesList.Contains(entityData.Blueprint)); //|| entityData.Descriptor.Faction == Factions.FactionWildAnimals);
+                            if (factionCheck)
+                            {
+                                //[RandomEnemies] Current unitgroupUnitGroup[CR7_ShadowDemonStandard]2f03b953-1131-425b-915c-e2274a395545
+                                bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && entityData.CutsceneControlledUnit == null);
+                                if (unitCheck)
+                                {
+                                    // blacklist already handled groups
+                                    if (!SpawnUnitHelper.createdUnitID.Contains(entityData.View.UniqueId)) // 
+                                    {
+                                        UnitEntityData result = RandomSpawnLogic.TryCreateEncounter(entityData);
+                                        if (result != null)
+                                        {
+                                            Main.LogDebug(entityData + " CR: " + entityData.CR + " changed blueprint to " + result + " , CR: " + result.CR);
+                                            RandomSpawnLogic.TryCreateLoot(entityData);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        RandomSpawnLogic.TryCreateLoot(entityData);
+                                        Main.LogDebug(entityData + "Not valid unit blueprint");
+                                    }
+                                }
+
+                            }
+                        }
                     }
-                    else { Main.LogDebug(entityData + "Cutscene active or blacklisted area " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key); }
                 }
             }
         }
+    
 
 
-    }
-}
+//        [HarmonyPatch(typeof(UnitSpawnerBase), "Spawn")]
+//        internal static class UnitSpawner2_Spawn_Patch
+//        {
+
+//            public static void Postfix(UnitSpawnerBase __instance)
+//            { //            if (Game.Instance.CurrentlyLoadedArea.GetComponent<CombatRandomEncounterAreaSettings>() == null && (!HasSpawned || (SpawnedUnitHasDied && m_RespawnIfDead)) && m_SpawnOnSceneInit && CheckConditions())
+//                if (__instance == null) { return; }
+
+
+//                UnitEntityData entityData = __instance.Data.SpawnedUnit.Value;
+//                if (entityData != null && !__instance.Data.HasDied && __instance.Data.IsInGame &&  !__instance.SpawnedUnitHasDied && __instance.Data.HasSpawned && !__instance.m_Blueprint.IsEmpty()) 
+//                Main.LogDebug("__instance.Data.HasDied " + __instance.Data.HasDied + " __instance.Data.IsInGame " + __instance.Data.IsInGame 
+//                    + " !__instance.SpawnedUnitHasDied " + !__instance.SpawnedUnitHasDied + " __instance.Data.HasSpawned " + __instance.Data.HasSpawned);
+//                {
+                    
+//                    bool cutsceneCheck = !Game.Instance.CutsceneLock.Active && !AreaEdits.ProceduralSpawnAreaBlacklist.Any((BlueprintArea x) => x.name == Game.Instance.CurrentlyLoadedArea.name);
+//                    Main.LogDebug(" Loaded area" + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
+//                    if (cutsceneCheck)
+//                    {
+//                        // Main.LogDebug("Passed CutsCeneCheck");
+//                        bool factionCheck = (entityData.Faction == Factions.FactionMobs || entityData.Faction == Factions.FactionWildAnimals) && entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null;
+//                        if (factionCheck)
+//                        {
+
+//                            //(Descriptor.State.IsFinallyDead && !entityData.Descriptor.State.Features.SuppressedDecomposition && !IsDeadAndHasLoot && !IsPlayerFaction && !Descriptor.State.Features.Immortality)
+//                            // Main.LogDebug("Passed factionCheck");
+//                            bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5);
+//                            if (unitCheck)
+//                            {
+//                                //Main.LogDebug("Passed unitCheck");
+//                                // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
+    
+//                                if (Units.UnitLists.allowedEnemiesList.Contains(entityData.Blueprint)) // 
+//                                {
+                                    
+//                                    // Main.LogDebug("Passed listChecks");
+//                                    UnitEntityData result = RandomSpawnLogic.TryCreateEncounter(entityData);
+//                                    if (result != null)
+//                                    {
+//                                        Main.LogDebug(entityData + " CR: " + entityData.CR + " changed blueprint to " + result + " , CR: " + result.CR);
+//                                        RandomSpawnLogic.TryCreateLoot(entityData);
+//                                    }
+
+//                                }
+//                                else {
+//                                    RandomSpawnLogic.TryCreateLoot(entityData);
+//                                    Main.LogDebug(entityData + "Not valid unit blueprint"); 
+//                                }
+//                            }
+//                            else { Main.LogDebug(entityData + "Unit bp was fake/cheater"); }
+//                        }
+//                        else { Main.LogDebug(entityData + "Faction is not mobs, they are " + __instance.Blueprint.Faction); }
+//                    }
+//                    else { Main.LogDebug(entityData + "Cutscene active or blacklisted area " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key); }
+//                }
+//            }
+//        }
+
+
+//    }
+//}
