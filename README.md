@@ -1,6 +1,6 @@
 # Random Enemies & Loot
 
-Update on 16.12: Hopefully fixed all the issues with saves corrupting. Loot logic changed, took performance hit but no idea how to implement it on load area without issues with saves.
+Update on 16.12.2021: Hopefully fixed all the issues with saves corrupting. Loot logic changed, took performance hit but no idea how to implement it on load area without issues with saves.
 
 PLEASE NOTE THIS IS VERY EARLY VERSION - it is highly likely that it will cause issue of replacing some important NPC! Toybox can most likely fix that. 
 
