@@ -16,5 +16,19 @@ namespace RandomEnemies.Equipment
 			Weapons,
 			None
 		}
+		public enum EquipmentTypes
+		{
+			Belt,
+			Feet,
+			Glasses,
+			Gloves,
+			Head,
+			Neck,
+			Ring,
+			Shirt,
+			Shoulders,
+			Usable,
+			Wrist
+		}
 	}
 }

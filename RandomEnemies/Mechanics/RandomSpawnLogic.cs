@@ -42,25 +42,23 @@ namespace RandomEnemies.Mechanics
             UnitEntityData newUnit = createNewUnit(entityData);
             if (newUnit == null) { return null; }
 
-            newUnit.GroupId = entityData.GroupId;
-            entityData.Group.Add(newUnit);
-            //entityData.Group.Remove(entityData);
-            newUnit.Descriptor.SwitchFactions(Factions.FactionMobs);
-            newUnit.Descriptor.Faction = Factions.FactionMobs;
-            if (entityData.BonusExperience > 0)
-            {
-                newUnit.BonusExperience = entityData.BonusExperience;
-            }
+            //newUnit.GroupId = entityData.GroupId;
+            //entityData.Group.Add(newUnit);
+
+            //newUnit.Descriptor.SwitchFactions(Factions.FactionMobs);
+            //newUnit.Descriptor.Faction = Factions.FactionMobs;
 
             // give guaranteed loot on harder encounters. (we are missing inventories of original mobs so some additional loot should be fine)
-            if (encounterType == Settings.RareEncounterName || encounterType == Settings.PowerfulEncounterName) 
-            {
-                TryCreateLoot(newUnit, true);
-            }
+            //if (encounterType == Settings.RareEncounterName || encounterType == Settings.PowerfulEncounterName) 
+            //{
+            //    TryCreateLoot(newUnit, true);
+            //}
+
+            Main.SpawnedUnitId.Add(newUnit.UniqueId);
 
             newUnit.GiveExperienceOnDeath = true;
             //entityData.Unsubscribe();
-            entityData.MarkForDestroy();
+            //entityData.MarkForDestroy();
             //entityData.Descriptor.State.IsFinallyDead = true;
 
             return newUnit;
@@ -78,7 +76,8 @@ namespace RandomEnemies.Mechanics
 
             try
             {
-                UnitEntityData newUnit = Game.Instance.EntityCreator.SpawnUnit(result, vector, UnityEngine.Quaternion.LookRotation(OriginalUnit.OrientationDirection), Game.Instance.State.LoadedAreaState.MainState, null);
+                //UnitEntityData newUnit = Game.Instance.EntityCreator.SpawnUnit(result, vector, UnityEngine.Quaternion.LookRotation(OriginalUnit.OrientationDirection), Game.Instance.State.LoadedAreaState.MainState, null);
+                UnitEntityData newUnit = Game.Instance.EntityCreator.ChangeUnitBlueprint(OriginalUnit, result, false);
                 Main.LogDebug("Created enemy" + newUnit.CharacterName + " in area: " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
                 return newUnit;
             }
@@ -89,20 +88,21 @@ namespace RandomEnemies.Mechanics
             }
         }
 
-    public static void TryCreateLoot(UnitEntityData entityData, bool skipLootCheck = false)
-        {
+    //public static void TryCreateLoot(UnitEntityData entityData, bool skipLootCheck = false)
+    //    {
 
-            LootType loottype = LootHandler.RollForLootType(skipLootCheck);
-            if (loottype == LootType.None) { return; }
+    //            LootType loottype = LootHandler.RollForLootType(skipLootCheck);
+    //            if (loottype == LootType.None) { return; }
 
-            RangeInt range = LootHandler.CreateRangeForLoot(entityData);
-            BlueprintItem Loot = LootHandler.CreateLootItem(loottype, range);
-            Main.LogDebug("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName);
-            if (Loot != null)
-            {
-                entityData.Inventory.Add(Loot);
-            }
-        }
+    //            RangeInt range = LootHandler.CreateRangeForLoot(entityData);
+    //            BlueprintItem Loot = LootHandler.CreateLootItem(loottype, range);
+    //            Main.LogDebug("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName);
+    //            if (Loot != null)
+    //            {
+    //                entityData.Inventory.Add(Loot);
+    //                Main.SpawnedUnitsLoots.Add(entityData.UniqueId, Loot);
+    //            }
+    //    }
 
     }
 }

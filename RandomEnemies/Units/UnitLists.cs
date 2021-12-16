@@ -10,35 +10,125 @@ namespace RandomEnemies.Units
 {
     public class UnitLists
     {
+        public static BlueprintUnit AasimarRedMask = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("20fcfa451598dfe48a2e90088effc766");
+        public static BlueprintUnit AD_CrusaderMelee1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e3e0288a9955d514f9623aea95389b2f");
+        public static BlueprintUnit AD_CrusaderMelee2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("85948e5800c216b48a3ab1db3b26eadb");
+        public static BlueprintUnit AD_CrusaderMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("194f7a44bbb48f84da7e6364924d5255");
+        public static BlueprintUnit AeonDevilCompanion = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a3b1368156ca54d4d977de62f76b4ab3");
         public static BlueprintUnit AeonInThePast_DemonLordDeskar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f896dd504b3509b4abd42f01e26140da");
         public static BlueprintUnit AeonInThePast_DemonLordDeskar_Cutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8748d722be324ebe9d0f7cbe49ce8c62");
+        public static BlueprintUnit AeonQ3_CapitalGuard_01_Viram = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4781b8ec3e208e34bba2d4b4c4d6d5f0");
+        public static BlueprintUnit AeonQ3_CapitalGuard_02_Erwart = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("55eb5b2a270e50544bbc6ba97c3203ae");
+        public static BlueprintUnit Aeon_Axiomite_F_01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("47a9c07ff9fd452b8a0c4e646a380f45");
+        public static BlueprintUnit Aeon_Axiomite_M_01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("645cf78acf544567a1185b7664b6ad74");
+        public static BlueprintUnit Aeon_DevilGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e061fa70f5e38f546a50ee32e62312d6");
+        public static BlueprintUnit AlderpashLich25 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("72bc5adfe506b6f4ba419963b036a553");
+        public static BlueprintUnit Alichino = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d8fe12b59bb7e6b4cacb2045a36595a8");
         public static BlueprintUnit AlichinoEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9efc7a26dd194d8faf59e4718f6f5ed6");
+        public static BlueprintUnit Alinythia = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("86e4e843f80396a41952f1c8e088b801");
+        public static BlueprintUnit ALR_AreeluChild = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("488141008d842664982e81edff681cf8");
+        public static BlueprintUnit ALR_AreeluChildSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f7b257bed569ad04c84d684481894927");
+        public static BlueprintUnit ALR_AreeluChildSmall_F = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ea229f308d3c430e97331dde739f7b92");
+        public static BlueprintUnit ALR_AreeluChild_F = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c029668640884489ba291ad195893a90");
+        public static BlueprintUnit AlushinyrraAbrikandiluCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f47c2253fd7645d45a28cdee6288dc5d");
+        public static BlueprintUnit AlushinyrraBabauCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ad755ea7dbdab9d4f8b8e8c779c525a7");
+        public static BlueprintUnit AlushinyrraBeggarAbrikandilu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4943692227375724f8f5fa4ae1415b2d");
+        public static BlueprintUnit AlushinyrraBeggarDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("82bf7c91d65d8904fa942c68e701f9b9");
+        public static BlueprintUnit AlushinyrraBeggarIncubus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9280b3615a47e3b4cafb95ccb34cc6f4");
+        public static BlueprintUnit AlushinyrraBeggarZiforian = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4e65d2f71f232994b94af5fa25b62043");
+        public static BlueprintUnit AlushinyrraCambionCommoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dfce3a37eb288134fabf7c6f354f75e8");
+        public static BlueprintUnit AlushinyrraCambionCommoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ec7133b0a5e9ec1419a4430a686f9895");
+        public static BlueprintUnit AlushinyrraCambionCommoner3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a37e9ab9abea76c46a07b13befa7a788");
         public static BlueprintUnit AlushinyrraCasterMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("28966687fe3ceec43857d87a08303854");
         public static BlueprintUnit AlushinyrraCasterMiniboss1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4595304a7627fcf40895746e197fde15");
         public static BlueprintUnit AlushinyrraCasterMiniboss2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9dfed67e29a1cdc45900bdde24d66a4e");
         public static BlueprintUnit AlushinyrraCasterMiniboss3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("91cd42858e372f845ae2c82554412101");
+        public static BlueprintUnit AlushinyrraColoxusCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2590ec8b588c37f429b2ca25b9c31b76");
+        public static BlueprintUnit AlushinyrraDemodandCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0fabe8cf1bf5e394f90fe45b2736bceb");
+        public static BlueprintUnit AlushinyrraDemodandCommonerStringy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5e55690a01a31d84cbb9da03e623dfa6");
+        public static BlueprintUnit AlushinyrraDemodandCommonerTarry = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c7f84a4550b4355499e6af3ec1b985cf");
+        public static BlueprintUnit AlushinyrraDretchCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cd8a60a99de90424dbb882df94c51766");
+        public static BlueprintUnit AlushinyrraElfCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("216824171f433c4478cf06c36b53cd80");
+        public static BlueprintUnit AlushinyrraGibrilethCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("04ba556f6794ae9429d2fd130b980e12");
+        public static BlueprintUnit AlushinyrraGlabrezuCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("db1f55c83e6db6540bf94af7ce9eea61");
+        public static BlueprintUnit AlushinyrraHerald = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ba4d057e32bd2984f969bc781da523ba");
+        public static BlueprintUnit AlushinyrraHumanCommoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fb3aec2faada43c41b503444fa9ba5cf");
+        public static BlueprintUnit AlushinyrraHumanCommoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a6894a6f5ebaeac449448ed6bdf7a468");
+        public static BlueprintUnit AlushinyrraIncubusCommoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("90b6fbd39cdc4c84980c2c6a5265f4c3");
+        public static BlueprintUnit AlushinyrraIncubusCommoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("171b37f59cc4e6141a92b183f5750ed9");
+        public static BlueprintUnit AlushinyrraIncubusCommoner3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cc0d39747b4ab874daaf6145f2f5c08e");
+        public static BlueprintUnit AlushinyrraIncubusCommoner4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0770b730ec7abb04b8e84f9622c334c6");
+        public static BlueprintUnit AlushinyrraIncubusCommoner5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("68a07012b8febb4449f3e810884c2d2f");
+        public static BlueprintUnit AlushinyrraIncubusCommoner_Lower = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("533eab348dc14aabbc292eccf68f3237");
+        public static BlueprintUnit AlushinyrraMarilithCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("870e4888f4fa4f94ca25035d60c41afe");
+        public static BlueprintUnit AlushinyrraNabasuCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ea961749118c98f47b9230153b4cb846");
+        public static BlueprintUnit AlushinyrraNalfeshneeCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("10766a6f8e728bd4faa36ae15579c7fe");
+        public static BlueprintUnit AlushinyrraOolioddrooCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("331d79e9ae93eea468e80959719da4fb");
+        public static BlueprintUnit AlushinyrraQuasitCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4e2191bb957f70749991d0e8e07f0611");
+        public static BlueprintUnit AlushinyrraSadisticCambionCutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d7320a857ce8f644b87a5292a9780892");
+        public static BlueprintUnit AlushinyrraSadisticSuccubusCutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("530cbd7d4adbca746b8fb26a690e8a9e");
+        public static BlueprintUnit AlushinyrraSchirCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("60dd7c9dccf90b14087b2195887e6bcc");
+        public static BlueprintUnit AlushinyrraShadowDemonCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f11ed4a811f06284f9eed48d4d6fb6bb");
+        public static BlueprintUnit AlushinyrraSlaveAbrikandilu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a69bcd47bfa9dce40b661e86133aac13");
+        public static BlueprintUnit AlushinyrraSlaveDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("03923683c9471c945b0c16874a9b3fd7");
+        public static BlueprintUnit AlushinyrraSuccubusCommoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("27968f53ec3ccb1468d04255798ec45b");
+        public static BlueprintUnit AlushinyrraSuccubusCommoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bc0ece0cccbab164f965eb7a5cd1df2a");
+        public static BlueprintUnit AlushinyrraSuccubusCommoner3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b5b8462f3e884f644a59473bb1fa4a1d");
+        public static BlueprintUnit AlushinyrraSuccubusCommoner4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("203011621a166c34b8af7e3609b8b8c1");
+        public static BlueprintUnit AlushinyrraSuccubusCommoner_Lower = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("555443732e0545bcaf8c4af6ab42d7b7");
+        public static BlueprintUnit AlushinyrraSuccubusCutsceneTorture = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f92e811fd4e816a47bde051f0f5de1ff");
+        public static BlueprintUnit AlushinyrraTavernFighter1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7aa55dca9f9dc9641aeedadc6911667e");
+        public static BlueprintUnit AlushinyrraTavernFighter2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1bed68d04a4e8354ab8539dd1bfea1a4");
+        public static BlueprintUnit AlushinyrraThanadaemonCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("32c4818f76b4ce140867fd889586f024");
+        public static BlueprintUnit AlushinyrraVavakiaCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1bd6ce0ff5559114fbec6d8028f0f7fb");
+        public static BlueprintUnit AlushinyrraVrolikaiCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("111053285e1a2594f9bd31a0dfae9c2a");
         public static BlueprintUnit Alushinyrra_Minagho = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("23e9e36701934fcbbf3e1472091d9321");
         public static BlueprintUnit AlushynirraDemodandKineticist = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("17c83213a13646e9892d63d5004fd87f");
         public static BlueprintUnit AlushynirraDemodandMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e67d5e358a59f7c4b8803ed6c54c36c0");
         public static BlueprintUnit AlushynirraSalamanderLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cf0aaa0ac472df445b27bcbc48b08140");
         public static BlueprintUnit Alushynirra_BalorNocticulaGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ab1ac8ceb6648f9b72090b0c36e9000");
+        public static BlueprintUnit AmbushInquisitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("29f69b9a9596fba439067c51deb35cc6");
+        public static BlueprintUnit AmbushInquisitorMinor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("21e38936f9746e349b868c3f786c6b18");
         public static BlueprintUnit Anemora = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("de4180f17c9f0a64687707cd6af1865a");
+        public static BlueprintUnit AngelLariel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f77936fe93a4fa4a8d084a5a64bd995");
         public static BlueprintUnit AngelTargona = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("81297c673b63b60448ef88a10db6bc78");
+        public static BlueprintUnit Angel_1_DreszenSecondState1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5dc28ad2e0ca4fb9a982add03cfcc19b");
+        public static BlueprintUnit Angel_2_DreszenSecondState2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("eaa87b9b297d43d687dffba0f8a331b5");
+        public static BlueprintUnit Angel_3_DreszenSecondState3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e08cc497746d4115b0dc3e153bd8dc6b");
         public static BlueprintUnit AngryDemodandLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("12d74de992a8845458ba8a16ace425a7");
         public static BlueprintUnit AngryIncubusRanger = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("872de0b89c2e4f3285a589847e809eef");
+        public static BlueprintUnit AponaviciusVision = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("280e0464d529949448dcccbd0d3a7e34");
         public static BlueprintUnit Aponavicius_IvoryLabyrinth26 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ddb9b76a660d58a428085a6661c34733");
         public static BlueprintUnit Aponavicius_IvoryLabyrinth26_Scimitar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("911f53ca85b7b444dac6ce1f893d3821");
+        public static BlueprintUnit Aranka_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b85fdd8481f26f54f9c504fc4d2e031f");
         public static BlueprintUnit ArcaneBonepowderGhoul18 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7b84de6394e7e64796557c5036bc2d1");
+        public static BlueprintUnit Arcanotheign = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("62b1978f3145f3a4a9a75ca243ee4c06");
+        public static BlueprintUnit Areelu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("92f29ae2c49edb74f8943d30ea788dd0");
+        public static BlueprintUnit AreeluCrusaderVIsionByAreelu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f8fc9de41bc7e23458efb42d07026ab8");
+        public static BlueprintUnit AreeluDemonicForm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6eac4b763b6504546a580d4f01c63bfa");
+        public static BlueprintUnit AreeluDisguised = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cc999f2802d571543848539c73ccc318");
+        public static BlueprintUnit AreeluHologram = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("16dbbd3b4e52b654883257d83b4b045d");
+        public static BlueprintUnit AreeluHumanHologram = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d99c7ed1fb72f87428fb43348ce423cb");
+        public static BlueprintUnit AreeluInquisitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9631a039b0392d049944fdfc40290889");
+        public static BlueprintUnit AreeluInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c9f23e42e5acf43459fe62d8ca6bbe9e");
         public static BlueprintUnit AreeluLab_Derakni = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9a07422abebed6e44be52b88abbdfa7a");
         public static BlueprintUnit AreeluLab_Nalfeshnee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c379b192a85b2d74f839a761da0af360");
         public static BlueprintUnit AreeluLab_ShadowDemon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8329aea99aa3244b8cf866804d2cf28");
+        public static BlueprintUnit AreeluNoName = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("da61651090b428f4880c26898aace0fe");
+        public static BlueprintUnit Areelu_4dialogues = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("293b18d391014c948f8815fbea19d81d");
+        public static BlueprintUnit Areelu_MidnightFaneInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c6e77c101ae5c7442838b4bff9f06c2b");
+        public static BlueprintUnit ArenaWizard_Curse = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0fe3438b11d09841a8717ab55eebe15");
         public static BlueprintUnit AreshkagalBoss_ShadowCopy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("53292043b0a34835a9c0cf997a35de9c");
         public static BlueprintUnit AreshkagalBoss_ShadowCopy_ArenaFight = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0147f4d2006c457da499947b3065a8f9");
+        public static BlueprintUnit AreshkagalBoss_ShadowCopy_GlobalPuzzle = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a90e29409ada4968b207ae41bbb62bd6");
         public static BlueprintUnit ArmyCultist_FighterTank = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("37a49639abfe0fb41b37b8ffa3cc21f8");
+        public static BlueprintUnit ArmyLilitu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0c03b5924c64ee7b7406808714c1c90");
         public static BlueprintUnit ArmyLocustSwarmStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bdf6c58bdaf74978b51b423993a6c9a0");
         public static BlueprintUnit ArmySpiderSwarmStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("48f0c472e5cd4beda4afdb1b6c39c344");
         public static BlueprintUnit ArmyVavakiaStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1badd32c3e1941289a9bd60ef5e68d47");
         public static BlueprintUnit ArmyVescavorSwarmStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c148c12cb7914a50b2fccc39fa880b73");
+        public static BlueprintUnit Arsinoe = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("459aba8a61a75514fbf0495545cd52d1");
+        public static BlueprintUnit ArueshalaeImprisoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("48fc622c39f1faa44b245cd1596b76d1");
         public static BlueprintUnit ArueshalaeRedoubt_Cultist_Slayer_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cd73a15a1ea1a204f87adae3c7a30581");
         public static BlueprintUnit ArueshalaeRedoubt_DamageFullCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("aafab29c0c04a1a479e3841933856736");
         public static BlueprintUnit ArueshalaeRedoubt_DamageFullCaster2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8c153cc9dbb62204281d7f542fdc1955");
@@ -51,40 +141,103 @@ namespace RandomEnemies.Units
         public static BlueprintUnit AshGiantDrezen01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5122b4b63a7e68c4da5fbd397878e30c");
         public static BlueprintUnit AshGiantDrezen02 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("60f1642d6bed26e448820a77e2aa5d33");
         public static BlueprintUnit AshGiantLairMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b0a5e6f7f3436614685b294bbc97ee4b");
-        public static BlueprintUnit AxiomiteSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5adafaa653dc4de40b3ac73fa002a2ec");
-        public static BlueprintUnit AzataBralaniSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("58574e8d1d4dc464c976f396d9115b1a");
-        public static BlueprintUnit AzataBralaniSummonedAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3033075df510cce4aba934dca074b94e");
-        public static BlueprintUnit AzataGhaelSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bc8ca1437c0f48948b317b7e64febf0d");
-        public static BlueprintUnit AzataTreantSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2c67d5957ef71c047b915b0f68eb7502");
+        public static BlueprintUnit AssasinInGuild = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4284debdf65fd344f81b9120a8420d13");
+        public static BlueprintUnit AssasinInGuild1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6ec210677ad944dfae943005c2ad8de4");
+        public static BlueprintUnit AssasinInGuild2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ddf98831039a4c139e4a29a569634ec6");
+        public static BlueprintUnit AssasinInGuild3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3fd0575c3bf643ca93c1c178a8e9fed8");
+        public static BlueprintUnit AstralDeva_DreszenSecondState = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("61fd03cfd5d24a52b4b61e37777c3f4a");
+        public static BlueprintUnit Asty = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d8e2475977bd87b439c4bba8f5f55949");
+        public static BlueprintUnit AzataIsland_AzataBralani = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dd911a727ee94a61bf4f442aac9386a2");
+        public static BlueprintUnit AzataIsland_AzataYinudja = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c8b1b9753e3141ac90898472dcfe90c6");
+        public static BlueprintUnit AzataIsland_FiendishMinotaur = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("417e0c03a58529a4cbf6482379051fdd");
+        public static BlueprintUnit AzataLillendMadAlchemist = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("84537fb26221ec94aa1c0e50c0cdcd9f");
+        public static BlueprintUnit AzataLillendRankUp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ecb56c3e6aff473c9b486d4daf7af8a2");
+        public static BlueprintUnit AzataLillendTwin1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a53ecd6218208814b9dea837af612275");
+        public static BlueprintUnit AzataLillendTwin2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cf8fcbd972b0b6e4c8684395c36eb9dd");
+        public static BlueprintUnit AzataLillend_DrezenCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("daa1ec7d3f754b32a3bfb6a54681b12d");
+        public static BlueprintUnit Azata_Aranka_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("430cba7801b149b4e8494ace6baf4f7c");
+        public static BlueprintUnit Azata_Aranka_RankupSpeaker = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd0c4fe722aeef94b8495ac284b96bc8");
+        public static BlueprintUnit Azata_AshGiantSlave = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("36eda13a8c032504dafb495d9cd1fe41");
+        public static BlueprintUnit Azata_FiendishMinotaur = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ba7dd514f4c213c45a51b66cdfa1db22");
+        public static BlueprintUnit Azata_Ileks_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6cdc010337068ca439e2a31e8258fafd");
+        public static BlueprintUnit Azata_MimicChest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c1a4a6b277981a04b9b3be59d71dae33");
+        public static BlueprintUnit Azata_MimicChest_Dialog = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b33e48940345c3b40a5c10aafc5076bb");
+        public static BlueprintUnit Azata_Quickwood = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c1a48c3402ab5384aaeaa8e76b2fe948");
+        public static BlueprintUnit Azata_Tall_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8fb65bd79574771429526eaef26762a9");
+        public static BlueprintUnit Azata_Treant = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("43549b09ecec7fa4686f3c1bc82937e0");
+        public static BlueprintUnit Azata_TreantBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("826a24f05d817fb4c8d146ea3af4b0d1");
+        public static BlueprintUnit Azata_TreantBoss_invportal = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("af3efbb79275454999620f7944313662");
         public static BlueprintUnit BabauAlarmer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b363ef52eecd6634cbd890bbfe229525");
+        public static BlueprintUnit BabauCrusaderVIsionByAreelu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("31ff281d9b7bb7a4689b92cab2d4b963");
+        public static BlueprintUnit BabauFreeHand_flowers = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("48cb285106132e34bb8509539a77df9c");
         public static BlueprintUnit BabauWithShortspear = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b4b7b5090a3bbfc47a84896ba61fa258");
+        public static BlueprintUnit Babau_Coronation = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("462a0e15125e4ba7919cdb35e059a57a");
         public static BlueprintUnit BalorLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ffa2585c4adde64ea653ba9ba29951a");
+        public static BlueprintUnit Balor_Coronation = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("846067ec50a741f48b1869e758f97c7c");
+        public static BlueprintUnit Balor_wintersun = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a83a87323823bb34e96d7efa7a72eb4d");
+        public static BlueprintUnit Baphomet = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f8007503fe211da4eb027e070eeb3f8c");
         public static BlueprintUnit BaphometStatueAnimanted_Cunning = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("df3e09221043fdd4fb269496049f5844");
         public static BlueprintUnit BaphometStatueAnimanted_Might = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("388588510423ef9489bd44637287a435");
+        public static BlueprintUnit BaphometVision_IvoryLabyrinth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ad5f5ed401c1caf42a91ac8219ac60c2");
+        public static BlueprintUnit BatteSlaver = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7704442d0fe6083479e96308ef0670cb");
+        public static BlueprintUnit BattleBliss_GuardianMinotaur = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("125908b797518bd4aadff30939ff7753");
+        public static BlueprintUnit BattleBliss_Healer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c81516e0a6526574c976e2ce4ed7d278");
         public static BlueprintUnit BattleBliss_MephitFire = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8daa7d2a0f25f4d4c8e034b0b06f2a8b");
         public static BlueprintUnit BattleBliss_MephitFireBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e64b423f6572ab84d9293fd0228be387");
+        public static BlueprintUnit BattleBliss_Spectator01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a4cf0505a01f07b429b3d4905a6de52b");
+        public static BlueprintUnit BattleBliss_Spectator02 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ded9785f324c32b4783b6315f6b4845c");
+        public static BlueprintUnit BattleBliss_Succubus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3ff3665cc0415e943802fd55e8187a6d");
+        public static BlueprintUnit BeggarAbrikandiluJocatChat = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("111cddfa16244c22952ed9ecaff32687");
+        public static BlueprintUnit BeggarDretchJocatChat = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0cc34fe87ec140d2bf9deb312d56ee59");
+        public static BlueprintUnit BeggarIncubusJocatChat = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b6fe738a9ead427095a1ea37f74e8fd6");
         public static BlueprintUnit Berengar_Balor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("80318a4117554ddeac0a8c1bceacec45");
         public static BlueprintUnit BlackFireAdeptLeader_Cage = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("86022e77965831d45ae751b9c923203a");
         public static BlueprintUnit BlackFireAdeptTalker1_Experiment = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("27121bbc3f248814fbfb77d8004e7cba");
         public static BlueprintUnit BlackFireAdeptTalker2_Experiment = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ef8881d01b80dfc4eb77a8cd2ae3e4c2");
         public static BlueprintUnit BlackFireAdeptVampire = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ae708a66d31e54e4b8b4da02d37e7b08");
+        public static BlueprintUnit BlackMaskSlaveTrader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c3d45363a9858024193412361ecb20b3");
         public static BlueprintUnit BlightedTreantBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1f71b4ecb229d2d4aa654c5efee8e576");
+        public static BlueprintUnit BlindCarver_Wintersun = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3ba3a0ff8575be8419159221177c1411");
+        public static BlueprintUnit BloodMoon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("97065dacd972bd04b8dd39dbc5301ad0");
         public static BlueprintUnit BloodyUrod = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a047c124f7c4d564692c0efcfdeb0d77");
         public static BlueprintUnit BodakLairMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8bc9289d26cf804090184442cdf797d");
-        public static BlueprintUnit BogeymanSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f04734e4ad930e438eec3182dfd95fe");
+        public static BlueprintUnit Boulder = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7ae258edc547f554284fb905cdff4786");
+        public static BlueprintUnit BrimorakDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3f98c4a13cbee8840baf57c8d1e2017f");
         public static BlueprintUnit BrimorakWithScimitar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dc3a0a825cd4ee74f8ed20e39f3df7e9");
+        public static BlueprintUnit BrokenCyborg_Medium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("abcf9399f5d548acb2722a83ebd6e0f5");
+        public static BlueprintUnit BronzeDragon_Drezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3ae83a313259459fa4bbc85499fb00b2");
+        public static BlueprintUnit BrothelGuard_Kalavakus12 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("628ecc260efcc6f4eaa01e28a880b0ac");
         public static BlueprintUnit BuletteSummonedInfested = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("08890437569606e48a976580dec2b529");
+        public static BlueprintUnit Caleb_Traitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1c91f3063e0b61d4c873ada4509dfaea");
         public static BlueprintUnit CambionFlameShaman = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fee9736c2d534066a03f17a7793e7bec");
         public static BlueprintUnit CambionMinibossKineticist = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6c06f8b57f2c4924e9d4323acc007d9e");
         public static BlueprintUnit CambionSlaverLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7c50cad36582b244084704b48f994fa2");
         public static BlueprintUnit CambionWithClub = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d8a1ab3537961c841b795bcb288a385b");
+        public static BlueprintUnit CapitalGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2557fe84288d7da45873ab1a9a4a8c38");
+        public static BlueprintUnit CatFamiliar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("de89b158379cc274ebaafab0e66e1cb8");
         public static BlueprintUnit CessilyGhost = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6511d8c634c20a446928144b5a61931b");
+        public static BlueprintUnit Chadali = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("75fd91d9d6119ea408a981680c659267");
         public static BlueprintUnit ChadaliEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("193c5f9b83594da48b9b4f6a5046382e");
+        public static BlueprintUnit Chief_Sull = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5d7026322edda04448d9f6d252c135c9");
+        public static BlueprintUnit Chief_Sull_LannQ1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6929f1ee076685a4084e01a0c29c82b6");
+        public static BlueprintUnit Chivarro = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7e819e2a9bb0804abcbffe8e7d91ba6");
+        public static BlueprintUnit Chorussina_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b0c5fb0d58d211f4f88828deb40eacd0");
         public static BlueprintUnit Chorussina_Miniboss_LuckyDices = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("201d1050ed29db94f86413a2d497310e");
+        public static BlueprintUnit Ciar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3d3472cb6852fec42aac9e505dcb1d33");
+        public static BlueprintUnit CiarUndead = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1f341d3068d6b7a429134125f7141e18");
+        public static BlueprintUnit Ciar_InCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b85158baaffa4de6bd18e143a6e1c353");
+        public static BlueprintUnit Claim_Crusader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e6672f215ed4a214fb8f3d4a82644165");
+        public static BlueprintUnit Claim_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f9507b34b2787a742995da8c3e22e6e0");
+        public static BlueprintUnit Claim_Drezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e1d6d49613774294939e502cb62bdce6");
+        public static BlueprintUnit Cobblehoof = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("43fed636cbf213640a6953011b9e7cd7");
         public static BlueprintUnit CobblehoofEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a6eb950f797646f1b0b918c353e13b08");
         public static BlueprintUnit ColyphyrSalamanderMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0b372fdd38a2bd24f8752daa6f2970bd");
         public static BlueprintUnit Colyphyr_BloodyUrod = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e7ab479823970d84caebbcdb10df103a");
         public static BlueprintUnit Colyphyr_MinotaurSlave = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d7e288cf73c66f041b6cf3dea3f7841d");
+        public static BlueprintUnit CorruptedHerald_Phase1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b796a45e2a56beb458c553e507f193ae");
+        public static BlueprintUnit CorruptedHerald_Phase1_CR25 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("68f497a2006185c4ea8f6d11eba0ce63");
+        public static BlueprintUnit CorruptedHerald_Phase2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("38a1ababf66a5ba4694d282c592952c4");
+        public static BlueprintUnit CorruptedHerald_Phase2_CR25 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e17a94be7b3a1924c806e91e85b0d4e2");
         public static BlueprintUnit Corruptor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("02584a50ef5139548a7ebd2b30475e8b");
         public static BlueprintUnit CR0_25_GiantCentipedeRanged_NoPoison = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("53375e396ad943d595b2b3a5bff3741a");
         public static BlueprintUnit CR0_25_GiantCentipedeStandard_NoPoison = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("64f75609947044d2be8c3c5569dd3a4c");
@@ -95,12 +248,14 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR0_5_Bandit_Human_FighterMelee_Male2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a0f3db944ee83654682e83bacd33504b");
         public static BlueprintUnit CR0_5_Bandit_Human_FighterRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("99482b6bcddeb6f408b1aacba29c252a");
         public static BlueprintUnit CR0_5_Bandit_Human_FighterRanged_Male2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("23c897656ea7ebb49811c0d7b32786d5");
+        public static BlueprintUnit CR0_5_Crusader_Sunrisesword_Ranger_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("594496e33f79add418d4e0a6450ab5ce");
         public static BlueprintUnit CR0_5_Cultist_BarbarianMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dea4bcd80ab5ad444ac41eef759c8b20");
         public static BlueprintUnit CR0_5_Cultist_Cleric = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ee0cd10a1593fe3409ba1868f819e84f");
         public static BlueprintUnit CR0_5_Cultist_FighterMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fbd199907bdc8b948a5afc7313ac29f5");
         public static BlueprintUnit CR0_5_Cultist_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("931425ba7152a7149a8b012cb637cbb4");
         public static BlueprintUnit CR0_5_Cultist_Wizard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d4ea0e4d4ae92ef488508e3fe85a123c");
         public static BlueprintUnit CR0_5_Cultist_Wizard_Prologues = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("43ae595406aa94f4e8f79e169473490c");
+        public static BlueprintUnit CR0_5_DeerStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7a50238cfe5156141b9fb29d72643b8a");
         public static BlueprintUnit CR0_5_Drow_FighterMelee_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("090cf4cc0a44fcc47be6cd1587f2a0e5");
         public static BlueprintUnit CR0_5_Drow_FighterRanged_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f0824e52ab846141aef985df8d99316");
         public static BlueprintUnit CR0_5_GiantCentipedeFiendishRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2e7a5ee1087e8eb4e92fa2fd5b729c5c");
@@ -116,6 +271,8 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR0_5_GiantSpiderStandard_Prologue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b048bb08e51492a4092063026282fa93");
         public static BlueprintUnit CR0_5_GiantSpiderYoung_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6eb8f96ee587cc24ba375f082b2ecdbc");
         public static BlueprintUnit CR0_5_GiantSpiderYoung = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("00f6b260b3727b44ba30a9e51abf3b11");
+        public static BlueprintUnit CR0_5_GiantSpiderYoung_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6377172087bd444a9712e63ee1914dbd");
+        public static BlueprintUnit CR0_5_JeetDeer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2476191a270444deb415c5915dfc3701");
         public static BlueprintUnit CR0_5_KoboldMeleeWarriorLevel1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d0ed34c1f6600e04592e7921c1dd6ff1");
         public static BlueprintUnit CR0_5_KoboldMeleeWarriorLevel1_Alternative = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("67041044daa54454096cffe273abca63");
         public static BlueprintUnit CR0_5_KoboldRangedWarriorLevel1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("90881bb401c1cfb4e8bd3e744c94c2ee");
@@ -124,6 +281,9 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR0_5_Marauder_Human_Ranged_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("22845807d20d114429e4e559a050d079");
         public static BlueprintUnit CR0_5_MiteRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6c489f7ac450e8e48b7377ba0cd6c3ad");
         public static BlueprintUnit CR0_5_MiteStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e311b351fdb321243bba659a8f3d7d53");
+        public static BlueprintUnit CR0_5_PonyStandart = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d683712521a11a84c9435b7169c5584a");
+        public static BlueprintUnit CR0_5_PonyStandart_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7d3eb4acaba281643966a077a7949451");
+        public static BlueprintUnit CR0_5_PonyStandart_3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bdfc9fd11221d1440909801b6fc9d6b9");
         public static BlueprintUnit CR0_5_ShadowLesser = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6e5021affa0664e4a8a8d30b4df94bb6");
         public static BlueprintUnit CR0_5_SkeletonArcher = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("042cc5482854a37499f805d33f9ab247");
         public static BlueprintUnit CR0_5_SkeletonMage = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("976d4937eb2620c4baf465bb6c7a00a7");
@@ -131,8 +291,10 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR0_5_SkeletonStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8658c2a211043e4b983a666d3c7068e");
         public static BlueprintUnit CR0_5_SkeletonTwohanded = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("912e1050f920d134eb3bd15c0124c35d");
         public static BlueprintUnit CR0_5_SkeletonUnarmed = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("63276a7a516ffbf4abc8b94d0874200a");
+        public static BlueprintUnit CR0_5_SunriseswordCrusaderRangedLevel1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("729ecbe5970ad7e448bff23ab367f9ae");
         public static BlueprintUnit CR0_5_ZombieBride = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("54eeb1676841439e9e6877e581936c9b");
         public static BlueprintUnit CR0_5_ZombieStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4c44d7b485cbc8741a1c91affd8a03f3");
+        public static BlueprintUnit CR0_5_ZombieStandardBuriedAlive = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("393c7370bb1b3ed44b76810160a72dd7");
         public static BlueprintUnit CR0_5_ZombieStandardVar2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f45efadfac388de489ef0a5102aef1ee");
         public static BlueprintUnit CR0_5_ZombieStandardVar3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("27a1e88d4bf21e348935d60374b77b3f");
         public static BlueprintUnit CR0_5_ZombieStandard_Crusader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6bb1156188044a74d9accfc667e73ce6");
@@ -141,6 +303,9 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR0_75_KoboldRangedWarriorLevel3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("26e5b67d1844e04498751163e1886345");
         public static BlueprintUnit CR0_75_KoboldRangedWarriorLevel3_Alternative = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9b2a517bb5d6df74d9173ee3bc82e5c1");
         public static BlueprintUnit CR0_ArueshalaeNightmare = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e881dabcd5323ae4bb5f90da2b763edf");
+        public static BlueprintUnit CR0_DogKenabresRebuilded = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9bb3a18f297c416fa2db2911fc6f88a2");
+        public static BlueprintUnit CR0_DogStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b6d638547f36b21499324fe5a30a92c6");
+        public static BlueprintUnit CR0_WeddingDog = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("352a712ad64f28846b31110b565b8124");
         public static BlueprintUnit CR10_AbrikandiluSunderer_Melee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1d66bcc575260c44eaa01e91e56ff52d");
         public static BlueprintUnit CR10_AbrikandiluSunderer_Melee_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("33a4f1792335f2840b777b47089b912e");
         public static BlueprintUnit CR10_AshGiantStandart_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("29f605c7a2334dd5a3443c8ea9a21dba");
@@ -190,6 +355,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR10_Sarcorian_Barbarian_Melee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6cb2884db2acbaf4a8244fe24f8a9c66");
         public static BlueprintUnit CR10_Sarcorian_Slayer_Melee_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fbb706a3418f0cf42829d72c99bd0f2a");
         public static BlueprintUnit CR10_SuccubusRanger_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("20843bb57c084e1d8fad58ee82c878ee");
+        public static BlueprintUnit CR10_UndeadWarlord_Fighter_Level6 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ca2b98d446264c2cbbedfed5b87d5873");
         public static BlueprintUnit CR10_WorgAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6621b17eecfc7f3419aeedf6ad476465");
         public static BlueprintUnit CR10_ZombieLordFighterLevel7 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a2803487ba242f144a3df7c672cf58ac");
         public static BlueprintUnit CR10_ZombieLordFighterLevel7_Axe = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a767e195acef2c74d97cd6032c83977a");
@@ -206,7 +372,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR11_BabauEliteFreeHand_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b8ff1047dc6a4caf85e8bc1a04c7302b");
         public static BlueprintUnit CR11_BabauEliteFreeHand_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("27bad3650c584c6ea22bdb77d988c3e6");
         public static BlueprintUnit CR11_BabauElite_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f5b1c91d9d9b4c7483aa3eb1e93a46ee");
-        public static BlueprintUnit CR11_BeerElementalElderSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cad7d144823209c40b7c841f821843f1");
         public static BlueprintUnit CR11_BlackDragonAdult = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f59db197439759f4593e633a9e23b5f8");
         public static BlueprintUnit CR11_BlightedTreant_Orange = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("24df5a2af51e1894291f214425c2be2b");
         public static BlueprintUnit CR11_BlightedTreant_Orange_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fcbc396e84f944b3a0cf584cd3a936d6");
@@ -220,13 +385,13 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR11_DeepShadowDemonStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7d86f2511acba7344ae796e5c03ed089");
         public static BlueprintUnit CR11_EarthElementalElder = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("672433d2f2e99764db2eadc6f595a2ba");
         public static BlueprintUnit CR11_ExecutionerDevilStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8ce70b97827742868efebf4466f195b5");
+        public static BlueprintUnit CR11_ExecutionerDevil_Neutral = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6f09202766484ad58d5c50a3674380a0");
         public static BlueprintUnit CR11_FireElementalElder = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d6b7b92ea00785f45b8e5a4bf8e87fa2");
         public static BlueprintUnit CR11_FrostGiantBarbarian = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0ce850a4d2630f149b5debc3f71b75f8");
         public static BlueprintUnit CR11_GibrilethStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fc9479d70112ac14a8ebcd0fb9b208c1");
         public static BlueprintUnit CR11_GibrilethStandardArueshalae = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7ed4ffba5709fc45b6422931027c47e");
         public static BlueprintUnit CR11_GibrilethStandard_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4697deaa625d0fc418305dd340d305c3");
         public static BlueprintUnit CR11_GolemStone = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dfd21dba15fe7dd4f95961ff27d91836");
-        public static BlueprintUnit CR11_GraveknightSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7237a32613fe55e479d1141682f2bbd4");
         public static BlueprintUnit CR11_HillGiantThug = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8f99f7fdd8902cf4590e8770dec21e7c");
         public static BlueprintUnit CR11_KalavakusAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("da7cc3ffbd69ca14390055d18b378715");
         public static BlueprintUnit CR11_KalavakusAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8af16c7bcc19863439e4138a99a7c8f1");
@@ -316,7 +481,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR12_SkeletalChampionGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("eaad6ebec57b4d3e8cff044ec633a10a");
         public static BlueprintUnit CR12_SmilodonElite = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0a35ab4548de45a3870dc2c4cac5ecd4");
         public static BlueprintUnit CR12_SmilodonTreant = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("153077859df7f8a4b8aa41af8f2960d4");
-        public static BlueprintUnit CR12_TherukNul = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("10f9cae4738e70247820e8030d19064f");
         public static BlueprintUnit CR12_UnhallowedBodakRogue_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7c0967bdbcc540cfbe3c9eda5052f120");
         public static BlueprintUnit CR12_WaterElementalElderAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1a0d3d0ccb6f03f41b8397804a648493");
         public static BlueprintUnit CR12_WightFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b11632fdfc1db25448224317b0e8da9b");
@@ -384,6 +548,8 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR14_Cyborg_CrusaderRangedLevel12 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("70be6d04398af684ba4c355b8d1946ef");
         public static BlueprintUnit CR14_Cyborg_CrusaderTankLevel12 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("91ffaba796637df4594f4bb4167c0b65");
         public static BlueprintUnit CR14_DeepShadowDemonTough2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ca36f91ba89b0c04c827ec9c5b7249ae");
+        public static BlueprintUnit CR14_DeepShadowDemonTough = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d9b4d98ff9c519c4bb2c164d4352a587");
+        public static BlueprintUnit CR14_DeepShadowDemonTough_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6d09a69381ac4b159f54ba6f5c2859bf");
         public static BlueprintUnit CR14_DemodandTarryAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fef5ca46f853a5f4eb022a75033ab899");
         public static BlueprintUnit CR14_DemodandTarryAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("de5f05998fe94717a442bb4e41833351");
         public static BlueprintUnit CR14_FiendishMinotaurAxeThrower = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("22713834d257ae145b8ebde1ebd85d3f");
@@ -402,6 +568,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR14_GreaterApocalypseLocust_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9ac2627a724d4477965126352d073646");
         public static BlueprintUnit CR14_HalfFiendFighterMinotaurDLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f6f563f8c4b14d028d133ec28be98c6a");
         public static BlueprintUnit CR14_HalfFiendGuardianMinotaur = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b5c8b4561321a1b408146ed4cd230964");
+        public static BlueprintUnit CR14_HalfFiendGuardianMinotaur_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2c930adfa1f049309872d20bb182ed6c");
         public static BlueprintUnit CR14_HalfFiendGuardianMinotaur_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0354f7cf2a57123438864088b94d89b5");
         public static BlueprintUnit CR14_HydraPoisonousBloomInfused = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("429b14ab29dd24548abf16506100fc83");
         public static BlueprintUnit CR14_MimicChestAcidBreath = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5aa5e5490a793514b8cc628664b07254");
@@ -444,6 +611,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR15_CambionCleric_Caster_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("26b9060ca9b3f2342a3897bff8657b16");
         public static BlueprintUnit CR15_ColoxusEmissary = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ebfc4f9af4ec9b84da9682cb46cd1d45");
         public static BlueprintUnit CR15_ColoxusEmissary_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("15a980d24ab94aa2b78a49fc9946a3f6");
+        public static BlueprintUnit CR15_CyborgSalamander_Add = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("65c08a0ea25b4d07a8961cb2d2c0e725");
         public static BlueprintUnit CR15_Cyborg_CrusaderCasterLevel13 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0f83ec1cf88439541ad14ed7c622ebde");
         public static BlueprintUnit CR15_Cyborg_CrusaderMeleeLevel13 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("af2e905fc0ed04a419923df1578c57fc");
         public static BlueprintUnit CR15_Cyborg_CrusaderRogueLevel13 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4ac079b8b4644a344809a3f49a319418");
@@ -469,6 +637,9 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR15_PainajaiAdvanced_RE_ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ed91fcdfe8544d0bb9ca8ec8c62ad96");
         public static BlueprintUnit CR15_Prebuff_GlabrezuAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a78dbdbfa1703404baf6616e67ebc3ea");
         public static BlueprintUnit CR15_SuccubusCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6cd0d8779bc24074cb34804807a75426");
+        public static BlueprintUnit CR15_SuccubusCasterDemonCh3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("977e8c3197703c7418f73c53aa357baa");
+        public static BlueprintUnit CR15_SuccubusCaster_KohhMageTemp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d5fd6a3c75a8b6242bdfe2fe7b65daf5");
+        public static BlueprintUnit CR15_ThanadaemonGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("91cae62d02b46ba49ab80b987a8790dc");
         public static BlueprintUnit CR15_ThanadaemonGuard_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3b35e8833b364d8489740c0f65b22a4e");
         public static BlueprintUnit CR15_WildHunt_ScoutStandart = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6f5ff0f1e359ee042ba49a746a507190");
         public static BlueprintUnit CR15_ZombieLordFighter_Barbarian_SarkorianLevel15 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("105a09e2a8524bafbcf77aa9c7dfbe2c");
@@ -489,8 +660,16 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR16_GlabrezuElite = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4b7ba5cb98e3ace4798ffb6d836a5938");
         public static BlueprintUnit CR16_GlabrezuElite_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fe1a76195897ce24a8d40045e9c32b61");
         public static BlueprintUnit CR16_GlabrezuElite_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c21a1bed5eb748f796b81bf7c708763d");
+        public static BlueprintUnit CR16_IncubusGladiator = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a5580dc0fad04fc49a71e429133e92f1");
+        public static BlueprintUnit CR16_IncubusToughCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6da23aae377fb774caba935f6a9fb8db");
+        public static BlueprintUnit CR16_IncubusToughCaster_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b426f523f3384c96b0d8176e4ddb53e4");
+        public static BlueprintUnit CR16_IncubusToughMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1b1459883d31f714394442a34beac3ce");
+        public static BlueprintUnit CR16_IncubusToughMelee_Minagho = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d7e9e9cec5504e80b712db6bf7a34d02");
+        public static BlueprintUnit CR16_IncubusToughMelee_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2edc05f1510d4936b81ce2e5d72b6458");
+        public static BlueprintUnit CR16_Incubus_DemonCh3_Prisoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7751a4bd7b0eb8e42ba0b699e08ccc4c");
         public static BlueprintUnit CR16_LabyrinthMinotaurStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b9785e113e729ff4fa5395c6dd9e3e4c");
         public static BlueprintUnit CR16_Salamander_Melee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0578fa76c2bde584a819ca288771d21c");
+        public static BlueprintUnit CR16_Salamander_Melee_Kohh = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("046e3ff7ab43b6b49a1e968adb243d31");
         public static BlueprintUnit CR16_Salamander_Melee_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a86631860623445fa991830b7fad9c44");
         public static BlueprintUnit CR16_VavakiaStandard_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ca2af709348c48b69e12837cb598f81a");
         public static BlueprintUnit CR16_VilderavnStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1f9fa06a30ec720418ea04b1c9b41334");
@@ -498,16 +677,19 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR16_ZombieLordFighter_Fighter_SarkorianLevel15 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("155df8f36ecd436b926b5fa8b221ce1e");
         public static BlueprintUnit CR16_ZombieLordFighter_Ranger_SarkorianLevel16 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4a09f37bb1f248949b63e01389e42377");
         public static BlueprintUnit CR17M_MythicGibrilethElite = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("981b08bddac11ca41b3698d3f6059629");
+        public static BlueprintUnit CR17_AlushinyrraBandit_RangedDemonCh3_Prisoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("430301d9a8c3bbc41982c11b1e2b0016");
         public static BlueprintUnit CR17_AlushinyrraVampireMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2356cb32610110b48bf4265efa0e17f8");
         public static BlueprintUnit CR17_AlushinyrraVampireRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ee55497be02ac1a408b2eb6709b86af8");
         public static BlueprintUnit CR17_AreshkagalLilitu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("142fee59923ebf647ad61b4d97180780");
         public static BlueprintUnit CR17_AreshkagalMarilith = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("713a7825363ebc5419d82609714e454c");
         public static BlueprintUnit CR17_AreshkagalSpellscribedMummy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2225b784ff1b163438858585858394f8");
+        public static BlueprintUnit CR17_Assassin_Human_MeleeRogue_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("36ad6f82dac348198e8f99651b9adb3c");
         public static BlueprintUnit CR17_CambionToughRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c06ad11810339d740823838f3ffe0751");
         public static BlueprintUnit CR17_CambionToughRanged_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f1d43452e01e484e9b16b4b585c8f954");
         public static BlueprintUnit CR17_ColoxusToughCaster_1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b06d25ead6ec62c4ab9c0821c7c32dd5");
         public static BlueprintUnit CR17_Cultist_Areshkagal_DamageFullCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("be546212e4bc5164eabbcebb0ef8322e");
         public static BlueprintUnit CR17_Cultist_Areshkagal_MeleeFighterDefensive = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("73cc6b669b2534548ac9f3c602cfecf1");
+        public static BlueprintUnit CR17_CyborgSalamander_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1d41c13cb3ac51648b689d3a86d35b92");
         public static BlueprintUnit CR17_DeathsnatcherAdvanced_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fb48531c2ebc4abbb0b302ce81340ce8");
         public static BlueprintUnit CR17_DemodandTarryAdvanced_Alushnirra = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6cd6d98b2205c2f44befdf99c7cd38cd");
         public static BlueprintUnit CR17_DevilApostateStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("07c5044acbd443b468b6badd778f8cad");
@@ -520,6 +702,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR17_GolemSummerAdvancedGiant = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1724bbee4c8c0cf4fb403ec09a2e15b6");
         public static BlueprintUnit CR17_LabyrinthMinotaurAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("06a56a6dd9291ae4baca18b75f8d4f57");
         public static BlueprintUnit CR17_LilituStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d5d58c9aea545254f895226ba604f06b");
+        public static BlueprintUnit CR17_LilituStandardDemonCh3_Prisoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5424ef0bd4443914ba7f4c12925d3e82");
         public static BlueprintUnit CR17_LilituStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("db146f53cdde1d142b2dfc3db0a33800");
         public static BlueprintUnit CR17_MarilithStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4addf73a9a68c694f9919137f800be50");
         public static BlueprintUnit CR17_MarilithStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6a6ff0070709f694b823deb9e329f58b");
@@ -529,6 +712,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR17_OolioddrooToughCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6d63a752d525ed9458e2b0415ef86462");
         public static BlueprintUnit CR17_PrimalTreant = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b2c86a184c5f9c942aeb77e52ea1d17d");
         public static BlueprintUnit CR17_Salamander_FireCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d4344c7d45f762b4f8041cf922b5a33a");
+        public static BlueprintUnit CR17_Salamander_FireCaster_Kohh = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8aca40d1530e1344fbea38c095d105eb");
         public static BlueprintUnit CR17_Salamander_FireCaster_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4a58b25b310a47e095f64a9bd14f119a");
         public static BlueprintUnit CR17_SuccubusCaster_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8966e432a3f44a2bae4bbea8a75d713c");
         public static BlueprintUnit CR17_VavakiaAdvanced_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ab513d350dd9436ba81962b5dd59803b");
@@ -549,9 +733,12 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR18_HalfFiendSalamander_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("14e387dd041a4d1d8c5dde206e3de0cc");
         public static BlueprintUnit CR18_IvoryLabyrinthDemodandKineticist = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6d4ee360322a3bc439c0dad1b9679bbf");
         public static BlueprintUnit CR18_LilituAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("704e8dd087aae8243bcdcf569cd3d09e");
+        public static BlueprintUnit CR18_LilituAdvancedFromMaze = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bc5f66c91ac54b2ba7ae36ad4396e86e");
         public static BlueprintUnit CR18_LilituAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bb7c1975ae442ab4fb88fd5b316adb21");
         public static BlueprintUnit CR18_LocustSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("938882d2e117404e9951b4bc0a1126a7");
         public static BlueprintUnit CR18_LocustSwarm_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7f3638c6b8844b7a938e3ab979593601");
+        public static BlueprintUnit CR18_MageWithAHundredFaces_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b77c75af5cbea5a4db030f3e0331c693");
+        public static BlueprintUnit CR18_MageWithAHundredFaces_Boss1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e1214079b6bd4474a273047d68263351");
         public static BlueprintUnit CR18_MarilithAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e350e84a381e17748aa663bd033f8ab1");
         public static BlueprintUnit CR18_MarilithAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a8d84135c9abab146a617e80fb7d6029");
         public static BlueprintUnit CR18_NahydrianCarnivorousCrystal = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2454182cb348d7a4694ca53637e25b4b");
@@ -564,6 +751,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR18_OmoxEnhanced_RE_leaper = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7469bb4d8422413eb6c8aeaa6bbf46dd");
         public static BlueprintUnit CR18_RiftDrakeFried = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e348ee0e95305d3458554cbb6226efe1");
         public static BlueprintUnit CR18_SuccubusCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("595c77db153499f42917c6f40e9e048e");
+        public static BlueprintUnit CR18_SuccubusCasterAssasin = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("54ae056dc30b49b281802bb562d5cdc1");
         public static BlueprintUnit CR18_SuccubusCaster_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4ca5a17cb22240c3aa9b2dc7469f17dd");
         public static BlueprintUnit CR18_SuccubusRanger_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b436c2f39c6f42b392f8745cf042ade2");
         public static BlueprintUnit CR18_VavakiaStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("143bf780bdf425a4ca14ab0e5df20232");
@@ -589,6 +777,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR19_MarilithAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("75a989b2726a023429cb4ad067e2a80b");
         public static BlueprintUnit CR19_MinotaurCasterDispeller = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0c05ae0e64dd0014e95c011197cd727a");
         public static BlueprintUnit CR19_OolioddrooInquisitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b9948fdfe5c3423384bf2b0d18401b06");
+        public static BlueprintUnit CR19_Savameleh = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b5b6da90a7adec74c8a64d1983593989");
         public static BlueprintUnit CR19_Siabrae = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dd2b7706d5de44149f95aaf43db3fe77");
         public static BlueprintUnit CR19_SuccubusAdvancedFighter_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3feeacfe8c18470cbd2df6e58cfd1db4");
         public static BlueprintUnit CR19_SuccubusRangedFighter_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8e59ae55458e4c2fabb47c3b78dd8971");
@@ -620,8 +809,15 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR1_Bandit_Human_RogueMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cc2c4e5c8fc133c4faf982b3612704e9");
         public static BlueprintUnit CR1_Bandit_Human_RogueRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("16ad8af18e2b5e84f9b99796ee67ebac");
         public static BlueprintUnit CR1_Bandit_Human_Transmuter_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4c3b74d1e82efe84dae4f0a4cb3a6062");
-        public static BlueprintUnit CR1_BeerElementalSmallSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4e8effeeca065de4594d1586931aee95");
         public static BlueprintUnit CR1_CorruptedMongrelmanMeleeSlayer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f4379cfaa0ab9f5409a9c82e12faf551");
+        public static BlueprintUnit CR1_Crusader_Human_Recruit_Melee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("622499edbd2cdeb4fa7128c61e3326ca");
+        public static BlueprintUnit CR1_Crusader_Human_Recruit_Range_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b0f08caf373a8ce4a8824d33d2a308f9");
+        public static BlueprintUnit CR1_Crusader_Human_Recruit_Range_Male_NoLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("12f00f3e46d34e23a834914a51533f1f");
+        public static BlueprintUnit CR1_Crusader_Sunrisesword_Paladin_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0eba4ec89d4d5b8499f3ab89d7a8d6c1");
+        public static BlueprintUnit CR1_Crusader_Sunrisesword_Paladin_Male_PraiseTheSun = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0f050fbde6a4c06a5011a0d1c16d334");
+        public static BlueprintUnit CR1_Crusader_Sunrisesword_Wounded_Paladin_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("45394f5a2cdf27140a9334d42dabf86c");
+        public static BlueprintUnit CR1_Crusader_Sunrisesword_Wounded_Paladin_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c27ebadb7dffa2d468d7418ae71d8fce");
+        public static BlueprintUnit CR1_Crusader_Sunrisesword_Wounded_Paladin_Male2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("263ea57032482264794d41269fd9bdf0");
         public static BlueprintUnit CR1_Cultist_Baphomet_Melee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d365ebdbcca9f4542917deb2bf9ca694");
         public static BlueprintUnit CR1_Cultist_Baphomet_Melee_HalfOrc_Traitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("00b0b86cebbf94347b8ad7a1855ff100");
         public static BlueprintUnit CR1_Cultist_Baphomet_Melee_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("89677a374ce18db4c96f2f43d6ed1a9d");
@@ -639,6 +835,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR1_Drow_FighterRanged_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46251000916dcda4f9785a64289c5ea6");
         public static BlueprintUnit CR1_EarthElementalSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a940662426e68524680bc06e1794fa8d");
         public static BlueprintUnit CR1_EarthElementalSmall_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d5ee8fc455b54203a0f5b4864bd3a689");
+        public static BlueprintUnit CR1_ElkStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("effa74aebe9d0794b86cf39d9956b96b");
         public static BlueprintUnit CR1_FireElementalSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("42db8d382f3687a459ffde7921ccbbfc");
         public static BlueprintUnit CR1_FireElementalSmall_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("355cbb2268ee44918ab629e18f811a94");
         public static BlueprintUnit CR1_GhoulStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2c0fd840d87c3b4418ae958c9a813fe0");
@@ -654,6 +851,20 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR1_GiantSpiderStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c4b33e5fd3d3a6f46b2aade647b0bf25");
         public static BlueprintUnit CR1_GiantSpiderStandard_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("457be920f33d9ee42b697f64a076ba98");
         public static BlueprintUnit CR1_GiantSpiderStandard_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("38a5be8e3d104fa28bdb39450cf80858");
+        public static BlueprintUnit CR1_GraveRobber_Human_FighterMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46f9312ad2b74430b90eeb0c1c2c6074");
+        public static BlueprintUnit CR1_GraveRobber_Human_FighterMelee_MaleRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("10827d5cf43a454abd922f2f0f52f268");
+        public static BlueprintUnit CR1_GraveRobber_Human_FighterRange_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4d50e4fd9b3e4a4081629797f14d4b0d");
+        public static BlueprintUnit CR1_GraveRobber_Human_FighterRange_MaleRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46c6dbaa2dad405890a32d39d4c9b76b");
+        public static BlueprintUnit CR1_GraveRobber_Human_RogueMelee_Male_KnifeMaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ade57462d1bd40b496921f53b80553ca");
+        public static BlueprintUnit CR1_GraveRobber_Human_RogueMelee_Male_KnifeMasterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("08274971c5c143cc9dc0de9528d4443d");
+        public static BlueprintUnit CR1_GraveRobber_Human_Sorcerer_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0a61543600fd4f85b31127ac5be4095f");
+        public static BlueprintUnit CR1_GraveRobber_Human_Sorcerer_MaleRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7ed3a09e865f4514af8599671c75e11f");
+        public static BlueprintUnit CR1_Hellknight_Human_ArmigerMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fce2788acefcbef46b416750477601d7");
+        public static BlueprintUnit CR1_Hellknight_Human_ArmigerRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("732eaba68a4aca54299facc328c9bd27");
+        public static BlueprintUnit CR1_HorseColored = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2b76da4005c4c4647bee370c2d3f9f0a");
+        public static BlueprintUnit CR1_HorseCountry = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8b1f20f2fcaa0b0438b77fddba037c99");
+        public static BlueprintUnit CR1_HorseRiding = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9e9e75c484e68734487e609714565202");
+        public static BlueprintUnit CR1_HorseStandart = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("73686f802c2cc6e4eb2c86803c050f21");
         public static BlueprintUnit CR1_KoboldAlchemistLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0e1a0881f52cca142a3d3c44d3abddef");
         public static BlueprintUnit CR1_KoboldMeleeFighterLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d51135e33425d2f428abd3357e44502e");
         public static BlueprintUnit CR1_KoboldRangedFighterLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8b23f76ebdd79a3468af56832a22f82e");
@@ -668,6 +879,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR1_Marauder_Human_RogueRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9e98ff2591cf54549bfee183a0ff142b");
         public static BlueprintUnit CR1_Marauder_Human_WarriorMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3857af3dd2832254ba6208795c5fbed7");
         public static BlueprintUnit CR1_Marauder_Human_WarriorRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4b94a763076ed9f41856cd2a56e57025");
+        public static BlueprintUnit CR1_MimicOozeChair = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("27f083ed8635486439875b3f430934fa");
         public static BlueprintUnit CR1_MiteFighterMeleeLevel1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("956562526c9bf344183f0febfa4d59b9");
         public static BlueprintUnit CR1_MiteFighterMeleeLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ffb8937ade520aa4da5592b52688937a");
         public static BlueprintUnit CR1_MiteFighterRangedLevel1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("06e4615decbb38c43937529b97f8e1e1");
@@ -675,10 +887,16 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR1_MongrelmanMeleeStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("16f5b968c9c2df54a8f5ec99b14ed333");
         public static BlueprintUnit CR1_MongrelmanMeleeStandard1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("def53ec91ef34023a1526fbaad302b28");
         public static BlueprintUnit CR1_MongrelmanMeleeStandard2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b0f2511df74c4031b51bc3cbe87b4915");
+        public static BlueprintUnit CR1_MongrelmanMeleeStandard3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("20ba98bddc484504abef607d6bbfc202");
         public static BlueprintUnit CR1_MongrelmanRangedStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("72d33b616167bd645bfa0feb40b52795");
         public static BlueprintUnit CR1_MongrelmanRangedStandard1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dbfa4b1c9d304a819eade0bf01f61c64");
         public static BlueprintUnit CR1_Nixie = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("394610e32cfbc4f43a0efaab16faae49");
+        public static BlueprintUnit CR1_RecruitCrusaderMeleeLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8cc6fd16bb9e8cb4ab88cbde69bc178a");
+        public static BlueprintUnit CR1_RecruitCrusaderMeleeLevel2_Blind = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9239dbf773f83f042a59463f1e0f080b");
+        public static BlueprintUnit CR1_RecruitCrusaderMeleeLevel2_npc = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6fdccda050d5cc44d8b58bdd759a6d7d");
         public static BlueprintUnit CR1_SpiderSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a28e944558ed5b64790c3701e8c89d75");
+        public static BlueprintUnit CR1_Thiefling_Rogue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a22776299d784c44eb519f268f652795");
+        public static BlueprintUnit CR1_Thiefling_RogueRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3c4aa3ec3281af64c86abdfd889eb83f");
         public static BlueprintUnit CR1_WaterElementalSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("92c6145373ee5b64fa9e2ec2a0d907db");
         public static BlueprintUnit CR1_WaterElementalSmall_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("792e95647b404a93a1596318cbe31fad");
         public static BlueprintUnit CR1_WolfStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ea610d9e540af4243b1310a3e6833d9f");
@@ -697,6 +915,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR20_CarnivorousCrystalEnhanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8d7a229da3d07c749a97c1846be065b6");
         public static BlueprintUnit CR20_CarnivorousCrystalEnhanced_Splitted = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b8757aac8db57d04281c9a124bc0a72e");
         public static BlueprintUnit CR20_CrazyMythicVavakia_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d054e06bcb0242b0b3925d888a192cdd");
+        public static BlueprintUnit CR20_EvilArueshalae_NPC = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2c8caedd0a558524ca0ed1ab3132fae1");
         public static BlueprintUnit CR20_GalluAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ab3644510a69d0940bd0adaf675c311c");
         public static BlueprintUnit CR20_GalluAdvanced_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d011b00607bcc8946b909745beb92d40");
         public static BlueprintUnit CR20_LabyrinthMinotaurEnhanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c169c31cd7b9609438d1662f516649f3");
@@ -729,6 +948,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR21_ColoxusCaster_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("47c032c3ca2b42d5bedf3c36a4158dfe");
         public static BlueprintUnit CR21_EcorcheTorturer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("938fff1c489c464485517960f650dead");
         public static BlueprintUnit CR21_GalluAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6c786c202513e8a458ad0e3b8324291c");
+        public static BlueprintUnit CR21_IncubusAssassin_Guild = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1590ecbb39f74d0db508b45b2026666f");
         public static BlueprintUnit CR21_IncubusAssassin_Slayer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("33d039c5eec49ec4fb19b0f87b106b95");
         public static BlueprintUnit CR21_MarilithMythic4_Slayer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a4738fdde19441b45873ca290e7bf14b");
         public static BlueprintUnit CR21_MarilithMythic4_Slayer_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("691fe8386ad009246b4d92cb9c63a8e8");
@@ -773,6 +993,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR25M_Prebuff_GreaterKalavakusAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cd3948db9fa55c94581eb574933fc6b3");
         public static BlueprintUnit CR25_Areshkagal_FullCasterBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("95a3fd789c077c741955f8aad271686e");
         public static BlueprintUnit CR25_Areshkagal_RetrieverBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9876513c09509954bb3330dc650fb9ae");
+        public static BlueprintUnit CR25_SavamelehMythic = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a3733f61b53a1054c83a2b7d8688ffc4");
         public static BlueprintUnit CR26_BalorMythicBloodrager = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("138deed3343f207488cb85edc9e0c145");
         public static BlueprintUnit CR26_BalorMythicBloodrager_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("85eba255013867c41a3990c8ef691ab4");
         public static BlueprintUnit CR26_Devastator = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("515c094f4e757794fa12ce0d6d7ee3d4");
@@ -799,7 +1020,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR29_Devastator_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("94ebac8b10284a42a9fd6c72e2d6d720");
         public static BlueprintUnit CR2_Bandit_Human_Alchemist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a08208431598fc4498561af672c0da7");
         public static BlueprintUnit CR2_Bandit_Human_BarbarianMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("22b82d2e98db4dd6af96a2f37c25831d");
-        public static BlueprintUnit CR2_Bandit_Human_BarbarianMelee_Male1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f949115d62a22df4aa6dec7afc7ff0f0");
         public static BlueprintUnit CR2_Bandit_Human_Conjurer_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("24088cc8784b8a0429316452bbb233b5");
         public static BlueprintUnit CR2_Bandit_Human_FighterMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("60219ef9ba0ed5e4da4d42d0fb682051");
         public static BlueprintUnit CR2_Bandit_Human_FighterMelee_Male2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1de468d0b47f87644a3408642fe0876c");
@@ -811,7 +1031,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR2_Bandit_Human_PositiveCleric_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9ffceca100e02644ba67cf492c17d351");
         public static BlueprintUnit CR2_Bandit_Human_RangerDistance_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0928f0c31a0b4b68b53ac73c4803c26e");
         public static BlueprintUnit CR2_Bandit_Human_RogueMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("81b1141a9e430fe4c80bb2758f2a346c");
-        public static BlueprintUnit CR2_Bandit_Human_RogueMelee_Male1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f83c9351d77344ab879dffb08ea306c2");
         public static BlueprintUnit CR2_Bandit_Human_RogueRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9b5a72338b8e479419d5bf612d73da7f");
         public static BlueprintUnit CR2_Bandit_Human_Transmuter_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c27d1224c44c2b240ac3668702c4f460");
         public static BlueprintUnit CR2_BoarStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5f968d63d756f994ebff0d774e88e4ab");
@@ -825,12 +1044,18 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR2_DretchStandard_RE_stinking = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bfd505a3734cabb45b66249f80949fff");
         public static BlueprintUnit CR2_Drow_KnifeMaster_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cf5959586f52ebf41a9b9e801531fdd3");
         public static BlueprintUnit CR2_Drow_Magus_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c4c2b025d0d75bf44ba8b6574e08d84b");
+        public static BlueprintUnit CR2_Elk = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7fb0caff5acb0be4ba63af668cf825d8");
         public static BlueprintUnit CR2_FaerieDragonStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f2ed74aea457fb409ba56872dbc5552");
         public static BlueprintUnit CR2_GiantFrogAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f834867d15633294ea70579f3616af21");
         public static BlueprintUnit CR2_GiantSpiderAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e9c1c68972cc4904dacdf2df9acf6730");
+        public static BlueprintUnit CR2_GiantSpiderAdvanced_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c89506306cc041dab3180dad5048ff89");
         public static BlueprintUnit CR2_GiantSpiderAdvanced_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("84d46dae0fbd4dfba7d85d2bd4d6648c");
         public static BlueprintUnit CR2_GiantSpiderAdvanced_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f560cc7976d44bbc99c51eef867abc4a");
         public static BlueprintUnit CR2_GiantSpiderMiteAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("18a3ceeb3fb44f24ea6d3035a5f05a8c");
+        public static BlueprintUnit CR2_GraveRobber_Human_Alchemist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("39a2773ff23e4c46ab04fbf1540b8d7e");
+        public static BlueprintUnit CR2_GraveRobber_Human_RangerDistance_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dee41f583ba24c86a394bea76daa905a");
+        public static BlueprintUnit CR2_Hellknight_Human_ArmigerMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76937772f87f2044c8e6f01eb1a4d6cf");
+        public static BlueprintUnit CR2_Hellknight_Human_ArmigerRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ad1f9b0468d1f343a54f964cb927aa8");
         public static BlueprintUnit CR2_KoboldAlchemistLevel3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("56716c70ca0fbe84b80968f7c621d1da");
         public static BlueprintUnit CR2_KoboldMeleeFighterLevel3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bdcd20ac09e3ee4468d4e52102508fce");
         public static BlueprintUnit CR2_KoboldRangedFighterLevel3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("25851b92b45f9d04294d76bd7beba263");
@@ -864,6 +1089,13 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR2_WerewolfStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("768a3608ae4f0214f8ea290b650e35c1");
         public static BlueprintUnit CR2_WolfAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("16d3e924302e06341914555b7d0c2039");
         public static BlueprintUnit CR2_WorgStandart = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("313a17cbd273d1f40bd1654ee2ae186e");
+        public static BlueprintUnit CR2_ZombieStandard_Fighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fbc33e20c3034a7d97cf207198ba8da9");
+        public static BlueprintUnit CR2_ZombieStandard_FighterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6c231d20524b44e59efcb8a36ff85126");
+        public static BlueprintUnit CR2_ZombieStandard_Fighter_Graveyard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7257a025f5264d0ebb99dc6d341885b8");
+        public static BlueprintUnit CR2_ZombieStandard_HandFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("adc591c5fdb64b938e2d3a5c7f25f013");
+        public static BlueprintUnit CR2_ZombieStandard_HandFighterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("827fcea7afef4eb683ee801c08021f59");
+        public static BlueprintUnit CR2_ZombieStandard_Ranger = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("952e2b2403484b71adba10d43ca4558d");
+        public static BlueprintUnit CR2_Zombie_HandFighter_Graveyard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("95668af826bd426bb7c0d00b33fa87c4");
         public static BlueprintUnit CR30_AreshkagalBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7a1b0862dd2443b49adaba36b194e5de");
         public static BlueprintUnit CR30_VavakiaMythic_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("09a02fa57e1844a4b6df546954bd1a75");
         public static BlueprintUnit CR3_AbrikandiluStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("35758d873d826214a8c95c526a401c90");
@@ -878,7 +1110,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR3_Bandit_Human_RogueRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0693a983a7e460c4881b2aea51637999");
         public static BlueprintUnit CR3_Bandit_Human_TanglefootAlchemist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c1b9b30e92687a64eba5d0b508c479ff");
         public static BlueprintUnit CR3_BearYoung = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7bc2a2c049930d84b9e0fab0a8794ab9");
-        public static BlueprintUnit CR3_BeerElementalMediumSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("32665968a5726a4428ede479342075c8");
         public static BlueprintUnit CR3_BoarAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6aa2ad33246b8da4091893b73ed0d8cf");
         public static BlueprintUnit CR3_CambionAlchemist_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("19ca035a66477954f97f91eaef89d0b0");
         public static BlueprintUnit CR3_CambionBard_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ee0eb8e208dcec14d8d213fff7060ee6");
@@ -888,20 +1119,34 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR3_CambionRogue_Melee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8868374092c5e3d4c9c30711f99f5951");
         public static BlueprintUnit CR3_CambionWizard_Caster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b410ed79d33b1e342972ed8539f4c5c7");
         public static BlueprintUnit CR3_CorruptedMongrelmanDefencive = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a05ae9f1fc67af64e8672641807f5329");
+        public static BlueprintUnit CR3_Crusader_Human_EagleWatch_PaladinMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("54448f07bdec69a45a7e7cf8b89265bb");
+        public static BlueprintUnit CR3_Crusader_Human_PaladinMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("928e50a55465ad34b9247c45f8b9009a");
+        public static BlueprintUnit CR3_Crusader_Human_PaladinMelee_Male2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4fcc6316f7998ea49a9cc839ff7fc3e0");
+        public static BlueprintUnit CR3_Crusader_Human_PaladinMelee_Male_NoLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7547d2bd2ef943539efb8c099571dda8");
         public static BlueprintUnit CR3_Cultist_ArcherHalfOrc_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ee94001f5d37a7d449e92da71c7f35b1");
         public static BlueprintUnit CR3_Cultist_ArcherHalfOrc_Ranged_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("73f1cd8712bfca14c8f6452c1e664fe9");
+        public static BlueprintUnit CR3_Cultist_ArcherHuman_Baphomet_01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("70b66051b762e694188fb838a3a37409");
         public static BlueprintUnit CR3_Cultist_ArcherHuman_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5864e5160dee65f42baa1ad2af833a3f");
         public static BlueprintUnit CR3_Cultist_ArcherHuman_Ranged_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("192488ef57b240f4e8df8e671f3735e3");
         public static BlueprintUnit CR3_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b4c6114b68136a84ebead5c7707ed041");
         public static BlueprintUnit CR3_Cultist_Baphomet_MeleeCaster_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e64796d2b86317f47979fa2eea73926f");
         public static BlueprintUnit CR3_Cultist_Deskari_MeleeFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b3bc7d19cb6e11741aff839743e6f484");
         public static BlueprintUnit CR3_Cultist_Deskari_MeleeFighter_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("df572aa9a0cf1ce4abb61b90bea43351");
+        public static BlueprintUnit CR3_Cultist_WizardScorchingRay_RichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("153ffc25b7414c27881a88aa1107fbb2");
+        public static BlueprintUnit CR3_Cultist_Wizard_Baphomet_02 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3564412411026694daf5d4e8dd0f5b41");
+        public static BlueprintUnit CR3_Cultist_Wizard_Baphomet_02e = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("23afb65bb6f708f499c0dc5a2dd9668a");
         public static BlueprintUnit CR3_Cultist_Wizard_DamageFullCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46d14b326c3a8f549941ec2573ce0cd0");
         public static BlueprintUnit CR3_Cultist_Wizard_DamageFullCaster_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2e2899d840529fa439233425d22b914d");
+        public static BlueprintUnit CR3_Cultist_Wizard_RichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2919da3631f4493eb890362404407833");
+        public static BlueprintUnit CR3_Cultist_Wizard_RichQuaterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c9d25575bad8496597377db06d0207bd");
         public static BlueprintUnit CR3_DireWolf = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("87b83e0e06432a44eb50fb03c71bc8f5");
+        public static BlueprintUnit CR3_DrezenKenabresCrusaderLeftHanded = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("77e3e412bf39ad244a50fc1ed3d4a97b");
         public static BlueprintUnit CR3_Drow_FighterMelee_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1d4ad9fb89760e64a87f63f0797e347c");
         public static BlueprintUnit CR3_Drow_FighterRanged_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("94ec3a9abcc9f0a419e79be2869ee23c");
         public static BlueprintUnit CR3_DryadStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("20660a3d7ef5ec54a9c1f08b0b58d753");
+        public static BlueprintUnit CR3_EagleWatchCrusaderMeleeLevel4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("80e72a410936c364ca7cf5d90dcf367c");
+        public static BlueprintUnit CR3_EagleWatchCrusaderMeleeLevel4_NoLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d8325859e60742048485fb642e5460f0");
+        public static BlueprintUnit CR3_EagleWatchCrusaderMeleeLevel4_spear = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7a0a3456921d2149921bc44ff68c93e");
         public static BlueprintUnit CR3_EarthElementalMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11d8e4b048acc0e4c8e42e76b8ab869d");
         public static BlueprintUnit CR3_FiendishEarthElementalMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ca026426d9734dbd882c59bb07b8df52");
         public static BlueprintUnit CR3_FiendishEarthElementalMedium_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3c3966b6aee64e5c82152f93a621d41e");
@@ -915,9 +1160,14 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR3_GhoulCreeper_RogueMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("492e9c74335b7b140bb5cab8413f7a42");
         public static BlueprintUnit CR3_GhoulCreeper_RogueMelee_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dcd2be3876aadee45911154583263826");
         public static BlueprintUnit CR3_GhoulCreeper_RogueMelee_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd66945bc4ad421f82278c188fa30fdd");
+        public static BlueprintUnit CR3_GiantCentipedeHuge_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1e04249d2a474f51865688c2e912b0c8");
         public static BlueprintUnit CR3_GiantEagleStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("406c1e1af5400ac4881e330502ccbd9e");
         public static BlueprintUnit CR3_GiantSpider_Prologue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("30e473f4deea1d34caac26be7836f166");
+        public static BlueprintUnit CR3_GraveRobber_HalfOrc_BarbarianMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0999456cd5994e53acc7836c0a6b91b1");
+        public static BlueprintUnit CR3_GuardWarriorTankLevel5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5eab8ef04a662b54e936f43f94da1805");
         public static BlueprintUnit CR3_HellhoundStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9c72fff76fc033640b747145c7456be6");
+        public static BlueprintUnit CR3_Hellknight_Human_ArmigerMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cadf20dc63f9c4140951c0f80a36dfd3");
+        public static BlueprintUnit CR3_Hellknight_Human_ArmigerRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4ebd291c823849c459b81504a488757a");
         public static BlueprintUnit CR3_KoboldAlchemistLevel4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c594f075d14ba64468299e7018d6fcac");
         public static BlueprintUnit CR3_KoboldBladeLevel4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3b5011e421ea0f54f93695b26c43ce33");
         public static BlueprintUnit CR3_KoboldRangedFighterLevel4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a4e79bafe7fc8444bae7c1d208389faf");
@@ -928,6 +1178,9 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR3_MephitEarthStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2640a5b5eb35d5347add078059360fd4");
         public static BlueprintUnit CR3_MephitFireStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d9e6bd6df2376ea4e82ee87b5bc05f6a");
         public static BlueprintUnit CR3_MephitWaterStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd516e2ca9e98224e96856ba4f080384");
+        public static BlueprintUnit CR3_Militia_Human_FIghterMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0ecfe515c4334b908a1b23be859898d1");
+        public static BlueprintUnit CR3_Militia_Human_PaladinMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3973158401e34940b4b13b181e883a0a");
+        public static BlueprintUnit CR3_MimicOozeDoor_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76bf9a1edff04f04a402b4c9eb4dcff7");
         public static BlueprintUnit CR3_MiteFighterMeleeLevel3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("960f4e494a5b1a844833ed000751229b");
         public static BlueprintUnit CR3_MiteRogueMeleeLevel3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("341d7d01a0cb9c344b44b363833985af");
         public static BlueprintUnit CR3_MonitorLizardAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("97a6a26585044b444bac476ae9c4889f");
@@ -944,10 +1197,20 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR3_Shadow = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11f98b11ab989ed4aa407f778e0262dc");
         public static BlueprintUnit CR3_Shadow_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("978ecb52a9a2cdb4bb2053640bebcb3f");
         public static BlueprintUnit CR3_SkeletalChampion = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6f0122a6ec507dc49b217b75c42c5296");
+        public static BlueprintUnit CR3_Thiefling_RogueRangedStrong = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c9c87bde384b7224688a20d064310ced");
+        public static BlueprintUnit CR3_Thiefling_RogueStrong = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("af9dc4c85202d134199e42797e83d5ac");
+        public static BlueprintUnit CR3_UnicornStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("60542cba4f54e404193725ab0e7bdad2");
         public static BlueprintUnit CR3_VermlekStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5abf050c62112ee46b3f4851c458c3da");
         public static BlueprintUnit CR3_VermlekStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7408e8afa8e4496ba5e8dc9647a26e4b");
         public static BlueprintUnit CR3_WaterElementalMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9922c4c5d1ec4cf409cf3b4742c90b51");
         public static BlueprintUnit CR3_WightStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d9e855031c4611b47ba3be0510890097");
+        public static BlueprintUnit CR3_ZombieStandard_Fighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d2a42e26446e4829abf0b79c6583c81c");
+        public static BlueprintUnit CR3_ZombieStandard_FighterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f1376db78d784097a99b1bc450acf619");
+        public static BlueprintUnit CR3_ZombieStandard_Fighter_Graveyard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("73b5669f19bd4ad2820ced314deb7361");
+        public static BlueprintUnit CR3_ZombieStandard_HandFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("896f898da78a4961a7d588bb1e52de94");
+        public static BlueprintUnit CR3_ZombieStandard_HandFighterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("de687d6995894ad0a3d61493ef9a66bf");
+        public static BlueprintUnit CR3_ZombieStandard_Ranger = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c6cba2610aa24532b4f058e684f7503c");
+        public static BlueprintUnit CR3_Zombie_HandFighter_Graveyard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c513f80bfce54a7bbab59a4ebfcef9a1");
         public static BlueprintUnit CR4_AbrikandiluAdvanced1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9aafb70c018c8d342940d49384d5603e");
         public static BlueprintUnit CR4_AbrikandiluAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2da0043c56aff674bb6520d857c1ef9f");
         public static BlueprintUnit CR4_AbrikandiluAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cff78f289c7346f38848b74277adad72");
@@ -973,16 +1236,26 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR4_Cultist_ArcherElf_Ranged_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9ecb5119300333e4d942c624b5e27784");
         public static BlueprintUnit CR4_Cultist_ArcherHuman_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("29222d6610ef6f1478dded92bcba82c1");
         public static BlueprintUnit CR4_Cultist_ArcherHuman_Ranged_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c22a5b2a12a2a7243ac1e57713aeaae5");
+        public static BlueprintUnit CR4_Cultist_Baphomet_03 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0c9420a7f9133274c99f8f870c7e5546");
+        public static BlueprintUnit CR4_Cultist_Baphomet_03e = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2b9a1b8c37ce77f4bbf09aa7d4a4dad2");
         public static BlueprintUnit CR4_Cultist_Baphomet_Leutenant = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5f2733a1f13a0874388ffb78bd216546");
         public static BlueprintUnit CR4_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fa09c09aeff05b34ba4252911a507888");
         public static BlueprintUnit CR4_Cultist_Baphomet_MeleeCaster_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b399059a966de1349bb95ecc26c2706f");
         public static BlueprintUnit CR4_Cultist_Deskari_MeleeFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ff59f4de6294e6c46b864c713a90c756");
         public static BlueprintUnit CR4_Cultist_Deskari_MeleeFighter_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c7846ec5b33a68a4f92bad51aead5f60");
+        public static BlueprintUnit CR4_Cultist_FighterMelee_RichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5f0914fca72549c795658b59e5d414ee");
         public static BlueprintUnit CR4_Cultist_FighterTank = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9d205398aae901b43a5b2b1d81aaa53e");
+        public static BlueprintUnit CR4_Cultist_FireVictim_FighterMelee_RichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("66e1f6e400834b408fafbd77f997c08e");
+        public static BlueprintUnit CR4_Cultist_FireVictim_FighterMelee_RichQuater2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e0397448a9464e19a490bdcb8307b40d");
+        public static BlueprintUnit CR4_Cultist_FireVictim_FighterMelee_RichQuater2_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2564cccd589a40fbbacdaa625fabd35e");
+        public static BlueprintUnit CR4_Cultist_FireVictim_FighterMelee_RichQuaterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fd0096a2b99d4f93b6379bf354b3fa7e");
+        public static BlueprintUnit CR4_Cultist_HeavyFighterMelee_RichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e93ce82161ac49e2b96c4ebf9ae07ab5");
+        public static BlueprintUnit CR4_Cultist_HeavyFighterMelee_RichQuaterRE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("742bd6b8329f43ab96de582004d05903");
         public static BlueprintUnit CR4_Cultist_Wizard_DamageFullCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a62f80242580d34caaafef9720223d4");
         public static BlueprintUnit CR4_Cultist_Wizard_DamageFullCaster_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ebb1aee495e961b4ebb4a9634c41abea");
         public static BlueprintUnit CR4_Cultist_Wizard_Summoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a09f35ce8c5ae89419332c2c8a900097");
         public static BlueprintUnit CR4_Cultist_Wizard_Summoner_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46d6dd3493d4ef24995cb6251ddc764a");
+        public static BlueprintUnit CR4_DeserterJanna = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4880d0b16ca74fa46a167914e2b44bcc");
         public static BlueprintUnit CR4_DireBoar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("85009a1487d9dbc4ca695b0ab5bbf6de");
         public static BlueprintUnit CR4_Drow_KnifeMaster_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a234d7409d051ba41930d41e50011e4c");
         public static BlueprintUnit CR4_Drow_Magus_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7ff4ff74e50a4ac4b9f97734b4aef3f6");
@@ -993,6 +1266,8 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR4_GiantCentipedeHugeFiendish = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2ad550da5fe3a794a802c07bba8196ff");
         public static BlueprintUnit CR4_GiantCentipedeHugeFiendish_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e839e1c73d59468ba783288ad60f0b7c");
         public static BlueprintUnit CR4_GiantCentipedeHugeFiendish_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4d37220c78c9436c829d95dbf5c614ee");
+        public static BlueprintUnit CR4_GiantCentipedeRadioactive = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b0a3b52ff81a9f448b8b4b9a02aa67a5");
+        public static BlueprintUnit CR4_GiantFrogAdvanced_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3e9793794d12479886268960619a0736");
         public static BlueprintUnit CR4_GiantFrogPoisonous = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("30080a8d8ae40bb43aca496b11b74c6b");
         public static BlueprintUnit CR4_GiantSpider = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ba9451623f3f13742a8bd12da4822d2b");
         public static BlueprintUnit CR4_GiantSpider_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1be1454f47c246419f0b410ab451d749");
@@ -1006,10 +1281,20 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR4_KoboldShamanNecromancerLevel5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("880223f794285d440abf882d2f306bca");
         public static BlueprintUnit CR4_KoboldThundercallerLevel5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b1c33857b8359674681d8677036bdbf0");
         public static BlueprintUnit CR4_Mandragora = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f30beec3bfcfc374883cbbc700c6ad47");
+        public static BlueprintUnit CR4_Marauder_Human_FighterMelee_MaleRichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76171d13d67d4dc6b9c8d1d37860e4c2");
+        public static BlueprintUnit CR4_Marauder_Human_Melee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f7d63a8429c8434199d3719a807b63a6");
         public static BlueprintUnit CR4_Marauder_Human_Ranged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5e301886958d9564badcf5a1090e0ba8");
+        public static BlueprintUnit CR4_Marauder_Human_Ranger_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6ef7adb96ce44f0484a8ff00fcf13b16");
+        public static BlueprintUnit CR4_Marauder_Human_Ranger_MaleRichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("80bbd06a4af047b1ab3ae3fe4aeaab90");
+        public static BlueprintUnit CR4_Marauder_Human_RogueAxe_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b2ee6a030ec740dabefab7d5c18b02be");
+        public static BlueprintUnit CR4_Marauder_Human_RogueMelee_MaleRichQuater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("db59e733b90f41ddaaabdc67b784a6e8");
+        public static BlueprintUnit CR4_Megaloceros = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("78017bebd03a8024ab6b1d6ceb4b817a");
+        public static BlueprintUnit CR4_MilitiaCommander_Human_PaladinMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("98cdc3f5611f44a6ae1d4fa2167375f3");
         public static BlueprintUnit CR4_Minotaur = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("eeb29b8b182f23e4a9a34c5520ae8571");
         public static BlueprintUnit CR4_MiteClericLevel4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("726fb074d855ba2418d563716e144893");
         public static BlueprintUnit CR4_MiteFighterMeleeLevel4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a5ecd638cdac3cb45861148b3909a42d");
+        public static BlueprintUnit CR4_MonitorLizardAdvanced_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c7581db3bb0b4323bdf0d1576ee61b57");
+        public static BlueprintUnit CR4_MonitorLizard_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("93e87820560943b29fab626d7da9410b");
         public static BlueprintUnit CR4_NixieRogue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d252cb73cd59876438f47a6c61ba4c26");
         public static BlueprintUnit CR4_SatyrShortbowStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6114adae73a1338498412b3c63c946f8");
         public static BlueprintUnit CR4_SatyrShortswordStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a6dceccaf84af1a42843e58412265388");
@@ -1019,6 +1304,8 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR4_SchirStandard_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2000b2dcaab22e34db40b9a1e13d7840");
         public static BlueprintUnit CR4_ShadowAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("499630dc06903a143a1963ec6d9c11a3");
         public static BlueprintUnit CR4_SkeletalChampionArcher = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c2e12b0da7b330a418d6cc46a8c88d26");
+        public static BlueprintUnit CR4_SkeletalChampionArcherSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a8f68527533142609c3d3790ec8b9591");
+        public static BlueprintUnit CR4_UnicornAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0161992a3f826ca4a8c15de8a1c0e77a");
         public static BlueprintUnit CR4_VampireSpawnStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e57f52872590c304d97c722ac5ff59ec");
         public static BlueprintUnit CR4_VermlekAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("680ebe59a0e45eb48ad46ea4b0e04da6");
         public static BlueprintUnit CR4_VermlekAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("afe1e0d0fc714e9bb37417917c6536ba");
@@ -1033,7 +1320,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR5_Bandit_Human_RogueMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8b8d7c9a8423be24bb03f08ca1570626");
         public static BlueprintUnit CR5_Bandit_Human_RogueRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2ce5e630dffcb2f458bc35aac5444a73");
         public static BlueprintUnit CR5_BearAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7c768774b75bcc4d88b0bb8956d3b01");
-        public static BlueprintUnit CR5_BeerElementalLargeSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e7eed1baf5df2c946b5056499d8ff121");
         public static BlueprintUnit CR5_BrimorakStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("61e89e329440c0e46a4125d4667720ee");
         public static BlueprintUnit CR5_BrimorakStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("855a8001a1e53e644a175629f24f373f");
         public static BlueprintUnit CR5_DireBoarAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dc36830486c624e48ace533603408287");
@@ -1046,13 +1332,19 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR5_FireElementalLarge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("25f8ba0f46a1df74b88746872aace0ee");
         public static BlueprintUnit CR5_GargoyleAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d42bb0733fad0584283043090d3481c0");
         public static BlueprintUnit CR5_GargoyleAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2d7063e374d5973438f6c91b3c3acb8c");
+        public static BlueprintUnit CR5_GiantSpider_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("56cbdcd0334b48fbb721f25ba9d4871c");
+        public static BlueprintUnit CR5_GuardFighterMeleeLevel6 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("da2d61c4621a5e6429a6bcb24761bf0e");
         public static BlueprintUnit CR5_HellhoundAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5500f341c6dd4674d885a14feb2ece57");
+        public static BlueprintUnit CR5_Hellknight_Human_HellknightMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("03b85bd4d716cf1408ef1e51fcf5618a");
         public static BlueprintUnit CR5_HydraAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("00a10a2129fc7de45889a7f10e06ea92");
+        public static BlueprintUnit CR5_KnightElan = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a863b65171271a44abdeded092a628f");
         public static BlueprintUnit CR5_ManticoreStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("da807351572c540478b703957d863e68");
         public static BlueprintUnit CR5_Marauder_HalfOrc_Alchemist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4acf1591a57bf274da927cc475db87b2");
         public static BlueprintUnit CR5_Marauder_HalfOrc_Barbarian_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cd482d37a388609408f5dd5bd019396d");
         public static BlueprintUnit CR5_Marauder_Tiefling_Melee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8d7e78d529f3e9c4f8154e7f814ad81b");
+        public static BlueprintUnit CR5_MegalocerosAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46919f5a7040caa4c91d3facba8ebd5b");
         public static BlueprintUnit CR5_MonitorLizard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("69818deca34684a46a3120a69cca9d53");
+        public static BlueprintUnit CR5_NightmareFriendly = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c8072d74e64caf244ac6b784e6838e12");
         public static BlueprintUnit CR5_NightmareStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a97b1875eae857d479c64543590f6ccb");
         public static BlueprintUnit CR5_QuickSpiderSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("da2f152d19ce4d54e8c17da91f01fabd");
         public static BlueprintUnit CR5_SchirAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b6b4b773aa4f93045903b67b92167930");
@@ -1061,11 +1353,14 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR5_SkeletalChampionNoShield = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cb93d5b441ab9514aaf620e8ebacc824");
         public static BlueprintUnit CR5_SkeletalChampionTwoHanded = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5787e01fea3a2fd45b60eed5dd0ab284");
         public static BlueprintUnit CR5_SkeletalChampionUnarmed = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b348af45b8ef0dd4086d9a8a50439a37");
+        public static BlueprintUnit CR5_ThiefCurl = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("01ffca70e10efd94b8a66c8a18199bc8");
         public static BlueprintUnit CR5_VescavorSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f03d262634c93a340b85c4a93cd0ffe4");
         public static BlueprintUnit CR5_WaterElementalLarge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f647c00b160966849bc5c282c8244a6f");
         public static BlueprintUnit CR5_WaterElementalLarge_LabyrinthBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4518955732be42ecbe41221001163c2a");
         public static BlueprintUnit CR5_WolfAlpha = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6b58203f59693d24dbefb72a09a8035d");
+        public static BlueprintUnit CR5_ZombieBossFighterLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("87ed66055c5c44d8a7ef82411119253b");
         public static BlueprintUnit CR5_ZombieLordFighterLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6fb0daac7b491914999525b426369d4f");
+        public static BlueprintUnit CR5_ZombieLordFighterSummon2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8e84e6f7f3b43d296bb47dc9074f343");
         public static BlueprintUnit CR6M_MythicCrazySchir_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9c5d808231054a7ab22776feaae70f70");
         public static BlueprintUnit CR6_AzataBralaniStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d6fdf2d1776817b4bab5d4a43d9ea708");
         public static BlueprintUnit CR6_BabauForTest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("10e1dd6f4ba7f5f4f8db9718751d2f36");
@@ -1073,6 +1368,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR6_BabauFreeHand_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f8560b93209995c47aed3a7d7eea3762");
         public static BlueprintUnit CR6_BabauFreeHand_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b5bf8ba33a8c44b29dda6215d03c773e");
         public static BlueprintUnit CR6_BabauStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b80f9014b742ea04ba27f897177bafc4");
+        public static BlueprintUnit CR6_BabauStandard_DrezenInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6fde408c22bbe2e418ed026f22cbe478");
         public static BlueprintUnit CR6_BabauStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cb4262d95f9b51d4bac710b25e1d7204");
         public static BlueprintUnit CR6_Bandit_Human_Alchemist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("110dde2b379be124ea630dcd36594734");
         public static BlueprintUnit CR6_Bandit_Human_BarbarianMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7cdea97b2024bc74087f688d0490d189");
@@ -1136,12 +1432,28 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR6_IncubusStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b9026a153df2a5a4e89a0cccb6e158ba");
         public static BlueprintUnit CR6_IncubusStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("750bd8a2bbb85fa4c9d05e0e0c0f23ae");
         public static BlueprintUnit CR6_ManticoreAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("37f79d70c8914324e909dbccb227704e");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f98315e745be6be4ab23edf9ce61c470");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Female1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f5784a57388d491e8ea9296fec73f030");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Female2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4e30337e935f4c1b84476ef7dcf7e952");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Female3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("24cf598d38cf49359cc1921cfcb06715");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Female4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("28e78b8a2d7d4d1c92f679000124fb53");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fd4db3c43164c3849862883dd63b17c4");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f98cb26c5b3f47589ab4892ae4bf5720");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male1_NoWeapon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a5e4b2ee8bd84e8087951dedba639b7e");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5c8fe8d016ee15641be5b9bf049e0602");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male2_NoWeapon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d4d40987e0614d49b2b4953e368f6e3d");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("51a61a8b6741cdd4e81e4e92990d6825");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male3_NoWeapon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("03f8e52e6ed3448ca89d520da0284e1a");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("87c6b2f3a8b44cfd98fab8a29805a1e9");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male4_NoWeapon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("856ee6f28b5f47d6acf0523090542b66");
+        public static BlueprintUnit CR6_Mongrel_Peasant_Male_NoWeapon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5ff5dfac9b43443c9904f1d1fb553267");
         public static BlueprintUnit CR6_NightmareAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8220c661e259dd4884212ee1193b88d");
         public static BlueprintUnit CR6_RedcapStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("99286885f5be6b948baf3de77471d6ca");
         public static BlueprintUnit CR6_SalamanderStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6cb07742d2b1a5844887cef544d83e7f");
         public static BlueprintUnit CR6_SalamanderStandard_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e58f942619e345d4b8f10f846e45d48e");
         public static BlueprintUnit CR6_ScytheTreeStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4289bc3b38c0fbd4a91eab08b940b1cc");
         public static BlueprintUnit CR6_ShamblingMound = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b98ae409beb5e8543a75b82ecda082a7");
+        public static BlueprintUnit CR6_SkeletonHero_TwohandedFIghter_Level4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9adec432ded043d8ababefeddedd1bc4");
         public static BlueprintUnit CR6_SuccubusStandard_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6a71d5363cfb4d37b1a4ecc698fe08fb");
         public static BlueprintUnit CR6_WaterElementalLargeAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("adedebad6c1542e45aca9498ce66c1fe");
         public static BlueprintUnit CR6_WillOWispPurple = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a8225dd5b4d32454eac4c91f25520cc1");
@@ -1151,6 +1463,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR6_WorgAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2ac25fadde7d9b541b403cdad2577352");
         public static BlueprintUnit CR6_WyvernStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ada72e12e8cd3014b80eb2162fbc7802");
         public static BlueprintUnit CR6_ZombieLordFighterLevel3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a8c6db112751b654184142107c356692");
+        public static BlueprintUnit CR6_ZombieLordFighterSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e9a04baac4194cf2931df4d9ca9c8e00");
         public static BlueprintUnit CR7M_MythicCrazyDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b3ff82b3a3e578342a5edc1880f1480c");
         public static BlueprintUnit CR7M_MythicCrazySchir = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11a1f9eafae2dd24195a17e49c35ea38");
         public static BlueprintUnit CR7M_MythicCrazySchir_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("93a2ae69ea769e947a4a19d01805f741");
@@ -1160,6 +1473,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR7_Bandit_Human_Alchemist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d32b31d0dac75fa45996c60106947ac8");
         public static BlueprintUnit CR7_Bandit_Human_FighterMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("341a00b2bbf4be9498049c62e6cd7456");
         public static BlueprintUnit CR7_Bandit_Human_FighterRanged_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("02459ebf6d89e8845933a6565f3bc2e3");
+        public static BlueprintUnit CR7_Bandit_Human_Necromancer_Sorcerer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5dd8dd54dd1846b28eb70ed6081e6cfe");
         public static BlueprintUnit CR7_Bandit_Human_RogueMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f92a310f5947f84090e2453cc1715d9");
         public static BlueprintUnit CR7_BearDire = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("260da5b557e3fb04bb4960a36a5d1dc4");
         public static BlueprintUnit CR7_BearQuickling = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1d2f19f9ec47f254aa35643252ac63c8");
@@ -1167,6 +1481,8 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR7_BrimorakAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("547bfb1f1db2cbe41bbc0a98b580947e");
         public static BlueprintUnit CR7_BrimorakAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("96662dac1c7945edbc2a9a04cfdad265");
         public static BlueprintUnit CR7_BuletteStandart = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("18fa241bd1afd77438564ec92614f7f1");
+        public static BlueprintUnit CR7_Crusader_Human_PaladinMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d96fbbd46e8872149b92ba5908229c5b");
+        public static BlueprintUnit CR7_Crusader_Human_PaladinMelee_Male_Cheliax = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("647e9eb900a2463e8dd67b648bdcc2ab");
         public static BlueprintUnit CR7_CyborgCrusader_WorkshopBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fef36508eb0842e4ba8b95eea191af69");
         public static BlueprintUnit CR7_DuergarFighter8 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a0b3734754cf8143a99022de74a9f27");
         public static BlueprintUnit CR7_Dweomercat = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6b7b4ea363264df4a9fdf97182ef57ff");
@@ -1233,6 +1549,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR8_BabauPoisoner_MeleeRogue_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5c2140367928e374abb291663198f83e");
         public static BlueprintUnit CR8_Bandit_Human_Alchemist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a429b5a21a3a3e5469ff35c5300034ff");
         public static BlueprintUnit CR8_Bandit_Human_Bard_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3f2672c1a9877244cab3caf16e221507");
+        public static BlueprintUnit CR8_Bandit_Human_Necromancer_Sorcerer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f03f48691f84c5d9e641c498d3125db");
         public static BlueprintUnit CR8_Bandit_Human_RogueMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a305c49dc73fe9d419003d5469b50f93");
         public static BlueprintUnit CR8_BearDireAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5c46ab04bad9b324dafc43bdb8899a5c");
         public static BlueprintUnit CR8_BodakStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("354c41838f9d54b4eaff846bc23874da");
@@ -1273,6 +1590,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR8_GhoulCleric_RE_high = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a5beac9e963dc594f8538083bc4a3214");
         public static BlueprintUnit CR8_GhoulCleric_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9af41d2ca209461e82a5ca054109b6db");
         public static BlueprintUnit CR8_GiantSlug = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dcadc02f9d30cfd499a277016b0082f9");
+        public static BlueprintUnit CR8_GiantSpider_DLC2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a69e0efd8bfd451aabdb0518709be60e");
         public static BlueprintUnit CR8_Marauder_Gnome_Boss_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("36f2ca4bed38d9a4ba4b962410f12dc0");
         public static BlueprintUnit CR8_MimicChestAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c460d2d3bc5c8e146a9b6771366fbe8d");
         public static BlueprintUnit CR8_NabasuAdvanced_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("42c7bce32f74494e95a6801a4b6ec885");
@@ -1291,6 +1609,7 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR8_SkeletalChampion_Vampiric = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8df0274c3ad7bff48be48f983f92fdc2");
         public static BlueprintUnit CR8_SmilodonStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("956aeb3443ab1be44ab7f1fcd36b1e0c");
         public static BlueprintUnit CR8_SuccubusAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("332817b5085f5d4449e65a5f8369c14d");
+        public static BlueprintUnit CR8_TreantStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0ef5c65ca08a0204cba840f01cd415af");
         public static BlueprintUnit CR8_TriceratopsStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("83b63546c1e1f7b43b6407c7d61efde0");
         public static BlueprintUnit CR8_UnhallowedBodak_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ec171a4d9ca419992cf7be241f4098f");
         public static BlueprintUnit CR8_VescavorGuardStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("17a0d2b9a532ff641bc122778fa80e05");
@@ -1311,7 +1630,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR9_BabauMurderer_MeleeRogue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5145ecb2fa4d56f49a704a5fdb7a34e7");
         public static BlueprintUnit CR9_BabauMurderer_MeleeRogue_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f5a5a13aa43f56f46b7dd782b1dd931e");
         public static BlueprintUnit CR9_Bandit_Human_FighterBoss_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ad4f4735eab16be44a835da799d24faf");
-        public static BlueprintUnit CR9_BeerElementalGreatSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d6691e1a2602f8d408c9474852aca0b9");
         public static BlueprintUnit CR9_DerakniStandard_RE_low = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9299782d53344be78c58eaf371878d83");
         public static BlueprintUnit CR9_DuergarBarbarian10 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11b06963497d0db48881176aa9f97483");
         public static BlueprintUnit CR9_DuergarFighter10 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6941dd80deb7fc84fafda3c04596f6eb");
@@ -1320,6 +1638,8 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR9_FiendishSmilodon_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("496e0d4273624abdb568e6e3f12e80fc");
         public static BlueprintUnit CR9_FireElementalGreater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5b7fc5f74b0195e42ba17f1d7e21a3c9");
         public static BlueprintUnit CR9_FrostGiantStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9fa7bc6f42619e44ba4c8320fc6d470f");
+        public static BlueprintUnit CR9_Hellknight_Human_ArmigerMelee_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("92e1132f8a1a47698e2587cb1d646142");
+        public static BlueprintUnit CR9_Hellknight_Human_ArmigerRanged_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f26d327cd7145a09f9f3b19493a388f");
         public static BlueprintUnit CR9_HillGiantThug = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c398dbd7553252f41a4bc8c952c188b1");
         public static BlueprintUnit CR9_HydraMatureBloomInfused = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ac214470685b0884dada8d845de08137");
         public static BlueprintUnit CR9_ManticoreMatureBloomInfused = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("667749d27f772ff4ba6d9d03d5afed63");
@@ -1353,6 +1673,17 @@ namespace RandomEnemies.Units
         public static BlueprintUnit CR9_ZombieLordFighterLevel6_Spear = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ad10255374ee14046b402fb0583e27d6");
         public static BlueprintUnit CrazyPrisoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b9ecb93622ce33b49b439ced07f58acf");
         public static BlueprintUnit CrazyPrisoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5605541786169db4d9f13a72b54afc06");
+        public static BlueprintUnit Crinukh = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0234cbc0cc844da4d9cb225d6ed76a18");
+        public static BlueprintUnit Crusader_AponDummy1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("196ddc9bf08bfc34786b54cca8e442fb");
+        public static BlueprintUnit Crusader_AponDummy2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("16b5cafff8b80704699ab35665de7324");
+        public static BlueprintUnit Crusader_AponDummy3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bc1162804d2fca346a3c8b78612bdc71");
+        public static BlueprintUnit Crusader_AponDummy4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5f9b3e7074d24e4c9b82855fd26f13d2");
+        public static BlueprintUnit CrusadeSoldier = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f14a1558b536b894c803b0307a115e8a");
+        public static BlueprintUnit CrusadeSoldier2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("db706c1502cca7642a2bdd68408fd8b5");
+        public static BlueprintUnit CrusadeSoldier3F = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b5f8c5fabe50c7c41803c4c67625106a");
+        public static BlueprintUnit CrusadeSoldierLastDefender = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("90f1f73b58fb5234db50d2044cfa14bc");
+        public static BlueprintUnit CrusadeSoldierNearIrabeth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d39d680de8e94b542b5fa4f7ec834e6b");
+        public static BlueprintUnit CrusadeSoldierZombie = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f198fd61dbe96a3458caf93b3569ef24");
         public static BlueprintUnit CR_22MythicShadow = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("60273f957fe2c0948810307ee35dc599");
         public static BlueprintUnit CR_22MythicShadow_Aeon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("efc83925a7ea451d93e15af17f933a55");
         public static BlueprintUnit CR_22MythicShadow_Angel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("221d5a7dade6407ba119e62ccfc6a791");
@@ -1372,10 +1703,14 @@ namespace RandomEnemies.Units
         public static BlueprintUnit Cultist8_ArcherHuman_Ranged_Deskari = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("00ef45131cd1c0c4796241126d897efd");
         public static BlueprintUnit CultistFighterMeleeTough_WithHalfplate = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d8aca3e976b64834b9dc74926814a0cb");
         public static BlueprintUnit CultistFighterMeleeWeak_WithHalfplate = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5c23efb18cc90c24d8c5158935c3fa7e");
+        public static BlueprintUnit CultistScriptor_HalfElf = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("037d7f1c6c44edd44ad2e704d22eb454");
+        public static BlueprintUnit CultistSelfVicitm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ae798f960cc4a134eb15cf2bcb7c3362");
+        public static BlueprintUnit CultistSelfVicitm2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9d3c652671bb72b498d4f8936b2795a6");
         public static BlueprintUnit Cultist_ArcherHuman_Ranged_Dialog2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("421fe5dffdb12004cbfe1dc8cbbb2d0f");
         public static BlueprintUnit Cultist_Baphomet_MeleeCaster_DialogMain = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("633249f0ebfadbc4d8f91f60656e1d51");
         public static BlueprintUnit Cultist_Baphomet_Melee_Dialog1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7f24d26f7f1cb4948b7cd6c5d7949f7a");
         public static BlueprintUnit Cultist_WallArcher = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fbec43481e1858c41b5944a3451ae9e1");
+        public static BlueprintUnit Cultist_Wizard_Coronation = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5b5eba3c18cd47689510b3b485655645");
         public static BlueprintUnit Cultist_Wizard_DamageFullCaster_Deskari = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d7b9114bfd97ba146b7e8ff787aa1950");
         public static BlueprintUnit CyborgChiefFemale_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4b7ba40dd891acf4bbb0582d65b6f506");
         public static BlueprintUnit DaeranAlienSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0264a9119a0737447a226cdd4ba1f79b");
@@ -1383,61 +1718,174 @@ namespace RandomEnemies.Units
         public static BlueprintUnit DaeranQ1_CambionWizard_normal = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ecf225e208fa6264488d4f0f49a09bbc");
         public static BlueprintUnit DaeranQ1_Schir = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f90e38b845b328a4f9878f1a96ca2082");
         public static BlueprintUnit DaeranQ1_SchirAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fed3a2dcc8e92b34e8ed6720fa08b45a");
+        public static BlueprintUnit DampirVendor_BlackDealer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d0b2309280b6cf444b43aae89ad1fd5c");
+        public static BlueprintUnit DarekSunhammer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11cdcb7fe4a91fd4da86ded2b0bd7e8b");
+        public static BlueprintUnit DarekSunhammer_Cutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9b1a973fd1d14da8ae234a16d917dba8");
         public static BlueprintUnit DarkForestWillOWisp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e0d4d1ca071fba54fbb2fe6fb4813aa6");
         public static BlueprintUnit Darrazand = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("819a27486581bb64cbcc4b8437ecd228");
         public static BlueprintUnit DarrazandHealer_FullCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ebe26c1bf09966142a7284c93c0a0679");
+        public static BlueprintUnit DeadMonk = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("02ca882d392306d46934d49565f392c0");
+        public static BlueprintUnit DeadSunrisePriestLeader_HellknightVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d55aa535c806a134fbd2ff92296f2915");
         public static BlueprintUnit DeathPactCR19_GalluStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5d22a29422d4417da76e75784f65e8a7");
+        public static BlueprintUnit DeepShadowDemonBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3dec3269554b5e54aa07adb11aba5349");
+        public static BlueprintUnit DeepShadowDemonTarshari = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d2576e5a567f0044eb66a331ebe7dcb7");
+        public static BlueprintUnit DefendersHeartWarning_Messenger = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11ebf77c8e2035045b78f0a5b9488427");
+        public static BlueprintUnit DefendersHeartWarning_Messenger2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c940a9e0cfb0f994ebff2092ce6fd478");
+        public static BlueprintUnit Delamere = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("433b2850e2f5a1f4e82a6969bf43af66");
         public static BlueprintUnit DemodandStringyForSE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("05ab760ee34af4c44a82514cec76b59b");
         public static BlueprintUnit DemodandTarryLairMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("05c24788a0aca3844892cbe95d162fac");
         public static BlueprintUnit DemonDuo_Flayer01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d51f6e9734f1c1145ba9193ac004ef8e");
         public static BlueprintUnit DemonDuo_Flayer02 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7a30bf392a5967d47a1b19748465cc46");
+        public static BlueprintUnit DemonGladiator = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e0f83ca87e172114691b24ecc15af33b");
+        public static BlueprintUnit DemonGladiator02 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("80effc529d98a274c8a972a03878bf20");
+        public static BlueprintUnit DemonGladiator03 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e1abed183649a0a4a84920c93d024849");
         public static BlueprintUnit DemonicHungerBabau = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("339ebf6a2f6be8747a3e2bab4026c37a");
         public static BlueprintUnit DemonicHungerBalor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("15ba9cb6547b686488c50e8364f24e38");
         public static BlueprintUnit DemonicHungerMarilith = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c3a1b5d3580675e4e881cdc1bd8327ca");
         public static BlueprintUnit DemonLordDeskari = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5a75db49bf7aeaf4c9f0264cac3eed5c");
         public static BlueprintUnit Deradnu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b9793d3ebbae5c44b854134b437e929b");
+        public static BlueprintUnit DevalArmed = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1b18889dbdba1d849a69f76d5d00c033");
         public static BlueprintUnit DH_Cultist_Baphomet_Melee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f2239feee46dc894a9ce6aefc56de995");
         public static BlueprintUnit DH_Cultist_Cleric = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d209e8c388e84eb45be7160172add6f6");
         public static BlueprintUnit DH_Cultist_Deskari_MeleeFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2428b6ad294beaa468f408d32d32cf63");
+        public static BlueprintUnit DH_Cultist_FireRaising = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("99ab934ef7b38a04e8ee80a2d33dc2ba");
         public static BlueprintUnit DH_Cultist_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ccb7a379faa73974aad97b967767f59b");
         public static BlueprintUnit DH_Cultist_Wizard_RayOfSickening = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("45233bc9552c584469316808518f8488");
-        public static BlueprintUnit DireBoarSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6ec9c63c41a1e754ea4dcd85557625b4");
-        public static BlueprintUnit DireWolfSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("03dd28e92faf2e44eb9564a6ba01fdd0");
-        public static BlueprintUnit DogSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("77f3f2ddf1ec2da45ab956c433e3b557");
+        public static BlueprintUnit DH_SeelasFriend_DeserterJanna = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("588418cb0dfd7cb45b6e6d370ef42bea");
+        public static BlueprintUnit DH_SeelasFriend_KnightElan = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3ef3e97c6d1113d44a7de1f513f322f8");
+        public static BlueprintUnit DH_SeelasFriend_KnightElanBBDFight = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2f889f6d2255dbf4a9d3b5df9be0c5c3");
+        public static BlueprintUnit DH_SeelasFriend_ThiefCurl = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a5813ac97a480634188d034f262c3825");
+        public static BlueprintUnit Dimalchio = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0c4b24a1f9dd73c4f925ed79166ff481");
+        public static BlueprintUnit DimalchioMansion_CR20_SuccubusAdvancedFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd1002a393be4957932b98c69b821033");
+        public static BlueprintUnit DiplomatFromAndoran = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("47209ebc5ba643e69f272eb148d31660");
+        public static BlueprintUnit DiplomatFromIsger = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ff174261c5db46d58610dfd6dfea0c21");
+        public static BlueprintUnit DireOne = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6343dfa25f48a4042ac4e4777f26705b");
+        public static BlueprintUnit DisguisedAstralDeva = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4982847a1c0c480fb77c34c392bb85f2");
+        public static BlueprintUnit DisguisedMonadicDeva = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76bef9b225e34756a355804c0d607eb6");
+        public static BlueprintUnit DismembermentEnemyUnit = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0cd1f0af7c8c4fa8af00b1218891fae7");
         public static BlueprintUnit DontLikeGuestsLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("519f773f79ea48447ac028a37c388a12");
+        public static BlueprintUnit Doppelganger = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d6a0567eafa16f64fb6ace31d79de3a0");
+        public static BlueprintUnit Doppelganger_DemonCh3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11a474b83e8119146a1e31bca9f88c96");
+        public static BlueprintUnit DragonCommoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("aec51c28dc7626844ab88375069e9d32");
+        public static BlueprintUnit DragonCommoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d51ea8a132d54a338575695726210dc3");
+        public static BlueprintUnit DragonCommoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c8bd514ff6c0496f8b05df50b8e8e027");
+        public static BlueprintUnit DragonCommoner3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8dee68044a714ee880587fc6d72e9024");
         public static BlueprintUnit DretchKamikadze = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d2e507ff34cf7314ba26327a1c0a092c");
-        public static BlueprintUnit DretchKamikadze1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d2e507ff34cf7314ba26327a1c0a092c");
         public static BlueprintUnit Dretch_Stitch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("90215a976d13b254ab905d0d6f747deb");
         public static BlueprintUnit Drezen1_Tavern_Glabrezu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("139ec0d2249679a4bb0fe30737d0b05f");
         public static BlueprintUnit Drezen1_WightGrave = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d7d2c135375dfa34c9cb5ebdb80945e7");
+        public static BlueprintUnit DrezenBabauBBD = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5de744fbbacb83349965ec2d0dfb34c2");
         public static BlueprintUnit DrezenBabauGateGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("72d826140d6fc514b97809ff5480530d");
+        public static BlueprintUnit DrezenBBD = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7e44fb6070a8e3499fd9a9ce248db2b");
+        public static BlueprintUnit DrezenCapital_Quartermaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a380d926e92f70e429681eb9654478f9");
         public static BlueprintUnit DrezenCitadelLevel1_CultistMiniboss_Chapel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e6e6ef67cc4ae5b41bf44a3b77554f41");
         public static BlueprintUnit DrezenCitadelLevel1_CultistMiniboss_Gates = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6af9bf64b38b77b478f1e1512727089e");
+        public static BlueprintUnit DrezenCitizenMourning_1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("74a3d1fa33f41e04cb5a7b9a1fadc784");
+        public static BlueprintUnit DrezenCitizenMourning_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("735cb6fc615685840ba437c62cb94e06");
+        public static BlueprintUnit DrezenCitizenMourning_3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dd834caaa3294b64b8ee3485f3bf419f");
+        public static BlueprintUnit DrezenCitizenMourning_4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("05b2554c1d31d5743aa3e81662d5ac94");
+        public static BlueprintUnit DrezenCitizenMourning_5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ddb21bb06db2534469c3c9d66d1c9440");
+        public static BlueprintUnit DrezenCitizenMourning_6 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3c8ecd562a8e05547912aa9f7452c7c2");
+        public static BlueprintUnit DrezenCitizenMourning_7 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("825c321ad95e298409629f28fc622aba");
+        public static BlueprintUnit DrezenCitizenMourning_8 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("939ffc1696b2aca459729558b85824e5");
+        public static BlueprintUnit DrezenCitizenMourning_9 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4df6160b23275014ebee147d55eafb7b");
         public static BlueprintUnit DrezenDretchKeyKeeper = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e3e492cd95887324696259c56deb6830");
         public static BlueprintUnit DrezenSchirGateGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("410b3ccb13bbb0a4c96ff85fae32a873");
+        public static BlueprintUnit DrezenSchirStartPack = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4b5b8335cc7bec1489c87f27b6f6c003");
+        public static BlueprintUnit DrezenVrockCutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1f6b0db6c37f90844a7944931c9390ea");
         public static BlueprintUnit DrezenVrockGateGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("918191f03acac7f48b72ab960864d1bf");
+        public static BlueprintUnit Drezen_Cultist_1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2d852144a28e40cb8d61b0daa7539a41");
+        public static BlueprintUnit Drezen_Cultist_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("60c8a53d226449de8989621be2b756e7");
+        public static BlueprintUnit Drezen_Cultist_3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7cca7a859994570b98a0e44694315ab");
+        public static BlueprintUnit Drezen_Cultist_4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("28f3bb29247948d6b47aac8845f6fa31");
+        public static BlueprintUnit Drezen_Cultist_5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4ed16b7baffc4a56a9363b6c4f4b7133");
+        public static BlueprintUnit Drezen_PrisonerF = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2a528471485d49c992d8c6bbb7a82511");
+        public static BlueprintUnit Drezen_PrisonerF1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f6134d7ad6c94560ba6cba69d8978944");
+        public static BlueprintUnit Drezen_PrisonerF2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("73b23380395f4868a465821f6671075c");
+        public static BlueprintUnit Drezen_PrisonerM = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("abdaa085f6bc40b1b77f0cb3945e62aa");
+        public static BlueprintUnit Drezen_PrisonerM1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8513cbf9a68c4479ad8cdff52c2fe346");
+        public static BlueprintUnit Drezen_PrisonerM2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3bf0f93ce81b4f3a826e80fe0df89164");
+        public static BlueprintUnit Drezen_PrisonerM3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fe9bff2319cb4343a3a5a08de2bd62ab");
+        public static BlueprintUnit DrugVictimLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("914e078ed70d47646aebe55061601798");
+        public static BlueprintUnit DyingFemaleSunrisePriest_HellknightVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8573a4f187307534198accf3ac3f3d11");
+        public static BlueprintUnit Dyra_Trader_Neathholm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd6d6b07f1682c14c9d0966ef7954648");
+        public static BlueprintUnit DyunkSlaveTrader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f9efe024b3ea89d42a3f15d1316f5b3d");
+        public static BlueprintUnit EagleWatchCrusaderInjured = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0ffa7b485f59c1b45a8b067e6113888b");
+        public static BlueprintUnit EarlyBeginning_StorytellerWizard_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("665fed8581374d439fd88df5159e4ef4");
         public static BlueprintUnit EchoOfDeskari = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a40904b640d757a498f7d10b3e066f84");
         public static BlueprintUnit EchoOfDeskari_ForFight = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e0cb4338cb6e72146a8a35794a0034be");
         public static BlueprintUnit EcorcheLairBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0ac1ef59854f2c641bded5e36c1e79ac");
+        public static BlueprintUnit Elan_Feya = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d1f6d4f30ebfafd4fa447a6388978b3f");
+        public static BlueprintUnit EmberKnight1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("12debaf16f24eb444bf210026283700c");
+        public static BlueprintUnit EmberKnight2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7aaeb8af8ec5dba40b454bd830dae3aa");
+        public static BlueprintUnit EmberKnight3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dd9bf0556cc4ee34e834c7dbc75aa28d");
         public static BlueprintUnit EmberQ2_BabauFreeHand = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("542022987aede074ab07363b16a6e809");
         public static BlueprintUnit EmberQ2_BrimorakAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0f5699866ca71c84ab9146bcce32cb08");
         public static BlueprintUnit EmberQ2_KalavakusStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c8cd39bc836c95e409461682d4744e54");
+        public static BlueprintUnit EmberQ3_Crusader01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e90e4a247a7525245813f33bf468564a");
+        public static BlueprintUnit EmberQ3_Crusader02 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6dfea3be2fb784146b92087d9159f35b");
+        public static BlueprintUnit EmberQ3_Crusader03 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c09f66323a53acc43ac3d2deb512bc74");
+        public static BlueprintUnit EmberQ3_Cultist_ArcherHuman_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7292c47012b44c14c93086ad217f22cd");
+        public static BlueprintUnit EmberQ3_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6283498c6635df246a50d5477b73c256");
+        public static BlueprintUnit EmberQ3_Cultist_Wizard_DamageFullCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d6037c936b21e644480f355e41284078");
         public static BlueprintUnit EmberQ3_Tamplier_ArcherHuman_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1abf25c7ff9638b4ab2aca1c8d880c24");
         public static BlueprintUnit EmberQ3_Tamplier_Baphomet_4Dialogue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("42ce8cbf5824cd844a237aa155f99a4c");
         public static BlueprintUnit EmberQ3_Tamplier_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("52fdc5ae98c77c543b99f6863d685712");
         public static BlueprintUnit EmberQ3_Tamplier_Wizard_4Dialogue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("968786eb1f990844aaec2ce657a36212");
         public static BlueprintUnit EmberQ3_Tamplier_Wizard_DamageFullCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0ab5a35d07297944b9183c45709558d7");
         public static BlueprintUnit Ember_Q3_MarilithAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c16c0bc7554b41c4ea1ca34d0d4f71ea");
+        public static BlueprintUnit Eritrice = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4a47d14a45ce264408a1c6a33345dd89");
         public static BlueprintUnit EritriceEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8e161cb38c4c4b68a0a6c39b6eefd021");
         public static BlueprintUnit Eustoyriax_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2c91c5f6c86b7e949b102aa0cdc01298");
+        public static BlueprintUnit EverbrightCrusader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ca228394cab801d4fb666d98c0517200");
+        public static BlueprintUnit EverbrightCrusaderRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f0095c62d72b76147ba5e35a01d836fb");
+        public static BlueprintUnit EverbrightCrusader_male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("779ba1517d8e36a4a8f4da1f54b8e0b7");
+        public static BlueprintUnit ExplosiveHomunculus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8e323801d3a0417439c8e11c486c67fa");
+        public static BlueprintUnit FaerieDragon_01_Familiar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("78bb9f0f879aaba49a8e3fab3774c537");
+        public static BlueprintUnit FaerieDragon_02_Familiar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0581577965589a4f82c4556978debdd");
+        public static BlueprintUnit FaerieDragon_03_Familiar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8b7bfc4bb714efd459085cf49ab4cc1d");
         public static BlueprintUnit FakeHellknightGlabrezuBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9056368789e3bca49a0ab6c36b5aa8df");
+        public static BlueprintUnit FakeNosorez = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("67fe6232c9fcda14687438d082085eca");
+        public static BlueprintUnit FakeShyka = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3cfe0f43556c9d049aef639df65623de");
+        public static BlueprintUnit Fake_Arusha = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c82e100c4756a0b49ae8820fbf764e16");
         public static BlueprintUnit Faxon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("973973a64d64bc645941f134ab39e478");
+        public static BlueprintUnit FiendishAnkou = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8180204b0589cfb4f9796475ec60c5ce");
         public static BlueprintUnit FilletedMan = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("df09eefd7ede4f11a6426ea20e12e496");
-        public static BlueprintUnit FrostGiantSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("590cd3d5e76fdc649a5f97bc984cd3c4");
+        public static BlueprintUnit FinneanArmourer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("96b1f7d9dc8e2a9408c45c835632d178");
+        public static BlueprintUnit FinneanGhost = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5ff14a1c3dfcaeb42ad5536dfb5cf58e");
+        public static BlueprintUnit FleshmarketGuard_Cambion17 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("117211542b3603349a3926714e5b7acb");
+        public static BlueprintUnit FleshmarketGuard_Kalavakus11 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("acfbe901c51d26649b2dfe51396759f3");
+        public static BlueprintUnit FleshmarketGuard_SuccubusCaster15 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("22c166b6b2a72f44cb27f372c8c5eebd");
+        public static BlueprintUnit FleshmarketGuard_Thanadaemon15 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("659f096b16f458e47ab413d5621c065c");
+        public static BlueprintUnit Fleshmarket_CambionGuardCaptain_WithLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("28da512049ec4b138d04ef9d94d58764");
+        public static BlueprintUnit Foreman = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7744ea05a2303074c9f083df570935e7");
+        public static BlueprintUnit Forn = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("03d4f64e65040e6489b7a4c44f3d5ebb");
+        public static BlueprintUnit FriendOfBride = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d192e1d3851854a42b71f132a86e00b5");
+        public static BlueprintUnit FriendOfGroom = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bb125ad727e883d4eb96a6f41cd91d16");
+        public static BlueprintUnit FulsomeQueen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1a618b1ebea8fa3428a792b58f304bcc");
+        public static BlueprintUnit GalfreyBodyguard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("26d761e290f2cb647a8f17b45d42fd38");
         public static BlueprintUnit GalluWorriedDemonLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4d536125764ba8640b66dedd0e9950b3");
+        public static BlueprintUnit Gardener = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("be33c04afcfabea478e20469127df4c0");
         public static BlueprintUnit GargoyleHOwling = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d964e3de61898454bbe7ce77bf5ea22b");
         public static BlueprintUnit GargoyleWindseeker = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("42523cd7f55fd174e82b4150432c9100");
+        public static BlueprintUnit GateGuard_ConflictCutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("58c960745c5e46b40a19063dc88bba91");
+        public static BlueprintUnit GateGuard_HigherToMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fe4e653a606568f448c9e15a52579ab5");
+        public static BlueprintUnit GateGuard_LowerToMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6d0c102329936fb41997a9b564892808");
+        public static BlueprintUnit GateGuard_MediumToHigher = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e38f403833a0c0c4c8ddcf624b333baf");
+        public static BlueprintUnit GateGuard_MediumToLower = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("558dc07952333e345b96ee1b65f01978");
+        public static BlueprintUnit GateGuard_NocticulaPalace = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8c2866256a319324d8c4f3dfb5f253b6");
+        public static BlueprintUnit GateGuard_ShamiraHouse = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("aaa52d56dd5b5c74e99c823c9901181c");
+        public static BlueprintUnit Gelatinous_Cube = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7046fe58a5194cfebd108f09475b5b5f");
+        public static BlueprintUnit Gelatinous_Cube_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8eacbec92d5243ceba88ada40fd57d1f");
+        public static BlueprintUnit Gelatinous_Cube_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6d6a96e3f4a6483bb7f3e9410a81ee2d");
+        public static BlueprintUnit Gelderfang = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("88ee6433a4f76e6468fcbda6eab832b3");
+        public static BlueprintUnit Ghost = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7de34fee09e2c304884a210b994a785b");
+        public static BlueprintUnit GhostEliandra = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f69c869321703764ab02edc65124a300");
+        public static BlueprintUnit GhostFigure_Lilitu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3fc5d823733af8049af7d4c2dab07ae9");
+        public static BlueprintUnit GhostHeraldNew = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("684bf4bd2f282f14a88a5dac119e7c32");
         public static BlueprintUnit GhostOracleBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5a18098c2513d6443b84c12fdbcf0e50");
+        public static BlueprintUnit GhostTargona = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("be36c1de05970e546a1fac3aa6195d51");
+        public static BlueprintUnit GhostYaniel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("852adf707a6ea0a4ca531abe5abe0f5e");
         public static BlueprintUnit GhoulCreeper3_RogueMelee_Var = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3227ac00be8e9b946a777cb193b517db");
         public static BlueprintUnit GhoulCreeper6_RogueMelee_Var = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("383998c24fc36e14a8ba32102bb9d956");
         public static BlueprintUnit GhoulCreeper_RogueMelee3_LC = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd5ea58caacd43ef991234f0db22b288");
@@ -1446,31 +1894,83 @@ namespace RandomEnemies.Units
         public static BlueprintUnit GhoulHuntmaster_RangerRanged_Var = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0c13d7486953ac4483732881c3c0d5b");
         public static BlueprintUnit GhoulStandard_Var = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("97ab46d9926e7f2479cb29f31ded742e");
         public static BlueprintUnit Ghoul_Ratimus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("665736733e29d49418ba0c1c580dbf1b");
-        public static BlueprintUnit GiantFrogSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ed9a630f0d9d7f44855d3d1d1b2cdf2");
         public static BlueprintUnit GiantSpiderBloomInfused = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4622aca7715007147b26b7fc26db3df8");
+        public static BlueprintUnit GolarionGladiator01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("427c5db001a06f247aad43752a2cb56a");
+        public static BlueprintUnit GolarionGladiatorLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a6bb4f912928c66499143f6a6e03295e");
+        public static BlueprintUnit GolarionSlave1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("31d27ca5b5f273e4ba69e602e5026888");
+        public static BlueprintUnit GolarionSlaveLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3eb900728de851e42bc70da12e724f7d");
+        public static BlueprintUnit GoldDragon_Drezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("95a3f73b04c24c5cb120712d07df6810");
         public static BlueprintUnit GolemAdamantineDestructable = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3f11d3c1f5b9994498feb367ab71a0db");
+        public static BlueprintUnit GolemGold_VendorJewelry = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("556cb5163785e0b46b3a7e72810d522e");
+        public static BlueprintUnit GolemStoneBroken = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("718a114352024fb4d89997917562964d");
         public static BlueprintUnit Gouger_CrazyMythicVavakia = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dced828e9e6b4febaf0c630264413c3b");
+        public static BlueprintUnit GrayGarrison_CrusaderWizard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2be737297aa3e9d42aae9c78ce544a76");
         public static BlueprintUnit GreaslyBearSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8684351ff2e92c44a7fafd45d4fba73");
         public static BlueprintUnit GreyborInIvorySunctumAsNPC = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3e6612063a81e6d4fbd47b4d7fc03bc9");
         public static BlueprintUnit GreyborInIvorySunctum_BowHunterNPC = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("16a6ab6467e647349b75ef4e9c67f0f7");
         public static BlueprintUnit GreyborInIvorySunctum_ClericNPC = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f9214bc8672b8e9429e4ff764a66ceae");
         public static BlueprintUnit GreyborInIvorySunctum_EldritchArcherNPC = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("02549ed3985aef346a29d870fd007a1b");
+        public static BlueprintUnit GuardInquisitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5ab3e84dd7f97c44c9e914e6b983c0d0");
         public static BlueprintUnit Hag = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b889022a8eff1aa42bcc08f05c95c4dc");
         public static BlueprintUnit Hag_Lavixia = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a6fbdb285e70aee4d9a536f8a85a70f6");
         public static BlueprintUnit Hag_Letinda = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("82139a532ade3084aaea0ad513cbc017");
         public static BlueprintUnit Hag_Loreda = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4a1dd653acf974546a9993b9103d39af");
+        public static BlueprintUnit Hal = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b6dbe5d8e07ad0b45b9656d0bdf69f22");
+        public static BlueprintUnit Halaseliax = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a9df515d1e68471abd9cfd482a8dab42");
+        public static BlueprintUnit HalDragon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7d0171c0347cff1488a81c88734bb32e");
+        public static BlueprintUnit HalfFiendDemon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a5d97293da54aa741adcaf4bea51371d");
         public static BlueprintUnit HalfFiendSalamanderWithDimensionDoor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9115cedc7a7f5154083aaf05d611c322");
-        public static BlueprintUnit HamadryadSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("32a7776fb5bb9fa408b97757c04d4247");
-        public static BlueprintUnit HellhoundSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ece348345859351439e1263115f5fdb9");
+        public static BlueprintUnit Harlan = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd39c5aa214d3b148822abc9881d0209");
+        public static BlueprintUnit Hellknight = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2ab4a0379996dc9499e72c69e6e2ce9f");
         public static BlueprintUnit HellknightCamp_GreaterShadowDemonMiniboss1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ecc06d7bbf12ef14790b22b9d7a3b192");
         public static BlueprintUnit HellknightCamp_GreaterShadowDemonMiniboss2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("52be8901d87296d4c920d2aea71f8776");
-        public static BlueprintUnit HorseSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5bb9579fdb2b26b48bb10d61c81cfdfb");
+        public static BlueprintUnit HellknightF_Sosiel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("81affcf87bda48398dc49aff2e1ed13c");
+        public static BlueprintUnit HellknightKiller_HellknightVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("493d0d3268d927c4d9f8e514ba6c0ced");
+        public static BlueprintUnit HellknightsParaliktor_Aminas = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fd7e497d06121824bbbaf8409c0478dc");
+        public static BlueprintUnit HellknightsParaliktor_Gerren = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("96353de7a78f1964382c0e7640ecac34");
+        public static BlueprintUnit HellknightsParaliktor_Lerana = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8c58af62e7e90b4281a192d7aeab3a4");
+        public static BlueprintUnit HellknightWithShadowDemonInside_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46acfb6a54f3f2a44bd3fd9b9403cd84");
+        public static BlueprintUnit Hepzamirah = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd2a925967b5f5f489f6da0b03236d03");
+        public static BlueprintUnit HepzamirahFleshmarket = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fb8b16ba0d7682f45892a6870a67ac7a");
+        public static BlueprintUnit HepzamirahGhost = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("78549b805f0a63e41805cfe3e02e2ea8");
+        public static BlueprintUnit Herald = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fff912fcbfbbc364e84ae5ea9384db89");
+        public static BlueprintUnit HeraldAngel_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3713c5439dc88aa4eb9863b1d4484bbc");
+        public static BlueprintUnit Herald_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4ea8b90496bdb0942961cd4b462ed17f");
+        public static BlueprintUnit Herraxa = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9da37b67e7b13a048a3e6a2b16def405");
+        public static BlueprintUnit HokugolDragon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0e048b23aedfb144abc5ff9127b16560");
+        public static BlueprintUnit Homunculus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("72ba4167f8956f54e8cceaf11f2caa6a");
+        public static BlueprintUnit HomunculusHorgus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5cbee1d604d187445b658aaf45dfe26f");
+        public static BlueprintUnit Horgus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c02e641bf8cf0984fb49604afa224563");
+        public static BlueprintUnit HorgusQ3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6a5defb778849de4fa4f7d9440c8e15a");
+        public static BlueprintUnit Horgus_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7e864ec57ec3fff4f861d2f62108b3c0");
+        public static BlueprintUnit Horzalah = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("38f0acf8ba7c3b64b87369d478014fda");
         public static BlueprintUnit Horzalah_AssasinElfFighterRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8d47a51b397efc843a8b95cf207b5391");
         public static BlueprintUnit Horzalah_AssasinKitsuneMagusMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4fb235855e3ea6b47b9ef1295a4f5bdb");
+        public static BlueprintUnit Horzalah_GreyborQ2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b7b3a7ce5bf8b4c49a2187e42e07a99a");
+        public static BlueprintUnit Hosilla = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("64dcc27d70edc1148b31257fcc2241ce");
+        public static BlueprintUnit Hurlun = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6b66b00927bd6184388e012358888b35");
+        public static BlueprintUnit Hurlun_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("91a49e80ba02793429d70c03547ce92f");
+        public static BlueprintUnit Hurlun_InDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("35733470f7fc4ae2bd1c874cd58118a4");
+        public static BlueprintUnit Hurlun_SilentCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("77fbcde261cd4396bba5d9fe0b2c57c6");
         public static BlueprintUnit Hydra_Markyll = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a20703088fe9c5f4eb3883d22443fb3e");
+        public static BlueprintUnit Ileks_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("423852aa6abee934aa598e17847a98d0");
         public static BlueprintUnit Imezlen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e50783fbcff9a0a46b3ecd59e250b8af");
         public static BlueprintUnit IncubusBandLair_Incubus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("078cb4b269bd2004a8302c7807c211dc");
         public static BlueprintUnit IncubusBandLair_IncubusBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cc2441ffc5564d746b3e01fc38349d3a");
+        public static BlueprintUnit IncubusSlaverLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5b323926871223c42bed02e7b45a9295");
+        public static BlueprintUnit InevitableKolyarut_Drezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("311128f5ca99cfc4cb078803cb116904");
+        public static BlueprintUnit Innkeeper = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("47c4f47934182f84f99a5aed3bb0822c");
+        public static BlueprintUnit Inquisitor_Liotr = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("80fa55aabe8f2fa4cb2ab7b97dc77bbe");
+        public static BlueprintUnit IrabethTirabade = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d1e567736abf23943b9f041ba7a0bc23");
+        public static BlueprintUnit IrabethTirabadeDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b14f909c20a130d47b907ad1a8cf4984");
+        public static BlueprintUnit IrabethTirabadeGG = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e778129f817a5fa4286e64b061df84a5");
+        public static BlueprintUnit IrabethTirabade_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("48cc2d6daf65f014781f6ea76c2565bc");
+        public static BlueprintUnit IrabethTirabade_DH_Fight = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f7d655ee1430fae40b2c0c8bf7df0d78");
+        public static BlueprintUnit IrabethTirabade_DrezenCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("280d4712dceb37f4a88e98f1f4c6e64f");
+        public static BlueprintUnit IrabethTirabade_GibberingSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("910ba83603ad7d04ab3d46bca33d8a2a");
+        public static BlueprintUnit IrabethTirabade_Iz = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9adfeebc39054544fa0f924022e43c1c");
+        public static BlueprintUnit IrabethTirabade_LostChapel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("758596d3dbc112d40aa1a2fc64991076");
+        public static BlueprintUnit Irmangaleth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0aa2c4a42b0b06f44aa87f26b9fe184b");
         public static BlueprintUnit Irmangaleths_Assassin = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("81c79b1af0f68ea4f918382a29014f2e");
         public static BlueprintUnit IvoryHardmod_WildhuntAsassin24 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d0d96afafffdaf6418cb9cb0090dc57b");
         public static BlueprintUnit IvoryLabyrinthDemodand18 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1aa9d5b5a777f5c4eb56cdf9a911d299");
@@ -1492,31 +1992,65 @@ namespace RandomEnemies.Units
         public static BlueprintUnit IvorySanctum_MythicDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bbaed5ee562c54c49aa7155f1788a684");
         public static BlueprintUnit IvorySanctum_MythicSchir = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7d8ebfd47be609b4eb1331e9f1d7b9b5");
         public static BlueprintUnit Janeamine_SuccubusMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("92f30c0a2f48fc14884539b10acbdc90");
-        public static BlueprintUnit Janeamine_SuccubusMiniboss1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("92f30c0a2f48fc14884539b10acbdc90");
+        public static BlueprintUnit JarsigaxDragon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("494569f1adac26749a98ece5f767c69f");
         public static BlueprintUnit Jarunnika = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9c187cae5890c5a41b6801d448212439");
+        public static BlueprintUnit Jernaugh = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3c22e7205cead4a4fb6506211e31e8a1");
         public static BlueprintUnit Jerribeth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("417ce3dcf3a9707488f2b9b2a790814b");
+        public static BlueprintUnit Jerribeth_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bb9fe2c12d6941a43bfd5d5090ac97b9");
         public static BlueprintUnit Jerribeth_Wintersun = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fc8d7d07d716bee4499c9d17f6c43196");
         public static BlueprintUnit Jeslyn_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ddada83b9a60a8e4fbc3bb73ac36f66e");
+        public static BlueprintUnit JorunVane_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e42ba34fb70830c46a97cf5172accccf");
+        public static BlueprintUnit JorunVane_DrezenCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("59649a004ed01994e9887f9ab8b2168d");
+        public static BlueprintUnit JorunVane_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2d1db3b8106aa974ca0cc998a1e39172");
+        public static BlueprintUnit Kaylessa = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dfa0d3a840181be4da6091bf0ca11806");
+        public static BlueprintUnit KaylessaDisguised = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a1569a0739314d04cb8af1d47dcffbe0");
         public static BlueprintUnit KenabresBurning_Necromancer_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d6301782519486e4aacdca6fa3140452");
+        public static BlueprintUnit KenabresCrusaderInjured = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c5f93cd16f6c45e4d807c69a8c35bf28");
+        public static BlueprintUnit KenabresCrusaderMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d78c902c0d4970b47945683b22a0a2e0");
+        public static BlueprintUnit KenabresCrusaderMelee2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("616721fa6b790a74bb530260d260dffa");
+        public static BlueprintUnit KenabresCrusaderRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e243f628e855ef64d8765fdc2a09308b");
+        public static BlueprintUnit KenabresCrusaderToughMelee_NabasuCutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("db2bfcea9a2900a40b51eefb10d111bd");
+        public static BlueprintUnit KenabresCrusaderToughMelee_WithReward = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5a0b2a5603ca57a4c8f2c5e87dcfe443");
         public static BlueprintUnit KenabresMansion_Abrikandilu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6de3651e1f866ad42b0b13676ab5639b");
         public static BlueprintUnit KenabresMansion_Dretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("71be6e442f8afbb4bbf6a5af6ecf4e4c");
+        public static BlueprintUnit Kerismei = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6dfe6342b488952499d486f167855df0");
+        public static BlueprintUnit Kerz = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("636c2a5398019304fb60ecd6e6979bb3");
         public static BlueprintUnit Kestoglyr = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fce8aab8dcac059448f3ba5a6c5360f5");
         public static BlueprintUnit KestoglyrBodak = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6a04d6af3da1a8d45bb491ff85823afc");
         public static BlueprintUnit Khorramzadeh = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c114bf22097668b459767f0b20c995cc");
         public static BlueprintUnit Khorramzadeh_Aeon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b1cb82e0dde84112a9792fe25e64087d");
         public static BlueprintUnit Khorramzadeh_Undead = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1aa49ee02b8643f1a9479a3dde54cdee");
         public static BlueprintUnit Kilas = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("718412f861b29fe408d228e00a0675fc");
+        public static BlueprintUnit Kobold_ForDragonKTC = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4c3b21d33e0b51548916eacde9d44a13");
         public static BlueprintUnit KrebusShadowForm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7b2511bd361eb3243b1f84d6672d1130");
+        public static BlueprintUnit KrebusSlaveTraderHumanForm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("67013765d49b47748ba0f4abfdaab1e0");
+        public static BlueprintUnit KTC_Socothbenoth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a18e11d68e527e54f85a1b3a3e3113ad");
+        public static BlueprintUnit KTC_SocothbenothDisguised = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2511fdec4d5788942b305a3f6ae22fcb");
+        public static BlueprintUnit Kyado = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3c12b36005792104f9eca34633f3b757");
+        public static BlueprintUnit Kyado_InDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4a65ade864544ab6bbf920fbe82b24b9");
+        public static BlueprintUnit Kyana = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("180b0eaa5dce387458d2ebf0ee943985");
         public static BlueprintUnit LairDevastator = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8b9a89943f3c1d144b8ce038587d8d79");
         public static BlueprintUnit Lair_CambionAlchemist = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("30b52c870e9c2884c9d5f2f433ebaecf");
         public static BlueprintUnit Lair_CultistBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("95f863740f6370d449b25650f97772f0");
+        public static BlueprintUnit Lair_SuccubusBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("26560e7831f208c41ae9d109636d4d69");
         public static BlueprintUnit Lair_SuccubusBossHelperMeleeLevel5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c6d30cfa83446d7479e6573ef52fae1c");
         public static BlueprintUnit Lair_SuccubusBossHelperMeleeLevel7WithRapier = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d4181d0128306364987f82d71e6ff06d");
         public static BlueprintUnit Lair_WightFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6a8f2c3691032244186541942e018c9d");
-        public static BlueprintUnit LeopardSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("768275c9885dd954fb3c84ba69ac4281");
-        public static BlueprintUnit LivingArmorTankSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("41338e460cea53742842f41a89cbb2b3");
+        public static BlueprintUnit LannsMama_RiaNat = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("956afa829a8b17847ad75df7fa3cf070");
+        public static BlueprintUnit Latimas = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ade0746b2629f254d82d274614335088");
+        public static BlueprintUnit LatimasDragon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("36178c58519c5584b8cdab62b2be3bfa");
+        public static BlueprintUnit Latwerk = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6e7e12e60bfe9d4419aa908c945933d0");
+        public static BlueprintUnit LatwerkAasimarGirl = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("43bce8626c633b348b0ada21a98c5526");
+        public static BlueprintUnit LatwerkAasimarGirl_Dressed = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2961a547cf57486aabea9b553eb9b520");
+        public static BlueprintUnit LatwerkNoWeapons = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b928b311f8c137d4db7bc25acdeda056");
+        public static BlueprintUnit Lauliegh = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fa5af2f98697a8f4a9ec00df95932036");
+        public static BlueprintUnit LiLura = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5fc2ff4653a81734391c52e0e4acc8c0");
+        public static BlueprintUnit LiLura_Kenabres = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d0c651f4d55440289f43497808d1b49a");
         public static BlueprintUnit LocustSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("feee47100c095054086d3ebf75c3a738");
+        public static BlueprintUnit LocustSwarm_Xantir = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e7c7b3cf7dea4a24b933a2b9a380a86f");
         public static BlueprintUnit LocustVescavorQueen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e3cbfef493c4a3f4fa2abb660ba6aad6");
+        public static BlueprintUnit Locust_Anevia_Enemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f59c696db1cb4bd9ab0acf9d0d9f596f");
+        public static BlueprintUnit Locust_ArueshalaeEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fc3277bc8f8541f795f201dbb001dfae");
         public static BlueprintUnit Locust_Cultist_KTC2_1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7eec813aacd14986b2373f5d6d71ca47");
         public static BlueprintUnit Locust_Cultist_KTC2_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ff0ac57b48c5451192344de350d1f272");
         public static BlueprintUnit Locust_Cultist_KTC2_3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("23464a096f354264a27e56359f78e8e3");
@@ -1526,45 +2060,93 @@ namespace RandomEnemies.Units
         public static BlueprintUnit Locust_Cultist_KTC5_1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4a017f7ae20841ab80d4d7d02c2acd08");
         public static BlueprintUnit Locust_Cultist_KTC5_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("649aa5c3c95a44f8a463ab5341d36a19");
         public static BlueprintUnit Locust_Cultist_KTC5_3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("56c2e481acf14322a6b9bb357bfe0e24");
+        public static BlueprintUnit Locust_EmberEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d749a7ce854d49779735166d303e8746");
+        public static BlueprintUnit Locust_Irabeth_Enemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8aaa90aa633148b4ac5f98a827b8e371");
+        public static BlueprintUnit Locust_LannEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f8ae679261f74455880ea5d2e3c8475e");
+        public static BlueprintUnit Locust_RegillEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6e312873206949c0aa8dfc2e4125e2a1");
+        public static BlueprintUnit Locust_SeelahEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("88542dca21ef4e538bfbded6cba83197");
+        public static BlueprintUnit Locust_SosielVaenicEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9971d26557034d53bfbd5a8a692ac214");
+        public static BlueprintUnit Locust_TreverEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("04e7798bb4ad42f499dd502eb8ac4341");
+        public static BlueprintUnit Logistics_Prisoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bedefe8c744446a1beb175c1f288cad4");
         public static BlueprintUnit LostChapel_GargoyleMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e779beab8b72a444f864c9ca1b01b855");
-        public static BlueprintUnit ManticoreSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7b7701ffc8f335a47a9ed97516531b71");
+        public static BlueprintUnit Malessa = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("70349d454da843f43b6989e7168c6689");
+        public static BlueprintUnit Mandragora_RamisaPet = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("55f03a47dfc16b34fb47b0d5919661ec");
         public static BlueprintUnit Marhevok = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dcecebcbaff54334e8d57cc225a9fd04");
+        public static BlueprintUnit Marhevok_cutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8f49f9bc752b4cb4598217d7d288b0d4");
         public static BlueprintUnit MarilithWirlwind_Melee_Deskari = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0c095bb87e1c9584493ce16c56527906");
-        public static BlueprintUnit MastodonSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("028cc6f46e7998f46855a33ffde89567");
+        public static BlueprintUnit Markyll = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("156594c1a6e02ff479803e37e0660944");
+        public static BlueprintUnit MaskedGhost = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("538fe487715fbc74c9d154946f8da363");
         public static BlueprintUnit Maugla = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9b0bb09c56e8e5d4c86809a5ce35d9cb");
-        public static BlueprintUnit MephitAirSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("50782bc4eb36aac4287023e20ee00808");
-        public static BlueprintUnit MephitEarthSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46779f56cab2cb0438161fec0129790d");
-        public static BlueprintUnit MephitFireSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("10a820de0a417f345866f794324205ad");
-        public static BlueprintUnit MephitWaterSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4615328295cd7e84bb2ef09d3dba8403");
+        public static BlueprintUnit Megidiah = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("62b94135bdcb10a4c923e4529e584b3c");
+        public static BlueprintUnit Megidiah_Retinue_commoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("458428c287c94938b4e92edd1b4f1a0b");
+        public static BlueprintUnit Megidiah_Retinue_commoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c74f42a5ebb845bbbcd52956a7a8a1d1");
+        public static BlueprintUnit Megidiah_Retinue_commoner3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("07c92f7ecbb04cf3b7c8e197d757d3ae");
+        public static BlueprintUnit Megidiah_Retinue_commoner4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e862c517303a4751a53a4b0d7e245ee5");
+        public static BlueprintUnit Megidiah_Retinue_commoner5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0d3360bc5d14663b0654e8154b17a63");
+        public static BlueprintUnit Melazmera = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("85c7a3fd80f93db43a3e588ba5f5f9bc");
+        public static BlueprintUnit MendevianInquisitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ce9dbb18e3ffdce46bb8c72432a3aeeb");
+        public static BlueprintUnit Mephisto = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c3dfbb136aa27e74eb7a7b5159395a80");
+        public static BlueprintUnit Mephisto_AzataIsland = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a0720bb1db4539f49acb490ff96b5760");
         public static BlueprintUnit MercenaryCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("adcbc2ff4d23d274eb8b6d47a0f82d14");
         public static BlueprintUnit MercenaryMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("00f6e955cf970cb449958bd95d3ad2b7");
         public static BlueprintUnit MercenaryRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1fbe9460fb51d9249b1d877bee8d2b9e");
+        public static BlueprintUnit Miammir_Wintersun = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8144cabc1b6ba2b4b8fd6b0f350cf903");
+        public static BlueprintUnit Miammir_WithName = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("74d9e32f98c5438494f979646a05dc03");
         public static BlueprintUnit MidnightFane_BaphometPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9b5c7222d72560544b7c18ff9f6c2595");
         public static BlueprintUnit MidnightFane_DeskariPriestess = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("958f59750bcbd314a860dcaf6ad37829");
         public static BlueprintUnit MidnightFane_GlabrezuElite = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("75fa4aaa407c3d64fbd8cfd4c221f415");
         public static BlueprintUnit MidnightFane_GlabrezuRitualists = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b8d0898ac46e4851b9613b80aea0ef04");
+        public static BlueprintUnit MidnightFane_Ileks_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("df4fccbb4ad9371409d0e747d9a951a7");
         public static BlueprintUnit MidnightFane_LabyrinthMinotaurAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d10d6cb6881b51542801cca573f4a07d");
         public static BlueprintUnit MidnightFane_LocustSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d69e6a575b8a444db9607fea588c2c80");
         public static BlueprintUnit MidnightFane_MonadicDeva = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5c5a98f8f91b9cb4dad9180988ea09d1");
         public static BlueprintUnit MidnightFane_NocticulaPriestess = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2d6fe3abc0ed7364ba48e604ae2471bd");
         public static BlueprintUnit MidnightFane_RetrieverColdForged1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5b6a2b0c6c8aa28438a4b65b3afb02c1");
         public static BlueprintUnit MidnightFane_ShadowDemonNocticula = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("786e50e95d025e8498281178fec9d182");
+        public static BlueprintUnit MidnightFane_Tall_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2c3fa5ae2b0c9e04982be3770162c733");
+        public static BlueprintUnit Mielara = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9d9c523bc2b17434bb66df212b127187");
         public static BlueprintUnit Mighty_CorruptedMongrelmanBrute = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("56e5b923077a00343927c134e3e45d69");
         public static BlueprintUnit Mighty_CorruptedMongrelmanDefencive = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0ce2144fb160bd6459870b4e6c8d3f55");
         public static BlueprintUnit Mighty_CorruptedMongrelmanRangedRanger = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a771230b15d9bac499431b8955889ced");
         public static BlueprintUnit MimicChestIron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("78037e3448ad30f4f80477fd84280216");
         public static BlueprintUnit MimicChestStandart = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6bc6f24ac5e94b24898b8ee6acc43031");
+        public static BlueprintUnit MimicOozeBed = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0133a7eb9aa521429231fbfed715390");
+        public static BlueprintUnit MimicOozeBones = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e69e48766ab1fc04aa33300cc70c704d");
+        public static BlueprintUnit MimicOozeChair = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d5588d61e0033a04997b6b09d71fdb78");
+        public static BlueprintUnit MimicOozeDoor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c4aa226aa8e07694b8424d62afc780b9");
+        public static BlueprintUnit MimicOozeHugeStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1446fd94f1f699a4e96c5dad6eaf607d");
+        public static BlueprintUnit MimicOozeJar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ffa664bc7fb5c3147987b32329130144");
+        public static BlueprintUnit MimicOozeLargeStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ffc75a2dc5cd08f4093a4898b6db3efe");
+        public static BlueprintUnit MimicOozeMediumStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46f09f7a14c1e084bb091d18ab385db6");
+        public static BlueprintUnit MimicOozePictures = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d2dab421b5a5cda479b4f2918c7ac6ea");
+        public static BlueprintUnit MimicOozeSleepingBag = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0fcd1a4641fe5c6499257307bf7491ad");
+        public static BlueprintUnit MimicOozeSmallStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a6e8b2891231a9442b9f89413f8c39fa");
+        public static BlueprintUnit MimicOozeTable = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("630082d75e77f9c43bab4d460db47fb7");
         public static BlueprintUnit Minagho = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("495b15de02d7cc74f84b4342a829bfbc");
+        public static BlueprintUnit MinaghoDemonCh3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("989249db10aceda40a4fd0ef7eb0503e");
+        public static BlueprintUnit Minagho_DrezenCitadel_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b8d11ced33308874790188d910b71a2f");
+        public static BlueprintUnit Minagho_DrezenInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("565ccab37e2475742b043ec912a750fa");
+        public static BlueprintUnit Minagho_DrezenInThePast_ForPolymorth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4f36fb17ed855214cac44a3fef47d936");
+        public static BlueprintUnit Minagho_GreyGarrison = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bbcd85f6c1762364ba48be9f72f115ae");
+        public static BlueprintUnit Minagho_LostChapel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f0e49e28bcf791a42a45615b25ce3ff6");
         public static BlueprintUnit MinotaurGhost_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1b5fc80bcedff624b805b950a2244165");
         public static BlueprintUnit MinotaurGhost_BossNoExp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0dc27a43b555014286d89493e12bc14");
-        public static BlueprintUnit MiteSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0c433dcdefcaaeb4db78b07c3ebf4c94");
+        public static BlueprintUnit MinotaurPrisonCutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("494d06094b001d0429114f168644b274");
+        public static BlueprintUnit MoltenScar_Vorimeraak = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("70993252a840e23418fe06277183e3fc");
+        public static BlueprintUnit MoltenScar_VrockElite = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("420a62420ce05e149a457fac7728ee04");
         public static BlueprintUnit MonadicDevaSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0df5585bc5189d8498280c3e67fafc59");
         public static BlueprintUnit MongrelmanMelee_Talking1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f3d64e3f08a86494bbda4618aa171598");
         public static BlueprintUnit MongrelmanMelee_Talking2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d1c03d8a1aa1e314ca8641455db42cca");
         public static BlueprintUnit MongrelmanWitch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2a0c8e1bae292fe4c99f191390b2693c");
-        public static BlueprintUnit MonitorLizardSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4109b40f6bbb49640840644cc84ada67");
+        public static BlueprintUnit Mongrel_Melee_Neutral = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4e6e7ebfc7bba1f42a5d446db30205ba");
+        public static BlueprintUnit Mongrel_Melee_Neutral2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("26049340e1c54a4eb62ec26b72a4ccf6");
+        public static BlueprintUnit Mongrel_Ranger_Neutral = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3b88cd69b2625be48812d2d454a60889");
+        public static BlueprintUnit Mongrel_Ranger_Neutral2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fa9c07be593647ceb2c8c7d007da2774");
+        public static BlueprintUnit Morevet = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c1e0e928a852576409e90ce1adfd3aaa");
+        public static BlueprintUnit Morveg = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("831bd53f03832434497f61bc68960fa9");
+        public static BlueprintUnit Morveg_ForBattle = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9b6e3c07712b06346b50a65e6ece7532");
         public static BlueprintUnit MovanicDeva01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("18e988762ec90164590373c8ff380034");
-        public static BlueprintUnit MovanicDevaSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("afe56099ff6046b40a359b7562c0424e");
+        public static BlueprintUnit MovanicDeva_DrezenCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bf84dc132c75476ab4ed9085d9834725");
         public static BlueprintUnit Mutasafen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3e42b70cc8c924845967ea6592247eff");
         public static BlueprintUnit MutasafenAssistent = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cdece5535c236994f8490d9d3d8417ed");
         public static BlueprintUnit MutasafenFourth_NoLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fce709b70edfe3c4b98cb6e842668577");
@@ -1573,134 +2155,356 @@ namespace RandomEnemies.Units
         public static BlueprintUnit MutasafenSecond = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("418a0a5e5884d344a844f9681003b93f");
         public static BlueprintUnit MutasafenThird = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2035e7e9ad02ef74685acaae890137dd");
         public static BlueprintUnit Mutasafen_MidnightFaneInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a17a7fbf4dc5ce846b4e325587a29a09");
+        public static BlueprintUnit MysteriousArusha = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2e66b3260b9881841b22b9c52fd02222");
+        public static BlueprintUnit MythicLich_KTC_Elyanka = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("68bc27eb628a7584b96e901f4b4c4071");
+        public static BlueprintUnit MythicLich_KTC_ElyankaUndead = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("64c4f281fd82811409c24f19905e18c3");
+        public static BlueprintUnit MythicLich_KTC_Septimus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("21f0115453b62dd4bb1462e19b5c09dd");
         public static BlueprintUnit MythicNightcrawlerBoss28 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ba8eb63fc432bda4ebfae95f820de6f2");
         public static BlueprintUnit NabasuStandard_MoreExp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6ff929eb7d94a0f458275580dc3688d5");
         public static BlueprintUnit Nabasu_CutsceneNoAura = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("87c0a9f099590a248a93806ae30d4f61");
         public static BlueprintUnit NamedEliteDemonCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("28c13829acc5b5b41b8c296b3ca78ce4");
         public static BlueprintUnit NamedEliteMercenaryCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("234f43b9bf983394c8ee248921cc5ba4");
-        public static BlueprintUnit NereidSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1618961b217a446459c6a91481065d2c");
+        public static BlueprintUnit Neathholm_Mongrelman02_LannQ1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0b6bf63794421f3468e8e7c2319b16a0");
+        public static BlueprintUnit Neathholm_Mongrelman03F_LannQ1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("350d2faa122b9b74b8e601056d7fed1f");
+        public static BlueprintUnit Neathholm_Mongrelman_LannQ1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8348a3fd5811bab4da7ded1af92ee5a1");
+        public static BlueprintUnit Nexus_Aasimar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("632426cab3482cc4290029d08881b3fc");
+        public static BlueprintUnit Nexus_AasimarFemale = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("afcdfb3ed826f3b41a38eb738624df6e");
+        public static BlueprintUnit Nexus_AzataSlave = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f855dd4ed052a2146ac07f4afda888ff");
         public static BlueprintUnit Nexus_CambionWithLoot_ForAssault = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f3a44470aebf4a0a8f8894d13e60e80d");
         public static BlueprintUnit Nexus_CambionWithLoot_ForAssault_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fb5de51f70aa48baae028cbd24c264a7");
+        public static BlueprintUnit Nexus_ShadowDemonGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("64287d556e104a344b97571431af0952");
+        public static BlueprintUnit Nexus_SuccubusGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b23050a848803e4429cc7cbf3204b286");
+        public static BlueprintUnit Nexus_TieflingBoy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5aaaa2529f88bd244a4ecf9153ea62a1");
+        public static BlueprintUnit Nocticula = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0cca8c841d634d84fbec2609c8db3465");
+        public static BlueprintUnit NocticulaCaptain = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b206b8f39c7155542aca9e2901acf246");
+        public static BlueprintUnit NocticulainDialog = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a362df96285749c78f549835367bb6b5");
+        public static BlueprintUnit NocticulaInDress = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9182101ebd724cad9914015acf5f58c0");
+        public static BlueprintUnit NocticulaLichCutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1e6a74b05b2f5df4e84b94c817470ad9");
+        public static BlueprintUnit Nocticula_AlushinyrraMythicDemon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ce682067f7f81084fbd00d3e57f877af");
+        public static BlueprintUnit NonameSlaveTrader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4b22429c9ca86864e94368380e4e4885");
         public static BlueprintUnit NoRespectLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cd85d333b8920ac448b400f2515dc8f5");
+        public static BlueprintUnit NPCGhostTeldon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5487d4bf75fb46238e9d3e838afac7c9");
+        public static BlueprintUnit NPCTeldon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bae0dd325c4f85d448d0311cfb910010");
         public static BlueprintUnit Nulkineth_LostChapel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("54d59e06943b6ee46b7586644813c7d9");
+        public static BlueprintUnit NuraDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("09a9d68daa84e0143b0272ee07b1730c");
+        public static BlueprintUnit NuraDrezenBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("89d073156f3ae404785a8c73b202c464");
+        public static BlueprintUnit Nurah = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c44d5c157091e7e46af1f11a4c79303d");
+        public static BlueprintUnit NurahCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f999fc37ddb225640b7f98c0a05d6948");
+        public static BlueprintUnit Nurah_GargoyleAttack = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("803639b3135c2aa4ca6af5cb34ee600d");
+        public static BlueprintUnit Nura_DrezenCitadel_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("47828d394362ccd4797f2f45f1257b8f");
+        public static BlueprintUnit Nura_GibberingSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("db24150bb4742c947b47dc90c0420700");
+        public static BlueprintUnit OldCrusader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6cdd6d3656b787b4b9dc1b48846635ba");
+        public static BlueprintUnit Opon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a002842639602cf45be0db6d4fa1d65e");
+        public static BlueprintUnit OponHuman = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5d1d6ec190446884b9606c5650defee4");
+        public static BlueprintUnit OracleServant = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11b3e85f971816f458fc55ac2fe0b108");
         public static BlueprintUnit Orengofta = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("37bcbc540ac4fc043b2bed43dfd02fb3");
         public static BlueprintUnit Othirubo_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("79cf46ea255f8294a9a599b10ff86ffd");
-        public static BlueprintUnit OwlbearSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2e9e3790f7e53ee4ab33e1e3f43c38f7");
+        public static BlueprintUnit OurTerritoryLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3b0fa0b030bea374bbb880db8069d835");
+        public static BlueprintUnit OwlcatFamiliar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("87adc262b1a34bb41a5957ea24e80f88");
+        public static BlueprintUnit PinkEye = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9ded106c8419b82499f874c9ea1c3d23");
         public static BlueprintUnit PlayfulDarknessDeathsnatcher = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a1b06220efb4f0545a870ce52fadd678");
-        public static BlueprintUnit PonySummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3f95557fc806db741b500a5735990841");
+        public static BlueprintUnit PleasureSlave = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d4759166a910a924a8c5a0a2fe967f14");
         public static BlueprintUnit PoolSuccubus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0d88d5c310fac90449bfd0714bb9f810");
+        public static BlueprintUnit PoorCultist_HellknightsCamp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4d67ffb5a2206994e8201d52414a50de");
         public static BlueprintUnit PortalStoneSpiderRingSummonedSpider = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a027b1b189e95c64a9323da021bd7a9a");
+        public static BlueprintUnit PrisonDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2f2a5ee26ae315846a26a487cf0a6acc");
+        public static BlueprintUnit Prisoner1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("945bce0143ffee642b6d16a17ebe7fc3");
+        public static BlueprintUnit Prisoner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cbe8f70e159b3b04dbb8ccc85948989f");
+        public static BlueprintUnit Prisoner3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ad4a38454f3bc6144926e7b55ee0fd91");
+        public static BlueprintUnit Prologue_KenabresCrusader_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8505af8a7ebf6c549af6f21555aabdd9");
+        public static BlueprintUnit Prologue_KenabresCrusader_FemaleLeft = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a68902c6b5c842b5af222ca58f1476bb");
+        public static BlueprintUnit Prologue_KenabresCrusader_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a23e71893cf8ab428e7ebd64b10ad27");
         public static BlueprintUnit PuluraFalls_Zombie = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0a0ab49dcddbd3b4a8f1f1fa2a27c540");
+        public static BlueprintUnit PuluraFall_Cultist_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("427f6e4b64282a44bab0f251af0481a2");
+        public static BlueprintUnit PuluraFall_Cultist_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cd56ccc0a3ba2c64890231b341a4a06c");
+        public static BlueprintUnit PuluraFall_CultLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3cbdc6933a8eda74289d44f1fbab31a9");
         public static BlueprintUnit PuluraFall_Eliandra = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e349079a648cb15448a27f9049344bf1");
+        public static BlueprintUnit PuluraFall_Guard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ee3528da757c80d4f8e68763fa676a02");
+        public static BlueprintUnit PuluraFall_GuardCouncil = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0f1800f942eaa8d4ebe2f4d78094de20");
+        public static BlueprintUnit PuluraFall_Stargazer_Female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bd0838bc7b9e1044cad61e7ddbf712dd");
+        public static BlueprintUnit PuluraFall_Stargazer_Male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("32168199d30e3a349b9f6e97fd3a5cbf");
         public static BlueprintUnit PulurasFall_WightFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0fa68e4ae340fc644b711ba9ef9fd409");
-        public static BlueprintUnit PurpleWormAdvancedSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f8d31211b81dbc74abaa10c64b8ab86d");
-        public static BlueprintUnit PurpleWormSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bf2216f48b3f4d24c9c502007649340d");
+        public static BlueprintUnit PuzzleCR12_NabasuAdvanced_RE = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("108aecce66074244a862310e8326b73d");
+        public static BlueprintUnit PuzzleCR8_ZombieLordFighterLevel6 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("778df24aec68093418f8de3fa7159670");
+        public static BlueprintUnit Puzzle_Quickwood = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8e7ac5cb55852e64980ec597d826da98");
+        public static BlueprintUnit Puzzle_TreantBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0a9d0b82a8f66154db6724c4c31abdc1");
+        public static BlueprintUnit QueenGalfrey = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("97d1c33c784100140b9fa317aef5a499");
+        public static BlueprintUnit QueenGalfreyDisguised = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a8b7f6fd39ff2974f8b5fbf944a7f735");
+        public static BlueprintUnit QueenGalfreyDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dd4cc594a29e25542bc6da2e69b9aee9");
+        public static BlueprintUnit QueenGalfrey_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ac2060f96475ca54e8238cb1d8fc20a3");
+        public static BlueprintUnit QueenGalfrey_DrezenCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8c5dcc93d68d0ed44afd43902201da40");
+        public static BlueprintUnit QueenGalfrey_LostChapel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("93f70f6a27e49c049b5e3f3fdc52ff15");
+        public static BlueprintUnit Ramien = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ba3b1c79d4681da4fb1ed03504b1bce3");
+        public static BlueprintUnit RamienCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fa415b5b75d813e45a9f0304874852ec");
+        public static BlueprintUnit Ramien_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c911dac96dfd8494bb30aa33d8069abf");
+        public static BlueprintUnit Ramien_InDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("af19e9eed9314c5daf3e8cc480d34eb6");
+        public static BlueprintUnit RamisaSlaveTrader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6bc4c816006d50a4caa8f7d01b41da28");
+        public static BlueprintUnit RandomTalkingSunrise_HellknightVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6e3333d11be14b548927b2d955b444f5");
+        public static BlueprintUnit RankUpOfficer_Diplomacy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ca2d58c5c65723945857e04fb85d30ce");
+        public static BlueprintUnit RankUpOfficer_Leadership = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7f37e4fdcbad41309637ddcbe37440e3");
+        public static BlueprintUnit RankUpOfficer_Leadership_02 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6180afe728754317bf30388c1cfa8365");
+        public static BlueprintUnit RankUpOfficer_Logistics = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8692bff6041c47a0b13158d5977f291b");
+        public static BlueprintUnit RankUpOfficer_Military = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9ded7cef54924cfc925524af02ffa63f");
         public static BlueprintUnit Ravener = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ab29498326c2cbe448aba41635eb4dd4");
         public static BlueprintUnit RavenousVescavorSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d1add298a78c9744c89c9b4f87df5316");
-        public static BlueprintUnit RedcapSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("af8bcff074b93c84b97938e486184222");
+        public static BlueprintUnit Recruit_Speaker_1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4b5e80bc78ced4c4ab3de0cff75d042f");
+        public static BlueprintUnit Recruit_Speaker_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b349f1463de447c4284d26790318cac4");
         public static BlueprintUnit RedDragon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9e8727d008bec6e47842ba13df87d939");
+        public static BlueprintUnit RedDragonWyrmling_Cutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76186cfb58941fd45aa9e5d18df17c8e");
+        public static BlueprintUnit RedDragon_Sanctum1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c4b5746d3d2511441ba18a894cecb328");
         public static BlueprintUnit RedDragon_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b01da68dab56e004f952d7ad0e83cc46");
+        public static BlueprintUnit RedPandaFamiliar = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9137f0bf6f8648f419fa62cb9a20ac51");
+        public static BlueprintUnit RegillQ2_KTC_ParaliktorAminas = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fd0c48fda3d44054b9c8ce5dfec17e19");
+        public static BlueprintUnit RegillQ2_KTC_ParaliktorGerren = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3a7e4188a5cad39419f4a6811ab9a21e");
+        public static BlueprintUnit RegillQ2_KTC_ParaliktorLerana = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("85692412c6333564b8129ce0339aceaa");
+        public static BlueprintUnit RegillQ2_KTC_Yaker = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("45ac8163546efa84c8ccea4bbb74b81a");
+        public static BlueprintUnit Regill_HellknightsCamp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8ac1d4fbfc98e0a45b537239036024cf");
         public static BlueprintUnit Regill_HellknightsVsGargoyles_GargoyleMiniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("25fab688af9122a4fa4767657299b5e4");
-        public static BlueprintUnit RocSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2d50048038473bd4e87c470c49dde59b");
+        public static BlueprintUnit ReplacementInnkeeper = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5e69b5259e513de488656e82333dd0f3");
+        public static BlueprintUnit RobedDwarf = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1b5d1e70e5c501941a5868e9e98474e8");
+        public static BlueprintUnit Rokhorn = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("25ad116e1f5008e488b13f9b968596d4");
+        public static BlueprintUnit RvaniySlaveTrader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76b021bd47a2edc42b001ad6ef5c54bc");
+        public static BlueprintUnit SailorMelee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("546a4b45c9553584593156631be7a211");
+        public static BlueprintUnit SailorRanged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f1e2ee0f8558b64439ca6d116606ef26");
+        public static BlueprintUnit SailorRangedTough = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0390cb1501e64c15bef19f83a6bbdc95");
+        public static BlueprintUnit SailorSupportCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("732eda8be5bc7c746843b18a3a8b4ae4");
         public static BlueprintUnit SarcorianWedding_WightBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e6ace72105be4a73bd262be313c21ffb");
         public static BlueprintUnit SarkorianWedding_FallenBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d2e3f09a6b7a4e50b01f5e9921f2d7db");
+        public static BlueprintUnit SarzaksisSlaverTrader_Gibrileth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("95c84a60d369b2b43abc0fe13f076d8a");
+        public static BlueprintUnit SarzaksisTranslatorTiefling = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("02af0f9bc80a67446b87541f60ee61fc");
+        public static BlueprintUnit ScarredElf = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c8a7bbc7a29c5ff48b46473f735e6dce");
+        public static BlueprintUnit Seilkind = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("855f159c3ebc258489527dc82beb2f91");
+        public static BlueprintUnit ServantF = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("719b9a82156f2624795212e61f038e8c");
+        public static BlueprintUnit ServantM = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a2dab12808ecf004582fd103bed8c73c");
+        public static BlueprintUnit SetrayDevimai = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c2c704d1c5a52704f86fcb32626c68a3");
+        public static BlueprintUnit SetrayDevimaiHuman = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("38d752dfd9a8165409e065d0daaff538");
         public static BlueprintUnit Sevalros = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2a92b59985484743928fa4bc26efed4b");
         public static BlueprintUnit Shadowcaster_DamageFullCaster_Deskari = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("82f73ecc816e7d544ac0d24728872b6b");
-        public static BlueprintUnit SmilodonSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("beae4985629a6f64eb98081e3171e4c1");
+        public static BlueprintUnit Shamira = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("66e12264eaf6bf74196e20a9d7619cd2");
+        public static BlueprintUnit ShamiraAlushinyrra = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6b2da4c5fc0ced447a7a6ceec15b8b6b");
+        public static BlueprintUnit ShamiraMythic = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ae66d9252d56497e928808fa8c22effd");
+        public static BlueprintUnit ShaxahVendor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5898048aee2488247a1ae80c80f85a64");
+        public static BlueprintUnit Shyka = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a82e5dd56f6d2a647aaca81bbc92b402");
+        public static BlueprintUnit SilkShadow = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ed241b118ae315c4daafca4973d62675");
+        public static BlueprintUnit SirAllfrey = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("188524c2ff2dee749909a59e98e41b1c");
+        public static BlueprintUnit SirAllfreySquire1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f1c7f8ed5fb67ca4b986d714fc1b7954");
+        public static BlueprintUnit SirAllfreySquire2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0309cb4973ac0a74fbe2a155cb6e8a87");
+        public static BlueprintUnit SkilledGladiator01 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8bdeb32f24642145b194845507dbe2f");
+        public static BlueprintUnit SkilledGladiatorLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("42bc21d0b2a98f448a7da0caef3a3490");
+        public static BlueprintUnit SkilledGladiatorSlave = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("562dce00f87bbeb43b0c8b29eb073caa");
+        public static BlueprintUnit SkilledGladiatorSlaveLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("574be43ab08136b40945fcec15b4ac6a");
+        public static BlueprintUnit SlaveHorgus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5705246404df6f943b39765a69f0dad1");
+        public static BlueprintUnit Socothbenoth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("dcd200c627536c449bc8258eada65c9f");
         public static BlueprintUnit SocothbenothEnemy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d3da9ec08e08492fae63f04713b502ae");
         public static BlueprintUnit SosielQ2_ShadowGreater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b1414f7f2370b2c468c5e892c458c84a");
+        public static BlueprintUnit Sosiel_Q2_Deserter_Dwarf = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("62e55215662b0ed4c8b3d0a06a0d5e86");
+        public static BlueprintUnit Sosiel_Q2_Deserter_HalfElf = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("38bbaa83d1af67841a31764955ff41a4");
+        public static BlueprintUnit Sosiel_Q2_Deserter_Impostor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5cd203827ba68fc4e8d4d6352bc29248");
         public static BlueprintUnit Sosiel_Q2_PurpleWormBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6f01354cb3a0c8f459c35668cf888643");
-        public static BlueprintUnit SoulEaterSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1832be68f9814254dbbdab6df7fd5d0b");
         public static BlueprintUnit SoulsCloakAstradaemonSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("38945f1cff10aa7498c3071e95f4ce20");
         public static BlueprintUnit SpecialSummonedDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c235a7916ad648041abb831f9ce3133b");
-        public static BlueprintUnit SpiderSwarmSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f2327e24765fb6342975b6216bfb307b");
+        public static BlueprintUnit StatueGolfrey = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fc1f10be0d9dcfb4a8de852f2f0ef59a");
+        public static BlueprintUnit StatueHerald = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("324b1578b3a51fa4c94a49e5208d4e0d");
+        public static BlueprintUnit StatueLariel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("528a9832c7c0cd441a971c8bc72f0a13");
+        public static BlueprintUnit StatueTargona = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("572e372ca9455b341bd4420b7024313b");
+        public static BlueprintUnit StatueYaniel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("28e9210642606c341be5d51b7adbf799");
+        public static BlueprintUnit StatueZacarius = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f9d38848fcb7f9f498494ab6caff7ee7");
+        public static BlueprintUnit StauntonVane = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3425924a5b6a20b4f9e95d7e9fa3ccff");
+        public static BlueprintUnit StauntonVane_Boss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("88f8535a8db0154488d5e72d74e0e466");
+        public static BlueprintUnit StauntonVane_DH = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("131e2db0ea0d59140af827764dfd5443");
+        public static BlueprintUnit StauntonVane_DrezenCapital = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("42af09d994c89b645a20925a446b1f37");
+        public static BlueprintUnit StauntonVane_DrezenInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11f6608018930784cbe51fe36607bdc6");
+        public static BlueprintUnit StauntonVane_GG = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("34d714bc5f83e9a45810f1c73f172755");
+        public static BlueprintUnit StauntonVane_GG_Duel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8349367760344cae9dc04b2222bb75a5");
+        public static BlueprintUnit StauntonVane_LostChapel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c41157e55a9ee9e43b550977947fbb53");
+        public static BlueprintUnit StauntonVane_Undead = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("85ab07705fa0ec247aa26d1f1d9c2a83");
         public static BlueprintUnit StewardOfTheSkein = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("11be6e16daa400e49a70590e91ded967");
+        public static BlueprintUnit StitchAlushinyrra = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("32d67be47b8ab9a41a513d20e7fbb284");
+        public static BlueprintUnit StitchHalflingVIsionByAreelu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2c7904cebf9b90547ad99949c36ac803");
+        public static BlueprintUnit SuccubusCasterGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("17bf82175260f3e4e8c3b844e208c7d1");
         public static BlueprintUnit SummonCR3LocustSwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("43f21866042316a4bb539e9984803d30");
-        public static BlueprintUnit SummonedAirElementalElder = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("33bb90ffd13c87b4c8e45d920313752a");
-        public static BlueprintUnit SummonedAirElementalElderInfested = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("96aa2542f4fd17d4f901f2379e723fd4");
-        public static BlueprintUnit SummonedAirElementalGreater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e770cfbb96b528c4db258d7d03fe6533");
-        public static BlueprintUnit SummonedAirElementalHuge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2e24256e459468743b91fbb9aa85e1ab");
-        public static BlueprintUnit SummonedAirElementalLarge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3764b43791a00e1468257adbca43ce9b");
-        public static BlueprintUnit SummonedAirElementalMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("676f8b7d0a170674cb6e504e0e30b4f0");
-        public static BlueprintUnit SummonedAirElementalSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("04944455200bc224d955a8e9bbd64f3f");
         public static BlueprintUnit SummonedAstralDeva = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b9489ec6297a43dbb5b84d73b0ea7ee0");
-        public static BlueprintUnit SummonedEarthElementalElder = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6b4cb9b6116f2194192e1e7e379c48d7");
-        public static BlueprintUnit SummonedEarthElementalGreater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cda7013db24f4c547b79bfc5c617066b");
-        public static BlueprintUnit SummonedEarthElementalHuge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3b86a449e7264174eaccef9b8f02fe20");
-        public static BlueprintUnit SummonedEarthElementalLarge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d3d9ab560534bd948b10ac00abbff083");
-        public static BlueprintUnit SummonedEarthElementalMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("812c9a0348e004242ba4e46efa91e38e");
-        public static BlueprintUnit SummonedEarthElementalSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("651600a51edd20141adb67696986c582");
-        public static BlueprintUnit SummonedFireElementalElder = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ea0f0bbc6e5e471428d535501b21eb26");
-        public static BlueprintUnit SummonedFireElementalGreater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b0b4091bdaebb464e903857a95189dea");
-        public static BlueprintUnit SummonedFireElementalHuge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("640fb7efb7c916945837bbcab995267e");
-        public static BlueprintUnit SummonedFireElementalLarge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ba5026596b06b204eb2efed2b411c5b9");
-        public static BlueprintUnit SummonedFireElementalMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a0ab0c31b1a92554291a82e598f39ba4");
-        public static BlueprintUnit SummonedFireElementalSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("46cede83b1f34ad4fa46b8776e352b02");
+        public static BlueprintUnit SummonedCrusaderDrezen = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e6d08b70acc7bf04c9eac7db452efcba");
+        public static BlueprintUnit SummonedCrusaderDrezenLeftHanded = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e3862f8f01298f240b171e50f2d4302c");
         public static BlueprintUnit SummonedNightcrawler = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5ff5ed03b92b408d87fe7e2c255dce42");
+        public static BlueprintUnit SummonedNightcrawler_Lich = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2158490973a84fe38291089163cb4fa4");
         public static BlueprintUnit SummonedRavener = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4aee3aa342404ad089f73998e02322f9");
-        public static BlueprintUnit SummonedSkeletonChampion = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("53e228ba7fe18104c93dc4b7294a1b30");
-        public static BlueprintUnit SummonedWaterElementalElder = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3bd31a0b4d800f04a8c5b7b1a6d7061e");
-        public static BlueprintUnit SummonedWaterElementalGreater = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fcc939e3acf355b458ddf9617d8c6c28");
-        public static BlueprintUnit SummonedWaterElementalHuge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("877c154a296ee8e45be1a00668319923");
-        public static BlueprintUnit SummonedWaterElementalLarge = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("680b5b61c80af664daec46af7644486c");
-        public static BlueprintUnit SummonedWaterElementalMedium = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("62a3e860e6e72e6499c38bb8b2fe303e");
-        public static BlueprintUnit SummonedWaterElementalSmall = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("56372b0a2749c224392a5ee74105c534");
         public static BlueprintUnit Summoned_CR20_ErinyesDevilAbrogailGuard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76ed98adcf7d4867b784eaa352d4fd0b");
+        public static BlueprintUnit SunrisePriest_HellknightVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("eeda9325fb77bca46836bb4dc6a892cd");
         public static BlueprintUnit Svendack22 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ff209ea8efdcd6b4f861cabf5c87ad4f");
         public static BlueprintUnit Svendack22_WithTiara = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("67ff020f1aa54a668063b60ae391bd2e");
+        public static BlueprintUnit SvendackVision = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5482c7b505a712a45a254252359582a8");
+        public static BlueprintUnit SW_Camelia_Crusader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("29d2bd65b06527d41bc172c155023091");
+        public static BlueprintUnit SW_Ember_Child = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("458442c12c383014dbbff0acdd7062d0");
+        public static BlueprintUnit SW_Ember_ChildM = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("19fe4cdd075444a46afd501e17d029dd");
         public static BlueprintUnit SW_GlabrezuBoss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2433f902e6d443e2a6010de9e4227e9e");
         public static BlueprintUnit SW_GlabrezuBoss_phase2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6249608286e547f98c548cf5747ac646");
+        public static BlueprintUnit SW_Greybor_Daughter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cad4b3fdc5a6d7947aae07f52e36aa31");
+        public static BlueprintUnit SW_Lann_Sailor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c561b4731467a3447861527ce11903d5");
+        public static BlueprintUnit SW_Nenio_Gnome = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0c2024c242a0050409db3d90cdaf4ee7");
+        public static BlueprintUnit SW_Seelah_Akemi = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("19fab713ca6fdae4283a42ca2b711f46");
+        public static BlueprintUnit SW_Sosiel_Trever = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0573bc0298410ac42918c96c9ce7a248");
+        public static BlueprintUnit Tall_DesnaPriest1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("88abbf723f2c5ae489528cdee2b6790d");
+        public static BlueprintUnit Tall_DesnaPriest = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fef6f4fff5796a2499fc57d298c7d1f1");
         public static BlueprintUnit TamplierLeader_Cage = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6fdbf9abc9abab6478da7d6ad35ece02");
         public static BlueprintUnit TamplierLeutenant_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("82f4694565c46e542962a2d3f2dbb5fb");
         public static BlueprintUnit TamplierTalker_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6e3156147972ce14ba8ba3ce5eebcba6");
         public static BlueprintUnit TavernDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ff32a6d98d42acb4aa9d7ac25c761aba");
+        public static BlueprintUnit TeaSuccubus_HellknightsCamp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cdb762c3f65fe604eb001f19d04a27af");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR11_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6dbab5bb74b84f18892d1450a0f29357");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR11_Cultist_Baphomet_MeleeFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7346ddb366014ebb97cb70c641bf4c55");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR12_Cultist_Baphomet_RangedFighter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("40897bc8ea91433ba1e09ef10a4bac2c");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR1_Cultist_Baphomet_Melee = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5042d16fa6bc42e48c57522839e0fa22");
+        public static BlueprintUnit TemplarOfIvoryLabyrinth_CR3_Cultist_ArcherHuman_Baphomet_2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4a98d4084dae4cc182d3e023c1c1167f");
+        public static BlueprintUnit TemplarOfIvoryLabyrinth_CR3_Cultist_ArcherHuman_Baphomet_3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fcbcfa138b934bfa8006f84f4f003540");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR3_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ad96fb0603854074bd5389c93350f94c");
+        public static BlueprintUnit TemplarOfIvoryLabyrinth_CR3_Cultist_Wizard_Baphomet_3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("886900f18cb745fe8ab49630dbd26448");
+        public static BlueprintUnit TemplarOfIvoryLabyrinth_CR4_Cultist_Baphomet_4 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9710003c7e314ab8914cebc7463572fc");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR4_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("93ef438371d54b2a9702b06e56617ecc");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR6_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2e92674265924a9297f01842e3e7b1e3");
         public static BlueprintUnit TemplarOfIvoryLabyrinth_CR8_Cultist_Baphomet_MeleeCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("00d2c22cffbe405097820a607aa18695");
         public static BlueprintUnit TempleDretch = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("830ebf3f17e64bc4cb9b15b9470e4f49");
-        public static BlueprintUnit ThanadaemonSoulsCloakSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bb32be1a89a7f874c9cada150602dda7");
-        public static BlueprintUnit ThanadaemonSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e287515e761bb1a48a61e1bbcb3527b1");
+        public static BlueprintUnit TerendelevHuman = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9e8401e7703907e4d94189d5992dd13e");
+        public static BlueprintUnit TerendelevHuman_SilentCaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("045e2ea911644fa0abaa2f6c76b83feb");
+        public static BlueprintUnit Theatre_CyclopActor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f98267b65b0947448aad491751df5fe5");
+        public static BlueprintUnit Theatre_Director = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("55b4e5098852edf479e840edb1a55e46");
+        public static BlueprintUnit Theatre_GnomeTwin1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5eb5b47aebaaf3347a146c5cd3a45e3d");
+        public static BlueprintUnit Theatre_GnomeTwin2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5a435fc325cd43e4aa021ac85faca82a");
+        public static BlueprintUnit Theatre_GnomeTwins = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("fb4fba8b2e774d09b96d5ef9af7322f7");
+        public static BlueprintUnit Theatre_HalfElfDancer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a4d8636447a8eb44aba94c5b8f1b06cc");
+        public static BlueprintUnit Theatre_HalfElfDancerFullplate = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5fb16c444348ab948b52438909dceada");
+        public static BlueprintUnit Theatre_HalfOrcActress = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("687a4da0a1c5c414598a970734983a5a");
+        public static BlueprintUnit Theatre_Soundguy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("73c43b631cf694747a4c4e5120316249");
+        public static BlueprintUnit ThiefCurl_Kenabres = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3261e72adb064614fb262eaf3fb1b79c");
+        public static BlueprintUnit Thiefling = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("49e3fdc792134314cac7d2831f258eba");
+        public static BlueprintUnit Thiefling1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8df18f425a2239c4a942fd687c5e404b");
+        public static BlueprintUnit Thiefling2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2081d288ffa78c84499099c80a6730bd");
+        public static BlueprintUnit Thiefling3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4766bf07b15f15643ad2628835fca068");
+        public static BlueprintUnit Thiefling_RogueCustomer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8adb2016319f414bbe43c535f0676951");
+        public static BlueprintUnit Thiefling_RogueStrongBouncer = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("490f0b3f0efb473c82fa0aa5bc9ab355");
+        public static BlueprintUnit ThresholdSoldier = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0503cec4d94346709158a294ab718c9a");
+        public static BlueprintUnit Thug1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ff9670a12802da241b1d89fcdca5d8f1");
+        public static BlueprintUnit Thug2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("30d8fe024a82a7141b9e9a0f9ee5e095");
+        public static BlueprintUnit Thug3 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("de72e4195f61803408da278c39d6d0bb");
+        public static BlueprintUnit Tiefling_Crusader_Imposter = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("aeb5b79bef3faf1458087d2a05d7e015");
+        public static BlueprintUnit Tiefling_Dalna = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5bbbadefc0fc3fb4493c063761d53e51");
+        public static BlueprintUnit Tiefling_Doffie = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2a98743c606137b44ad6b04d4c12dfe4");
+        public static BlueprintUnit Tiefling_Merloun_armed = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("35286e8a430c6d7498cd44654e7a0e3e");
+        public static BlueprintUnit Tiefling_Merloun_traitor = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a9ea55b9a03ebd44b0f5feed8eed2cf");
+        public static BlueprintUnit Tiefling_RogueStrongTrader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d5b26860e6ce4714b2988d34c9dc6710");
+        public static BlueprintUnit Tiefling_Tavie = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ad8229b254d47cd4babc941d2df52d18");
+        public static BlueprintUnit Tiefling_Varnir = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ccdb3f60191ecf04ab90d329dcce50c2");
+        public static BlueprintUnit TigerOfSin = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("87cc4d3581f523e47aa4b635283775b2");
+        public static BlueprintUnit TigerOfSin1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d63137d6e07e4de18a3de16a00517e8d");
+        public static BlueprintUnit TigerOfSin2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cc75727d4f1848809be18ec3c393ab29");
+        public static BlueprintUnit Tomaz = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1a2b7bbb8f84ca24e80afdabd3946d20");
         public static BlueprintUnit Torlek = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ac21353ba2c4976408a669883b0d63b8");
         public static BlueprintUnit ToughMinaghoCambion = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a974bc51eaf3ae04287c174c5404d2b4");
+        public static BlueprintUnit Trader_Neathholm_LannQ1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5ee35371e1347d4498b0867f2d8f4121");
         public static BlueprintUnit TraitorCrusaderSupport = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3a7aca03c09139a4aba80c6a38b24d95");
-        public static BlueprintUnit TreantSummoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1a4b042c3209f0f4991f407cd49b96ee");
+        public static BlueprintUnit TraitorCrusaderSupportDemonCh3_Prisoner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("606ccb1046579c140913f8236f45c943");
+        public static BlueprintUnit Tran = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c35607fd0f8064f42b4d71f7eb50e96c");
+        public static BlueprintUnit TTD_BabauPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f3807cfda13f6c640bd903fa9d0bac6a");
+        public static BlueprintUnit TTD_ColoxusPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("997595680918dfc44bbbfc89a12eb230");
+        public static BlueprintUnit TTD_DemodandPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7678a579f19fb4c4eb431efb5b243ce6");
+        public static BlueprintUnit TTD_Fey = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("24f0a4b1e4da34b4fa0285175daf5b50");
+        public static BlueprintUnit TTD_GhoulPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6b5bed16194fb8d4a8f09b05f7b24130");
+        public static BlueprintUnit TTD_GibrilethPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e8535371dab989f4f9e68afedf4d3a97");
+        public static BlueprintUnit TTD_GlabrezuPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("13b16f9b391cfff488539061d6925043");
+        public static BlueprintUnit TTD_Incubus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b3d977e0f6a6461458c6407df020ce45");
+        public static BlueprintUnit TTD_Succubus1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f5e85f328e822c64686add79014d0616");
+        public static BlueprintUnit TTD_Succubus2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("98ee09f7378a93542ab8ec41223f2cb2");
+        public static BlueprintUnit TTD_SuccubusSinner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c3142a543ce2be74b8cd64656d79d03b");
+        public static BlueprintUnit TTD_SuccubusSinner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("92906177191e43f9bef44ec0d265522c");
+        public static BlueprintUnit TTD_VrolikaiPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d4331534554bbe449a2b4e4a95d9fa15");
         public static BlueprintUnit TutorialTestAbilityDamage = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e6a197c9ff28afc4389e5112007271d4");
         public static BlueprintUnit TutorialTestISpellResistance = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("03c31b70bd5ebfb478efb36460803f6e");
         public static BlueprintUnit TutorialTestISwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a33ef2cb27957e4bb20543683cade50");
         public static BlueprintUnit UffrandirLinnorm22 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4015eb0cbb361a04a968885d807ea820");
+        public static BlueprintUnit UndeadKingAlberie = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e5caa5b83dc2fdf49ada60b93fcba66b");
         public static BlueprintUnit UnhallowedBodakRogue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("417b08395754c1c4ba9d910dddb40655");
+        public static BlueprintUnit UrgathoaPatrols_Cleric = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("93328816be218484ca2315e9b17efc5e");
+        public static BlueprintUnit UrgathoaPatrols_SkeletalChampion = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c4fc1137d8e73954494cd7a79863dc6e");
         public static BlueprintUnit VampireBandLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("85d5adb077fb5fe4aba31587df2bfe14");
+        public static BlueprintUnit VampirePatrols_VampireSpawn = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0e818a19bc276524fb23e2c52bf26313");
+        public static BlueprintUnit VaultDweller_female = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c4d5d7615cfc137418ff0ee4d123e805");
+        public static BlueprintUnit VaultDweller_male = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a47f35770c71ce34ab4c08ade075fb5f");
         public static BlueprintUnit VavakiaAdvanced_Tazgarodd = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8fd6430d3a8c92142a4d9e5c65f86135");
+        public static BlueprintUnit Vavakia_Ruksa = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a619a43fa3302bf40a9bd978b631ab7b");
+        public static BlueprintUnit Velhm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f9c01a9515cd1f347800685ddbfbcc41");
+        public static BlueprintUnit VellexiaFirstDate = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("eaa50c021f75d7f45a17534ea2f94985");
+        public static BlueprintUnit VellexiaSecondDate = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6c232576d377ff145b1c2c1cb9500824");
+        public static BlueprintUnit VellexiaShamiraConfrontationDate = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("22fdc3d7aa2a61c40b9b099b8f84419b");
         public static BlueprintUnit Vellexia_CambionToughMelee_WithLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("40e5f14437d74763a3c51ef7988c6bc5");
+        public static BlueprintUnit Vellexia_Default = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a32a07903e428d34cb0e98a804d40569");
         public static BlueprintUnit VeryOptionalGlabrezu_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7a5501ce11c3a2f4d8a99e2c71476eee");
+        public static BlueprintUnit VescavorSwarmPassive = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("204a57cdfd30fdc4da930a05f87b5a0b");
+        public static BlueprintUnit Villodus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8362463e9ec87a54bbcc276a3007a253");
         public static BlueprintUnit Voetiel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d75ee7e088ea2d64b8b602e2e59ad6a5");
+        public static BlueprintUnit Vollard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ae1ec8b0857d0c4797f11dacd0da269");
+        public static BlueprintUnit VorimeraakReturns = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("566b531dd9fa7704aa28c89322bc866f");
         public static BlueprintUnit VrockWithLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3b04ec39b448ed547990b39342e1e05a");
+        public static BlueprintUnit Vrock_Coronation = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("66fafda286fc4143a0883dc7a9357a9e");
+        public static BlueprintUnit WarCamp_Quartermaster = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1e8d2770a79db2242a90d75df2d5a260");
+        public static BlueprintUnit WeddingBeast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a782e4e97f4153b4084ef5d4d5c7222e");
         public static BlueprintUnit WildHunt_ArcherSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5333ac43535e27b4bb4cd13ebff95faf");
+        public static BlueprintUnit WildHunt_Atselm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a02bfe7ffc4f47f47ab9597dc7788c3e");
+        public static BlueprintUnit WildHunt_AtselmOld = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4dd77815df66a2f479271309de041423");
+        public static BlueprintUnit WildHunt_AtselmYoung = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0fc3c2d69c6f67c4d9581917fd72ee2a");
         public static BlueprintUnit WintersunBear = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cca3387e88317974da2c37693cd7591a");
         public static BlueprintUnit WintersunDerakniAdvanced = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("5ece6c29406ee1247864f8586a2e292b");
         public static BlueprintUnit WintersunGlabrezu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("9bf9e607b8851034083f519a0ea75366");
+        public static BlueprintUnit WintersunIncubusTrader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c36a4eb2bcf976e4892eaffb61493a94");
         public static BlueprintUnit WintersunSiabrae = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("91e65b4320ecd7a4eb4d06e63bfb846a");
         public static BlueprintUnit WintersunWhiteDragon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("68fc75dad58dc8a499d6c3fb11ed5915");
-        public static BlueprintUnit WolfSummon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("76597216769b0d540aafafa07edf0cec");
+        public static BlueprintUnit WizardArcaneBomberAlchemist = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("050d9b68974c483185b6c4b00cd0e5ac");
+        public static BlueprintUnit Wizard_Crusader_DH_FlamingLance = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3bb1930e115be2b45a9bcd063977af5d");
+        public static BlueprintUnit Wizard_Crusader_SavedFlamingLance = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b28cd26ad5d99004e9cb23478fa01d32");
+        public static BlueprintUnit WoljifKid = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4c1bb837077dc4441af989d22e142ea0");
         public static BlueprintUnit Woljif_copy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c4ba63c776289fd41813836f8db51a32");
         public static BlueprintUnit WorthyOpponentLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d863c26aaeafaa541837d281f53b73e4");
+        public static BlueprintUnit WoundedHellknight_HellknightsVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1d91e805e95860d4a8415cc7cab263a4");
+        public static BlueprintUnit WoundedPeasant1 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("08dd814a6f10307488f4f9ad8d1838d4");
+        public static BlueprintUnit WoundedPeasant2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("abc5e6b2b18ad7d4db8e745eb5543f73");
         public static BlueprintUnit WoundWormsLair_BlackDragon = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c540d81c08822c14da75761493427e4c");
         public static BlueprintUnit WrongPlaceLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3cce142f8fd17f040867f16f735e6239");
+        public static BlueprintUnit WrongPlaceVrolikai = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8e34ec1fd8407604fb08b2d4a05ec1cf");
+        public static BlueprintUnit Xantir = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("082edd80ca45af84ab602fbe06e53f55");
         public static BlueprintUnit XantirLeutenant_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("594ad8559b298124cbbb256b99a6f26f");
         public static BlueprintUnit XantirOnlySwarm_MidnightFaneInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("67342b2d24310334cb5ac0ce30327d9b");
+        public static BlueprintUnit XantirWithoutSwarm_MidnightFaneInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a44bf782e3a95194493874cf122c4f99");
+        public static BlueprintUnit Xantir_Cutscene = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("35823eb36532246428e12e89baf4a864");
+        public static BlueprintUnit Xantir_MidnightFane = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("380ca81a299c8f54aacadb27d7bf316c");
+        public static BlueprintUnit Xantir_MidnightFaneInThePast = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e79a4f8acef85bb4291c31ef4f809ccc");
+        public static BlueprintUnit Xantir_SecondStage = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("ebb25e735729b01499186951560eb2aa");
+        public static BlueprintUnit Xorges = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("371dd87d609290c49b3feccb862c88be");
         public static BlueprintUnit Xuneki = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("324272e2671c25446b7c3e49b78c29ec");
+        public static BlueprintUnit YakerAnkelli_Hellknight = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("74002884024f5fe45afd8c99d962b671");
+        public static BlueprintUnit YakerWithTorch_HellknightVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("f79a0641d61ac714fb9142030d023bfc");
+        public static BlueprintUnit Yaker_HellknightsCamp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e24d6b2cbcb73ec4481b1365abcc5f88");
+        public static BlueprintUnit Yaker_HellknightVsGargoyles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1250edc804a3d904db28ea4db5893eab");
+        public static BlueprintUnit Yaker_WarCamp = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c58d89bbe1c7a5542b5e3204f1f4344b");
         public static BlueprintUnit Yaniel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d914111e83e44194db99ab91d8c04632");
         public static BlueprintUnit Yaniel_DrezenCitadelLevel2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("6774bfa8c17aa6f4f88129b1451d6a4c");
+        public static BlueprintUnit Ygefeles = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("aedf061b223b6d54e8ffae6175515b29");
+        public static BlueprintUnit Ygefeles_OldWoman = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("3c9dc518e41df79439b324c89449f69e");
+        public static BlueprintUnit Ygefeles_Player = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2efc5ced5c6d02c4797fe22a01dbf884");
         public static BlueprintUnit YouOnlyMortalsLeader = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c33ea06b234767e4483d546e16bf6fd3");
         public static BlueprintUnit YouOnlyMortalsLeader_Ecorche = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("2603ca4578a04e95accc0e7829e94eef");
+        public static BlueprintUnit Yozz = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("59e13b5f3020b5e4aa05e4bf7bde18ad");
+        public static BlueprintUnit YozzWithPolymorph = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8996217a7ae3d2344948eedca14bb34c");
         public static BlueprintUnit Zacharius = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e006d3f1b8e45ec4587358aa941409b7");
+        public static BlueprintUnit Zacharius_LostChapel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d67527d9c2246734baffc69808d40b01");
         public static BlueprintUnit Zacharius_SecondStage_Ch5 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("b1c89ced808048c1b9d7e328112ab067");
         public static BlueprintUnit Zacharius_Ziggurat = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("babbc46e076b78f408d8d87643daea3e");
+        public static BlueprintUnit Zanedra = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cb53c28684a263e4ab7306654e4045dc");
+        public static BlueprintUnit Zanedra_Sanctum = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("34c3e14d08f2ff4448b745761cbb846f");
+        public static BlueprintUnit Zeklex = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c09a0061a54a9b141ba3099f709fe13f");
+        public static BlueprintUnit Zerieks = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("79674c8c4286cd7498c7bb33fd8dca31");
+        public static BlueprintUnit Zermangaleth = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1e0fe10b0fcba114abab81e1e9a9abec");
+        public static BlueprintUnit Ziforian = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a497dbc6a97c0f45a6d0fa4a100ff53");
+        public static BlueprintUnit Ziforian_normal = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7ef2998dbeb7fda43a47ce842f4d142d");
+
 
 
         public static List<BlueprintUnit> AnimalList = new List<BlueprintUnit>()
@@ -1708,8 +2512,6 @@ namespace RandomEnemies.Units
             ArmyLocustSwarmStandard,
             ArmySpiderSwarmStandard,
             ArmyVescavorSwarmStandard,
-            AxiomiteSummoned,
-            BogeymanSummoned,
             BuletteSummonedInfested,
             CR0_25_GiantCentipedeRanged_NoPoison,
             CR0_25_GiantCentipedeStandard_NoPoison,
@@ -1858,37 +2660,15 @@ namespace RandomEnemies.Units
             CR9_RocStandard,
             CR9_SmilodonAdvanced,
             CR9_TriceratopsAdvanced,
-            DireBoarSummoned,
-            DireWolfSummon,
-            DogSummoned,
             GiantSpiderBloomInfused,
-            GreaslyBearSummon,
-            HamadryadSummon,
-            HellhoundSummoned,
-            HorseSummoned,
-            LeopardSummoned,
-            LivingArmorTankSummoned,
             LocustSwarm,
-            ManticoreSummoned,
-            MastodonSummon,
             MidnightFane_RetrieverColdForged1,
-            MonitorLizardSummoned,
-            NereidSummoned,
-            OwlbearSummoned,
-            PonySummoned,
             PortalStoneSpiderRingSummonedSpider,
-            PurpleWormAdvancedSummoned,
-            PurpleWormSummoned,
-            RedcapSummoned,
-            RocSummoned,
-            SmilodonSummoned,
-            SoulEaterSummoned,
             SummonedAstralDeva,
             SummonedNightcrawler,
             SummonedRavener,
             TutorialTestISwarm,
             WintersunBear,
-            WolfSummon,
         };
 
         public static List<BlueprintUnit> ElementalList = new List<BlueprintUnit>()
@@ -1901,7 +2681,6 @@ namespace RandomEnemies.Units
             CR10_FiendishWaterElementalGreat,
             CR10_FiendishWaterElementalGreat_RE,
             CR11_AirElementalElder,
-            CR11_BeerElementalElderSummon,
             CR11_EarthElementalElder,
             CR11_FireElementalElder,
             CR11_WaterElementalElder,
@@ -1922,7 +2701,6 @@ namespace RandomEnemies.Units
             CR17_FiendishEarthElementalEnhanced,
             CR17_FiendishEarthElementalEnhanced_RE,
             CR1_AirElementalSmall,
-            CR1_BeerElementalSmallSummon,
             CR1_EarthElementalSmall,
             CR1_EarthElementalSmall_RE,
             CR1_FireElementalSmall,
@@ -1930,7 +2708,6 @@ namespace RandomEnemies.Units
             CR1_WaterElementalSmall,
             CR1_WaterElementalSmall_RE,
             CR3_AirElementalMedium,
-            CR3_BeerElementalMediumSummon,
             CR3_EarthElementalMedium,
             CR3_FiendishEarthElementalMedium,
             CR3_FiendishEarthElementalMedium_RE,
@@ -1942,7 +2719,6 @@ namespace RandomEnemies.Units
             CR3_WaterElementalMedium,
             CR4_FiendishAirElementalMedium,
             CR5_AirElementalLarge,
-            CR5_BeerElementalLargeSummon,
             CR5_EarthElementalLarge,
             CR5_FireElementalLarge,
             CR5_WaterElementalLarge,
@@ -1969,35 +2745,9 @@ namespace RandomEnemies.Units
             CR8_FiendishWaterElementalHuge,
             CR8_FiendishWaterElementalHuge_RE,
             CR9_AirElementalGreater,
-            CR9_BeerElementalGreatSummon,
             CR9_EarthElementalGreater,
             CR9_FireElementalGreater,
             CR9_WaterElementalGreat,
-            SummonedAirElementalElder,
-            SummonedAirElementalElderInfested,
-            SummonedAirElementalGreater,
-            SummonedAirElementalHuge,
-            SummonedAirElementalLarge,
-            SummonedAirElementalMedium,
-            SummonedAirElementalSmall,
-            SummonedEarthElementalElder,
-            SummonedEarthElementalGreater,
-            SummonedEarthElementalHuge,
-            SummonedEarthElementalLarge,
-            SummonedEarthElementalMedium,
-            SummonedEarthElementalSmall,
-            SummonedFireElementalElder,
-            SummonedFireElementalGreater,
-            SummonedFireElementalHuge,
-            SummonedFireElementalLarge,
-            SummonedFireElementalMedium,
-            SummonedFireElementalSmall,
-            SummonedWaterElementalElder,
-            SummonedWaterElementalGreater,
-            SummonedWaterElementalHuge,
-            SummonedWaterElementalLarge,
-            SummonedWaterElementalMedium,
-            SummonedWaterElementalSmall,
         };
 
         public static List<BlueprintUnit> GolemList = new List<BlueprintUnit>()
@@ -2065,8 +2815,6 @@ namespace RandomEnemies.Units
             CR7_HillGiantStandart,
             CR9_FrostGiantStandard,
             CR9_HillGiantThug,
-            FrostGiantSummoned,
-            GiantFrogSummoned,
             GolemAdamantineDestructable,
             IvoryLabyrinthMinotaur18,
             IvoryLabyrinthMinotaurCaster19,
@@ -2090,15 +2838,10 @@ namespace RandomEnemies.Units
             ArueshalaeRedoubt_Summoner,
             Arueshalae_GhostFemale,
             Arueshalae_GhostMale,
-            AzataBralaniSummoned,
-            AzataBralaniSummonedAdvanced,
-            AzataGhaelSummoned,
             BlackFireAdeptLeader_Cage,
             BlackFireAdeptTalker1_Experiment,
             BlackFireAdeptTalker2_Experiment,
             BlackFireAdeptVampire,
-            CessilyGhost,
-            CessilyGhost,
             Chorussina_Miniboss_LuckyDices,
             Corruptor,
             CR0_3_Drow_Warrior_Male,
@@ -2152,7 +2895,6 @@ namespace RandomEnemies.Units
             CR12_Sarcorian_Druid_Caster_Sweep_Male,
             CR12_Shadowcaster_DamageFullCaster,
             CR12_Shadowcaster_DamageFullCaster_RE,
-            CR12_TherukNul,
             CR13_Assasin_WeakAssasins,
             CR13_Assasin_WeakAssasinsLeader,
             CR13_AzataGhaelStandard,
@@ -2506,7 +3248,6 @@ namespace RandomEnemies.Units
             Mighty_CorruptedMongrelmanBrute,
             Mighty_CorruptedMongrelmanDefencive,
             Mighty_CorruptedMongrelmanRangedRanger,
-            MiteSummoned,
             MongrelmanMelee_Talking1,
             MongrelmanMelee_Talking2,
             MongrelmanWitch,
@@ -2550,7 +3291,6 @@ namespace RandomEnemies.Units
             Anemora,
             AreshkagalBoss_ShadowCopy,
             AreshkagalBoss_ShadowCopy_ArenaFight,
-            AzataTreantSummoned,
             BlightedTreantBoss,
             BloodyUrod,
             ChadaliEnemy,
@@ -2742,11 +3482,9 @@ namespace RandomEnemies.Units
             Sevalros,
             Sosiel_Q2_PurpleWormBoss,
             SoulsCloakAstradaemonSummoned,
-            SpiderSwarmSummoned,
             SummonCR3LocustSwarm,
             Svendack22,
             Svendack22_WithTiara,
-            TreantSummoned,
             UffrandirLinnorm22,
             WintersunWhiteDragon,
             WoundWormsLair_BlackDragon,
@@ -3203,10 +3941,6 @@ namespace RandomEnemies.Units
                 Lair_CambionAlchemist,
                 LostChapel_GargoyleMiniboss,
                 Maugla,
-                MephitAirSummoned,
-                MephitEarthSummoned,
-                MephitFireSummoned,
-                MephitWaterSummoned,
                 MidnightFane_GlabrezuElite,
                 MidnightFane_GlabrezuRitualists,
                 MidnightFane_MonadicDeva,
@@ -3215,7 +3949,6 @@ namespace RandomEnemies.Units
                 Minagho,
                 MonadicDevaSummoned,
                 MovanicDeva01,
-                MovanicDevaSummoned,
                 Mutasafen,
                 MutasafenAssistent,
                 MutasafenFourth_NoLoot,
@@ -3240,8 +3973,6 @@ namespace RandomEnemies.Units
                 SW_GlabrezuBoss_phase2,
                 TavernDretch,
                 TempleDretch,
-                ThanadaemonSoulsCloakSummoned,
-                ThanadaemonSummoned,
                 ToughMinaghoCambion,
                 TutorialTestISpellResistance,
                 VavakiaAdvanced_Tazgarodd,
@@ -3280,7 +4011,6 @@ namespace RandomEnemies.Units
             CR10_ZombieLordFighterLevel7_Axe,
             CR10_ZombieLordFighterLevel7_Spear,
             CR10_ZombieLordFighterLevel7_Spear_RE,
-            CR11_GraveknightSummoned,
             CR11_PlaguedMastodon,
             CR11_PlaguedMastodon_RE_high,
             CR11_SkeletalChampion,
@@ -3415,7 +4145,6 @@ namespace RandomEnemies.Units
             PlayfulDarknessDeathsnatcher,
             PuluraFalls_Zombie,
             PulurasFall_WightFighter,
-            SummonedSkeletonChampion,
             UnhallowedBodakRogue,
             VampireBandLeader,
             YouOnlyMortalsLeader,
@@ -3620,7 +4349,6 @@ namespace RandomEnemies.Units
             CR12_Shadowcaster_DamageFullCaster,
             CR12_Shadowcaster_DamageFullCaster_RE,
             CR12_SkeletalChampionGuard,
-            CR12_TherukNul,
             CR12_UnhallowedBodakRogue_RE_high,
             CR12_WaterElementalElderAdvanced,
             CR12_WightFighter,
@@ -4574,99 +5302,12 @@ namespace RandomEnemies.Units
             UnitLists.GolemList,
         };
 
-        public static void ChangeUnitBPs()
-        {
-            List<BlueprintUnit> ModifierZeroBPs = new List<BlueprintUnit>()
-            {
-                AxiomiteSummoned,
-                AzataBralaniSummoned,
-                AzataBralaniSummonedAdvanced,
-                AzataGhaelSummoned,
-                AzataTreantSummoned,
-                BogeymanSummoned,
-                CR11_BeerElementalElderSummon,
-                CR11_GraveknightSummoned,
-                CR12_TherukNul,
-                CR1_BeerElementalSmallSummon,
-                CR3_BeerElementalMediumSummon,
-                CR5_BeerElementalLargeSummon,
-                CR9_BeerElementalGreatSummon,
-                DireBoarSummoned,
-                DireWolfSummon,
-                DogSummoned,
-                FrostGiantSummoned,
-                GiantFrogSummoned,
-                HamadryadSummon,
-                HellhoundSummoned,
-                HorseSummoned,
-                LeopardSummoned,
-                LivingArmorTankSummoned,
-                ManticoreSummoned,
-                MastodonSummon,
-                MephitAirSummoned,
-                MephitEarthSummoned,
-                MephitFireSummoned,
-                MephitWaterSummoned,
-                MiteSummoned,
-                MonitorLizardSummoned,
-                MovanicDevaSummoned,
-                NereidSummoned,
-                OwlbearSummoned,
-                PonySummoned,
-                PurpleWormAdvancedSummoned,
-                PurpleWormSummoned,
-                RedcapSummoned,
-                RocSummoned,
-                SmilodonSummoned,
-                SoulEaterSummoned,
-                SpiderSwarmSummoned,
-                SummonedAirElementalElder,
-                SummonedAirElementalElderInfested,
-                SummonedAirElementalGreater,
-                SummonedAirElementalHuge,
-                SummonedAirElementalLarge,
-                SummonedAirElementalMedium,
-                SummonedAirElementalSmall,
-                SummonedEarthElementalElder,
-                SummonedEarthElementalGreater,
-                SummonedEarthElementalHuge,
-                SummonedEarthElementalLarge,
-                SummonedEarthElementalMedium,
-                SummonedEarthElementalSmall,
-                SummonedFireElementalElder,
-                SummonedFireElementalGreater,
-                SummonedFireElementalHuge,
-                SummonedFireElementalLarge,
-                SummonedFireElementalMedium,
-                SummonedFireElementalSmall,
-                SummonedSkeletonChampion,
-                SummonedWaterElementalElder,
-                SummonedWaterElementalGreater,
-                SummonedWaterElementalHuge,
-                SummonedWaterElementalLarge,
-                SummonedWaterElementalMedium,
-                SummonedWaterElementalSmall,
-                ThanadaemonSoulsCloakSummoned,
-                ThanadaemonSummoned,
-                TreantSummoned,
-                WolfSummon,
-            };
-            // blaaah need to do this so we get experience from units spawned that normally wouldnt give xp
-            foreach (BlueprintUnit unit in ModifierZeroBPs)
-            {
-                Experience component = unit.GetComponent<Experience>();
-                if (component.Modifier == 0)
-                {
-                    component.Modifier = 1;
-                }
-            }
 
-        }
-        // their CR seems really low compared to class levels.
-        public static void UpdateCR()
-        {
-            CR21_SkeletalChampionArcher.GetComponent<Experience>().CR = 15;
-            CR15_HellhoundAlpha.GetComponent<Experience>().CR = 10;
-        }
+        //// their CR seems really low compared to class levels.
+        //public static void UpdateCR()
+        //{
+        //    CR21_SkeletalChampionArcher.GetComponent<Experience>().CR = 15;
+        //    CR15_HellhoundAlpha.GetComponent<Experience>().CR = 10;
+        //}
     }
 }

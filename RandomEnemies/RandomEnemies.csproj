@@ -160,7 +160,6 @@
     <Compile Include="Utilities\Attributes.cs" />
     <Compile Include="Utilities\Common.cs" />
     <Compile Include="Utilities\DescriptionTools.cs" />
-    <Compile Include="Utilities\EquipmentTypes.cs" />
     <Compile Include="Utilities\Factions.cs" />
     <Compile Include="Utilities\Helpers.cs" />
     <Compile Include="Utilities\ILUtils.cs" />
