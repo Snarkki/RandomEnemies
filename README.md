@@ -1,6 +1,10 @@
 # Random Enemies & Loot
 
+Update on 16.12: Hopefully fixed all the issues with saves corrupting. Loot logic changed, took performance hit but no idea how to implement it on load area without issues with saves.
+
 PLEASE NOTE THIS IS VERY EARLY VERSION - it is highly likely that it will cause issue of replacing some important NPC! Toybox can most likely fix that. 
+
+
 
 What does this mod do? Basically when a monster spawns, this mod will replace it with new one of similar kind of power level (in some cases you might roll a really hard fight). Every zone will have a theme and a backup theme chosen when loading into area from which the monsters pool is fetched first. If no match is found, then all pools are to be used. 
 
