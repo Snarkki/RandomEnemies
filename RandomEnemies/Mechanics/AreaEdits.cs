@@ -75,6 +75,8 @@ namespace RandomEnemies.Mechanics
 			AreaEdits.ProceduralSpawnAreaBlacklist.Add(ResourcesLibrary.TryGetBlueprint<BlueprintArea>("e8f1160e960935344a8aa7466484506d")); //  Ziggurat
 			AreaEdits.ProceduralSpawnAreaBlacklist.Add(ResourcesLibrary.TryGetBlueprint<BlueprintArea>("69a8a5d331f0d7f4c983a1de63b925b0")); //  Capital
 
+			AreaEdits.ProceduralSpawnAreaBlacklist.Add(ResourcesLibrary.TryGetBlueprint<BlueprintArea>("7a25c101fe6f7aa46b192db13373d03b")); //  WarCamp - hopefully this means crusaders camp...
+
 		}
 
 		// Token: 0x040000A2 RID: 162

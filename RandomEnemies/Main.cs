@@ -16,6 +16,7 @@ using TurnBased.Controllers;
 using static TurnBased.Controllers.CombatController;
 using EnemyDifficultyMod.Utilities;
 using Kingmaker.Blueprints;
+using Kingmaker.Blueprints.Items;
 //using static UnityModManagerNet.UnityModManager;
 namespace RandomEnemies
 {
@@ -81,6 +82,7 @@ namespace RandomEnemies
         public static List<string> unitGroupByName = new List<string>();
         public static List<BlueprintUnit> unitBlackListBP = new List<BlueprintUnit>();
         public static List<string> SpawnedUnitId = new List<string>();
+        public static Dictionary<string, BlueprintItem> SpawnedUnitsLoots = new Dictionary<string, BlueprintItem>();
         public static void Log(string msg)
         {
             ModSettings.ModEntry.Logger.Log(msg);

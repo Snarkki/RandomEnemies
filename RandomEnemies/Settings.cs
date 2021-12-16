@@ -1,5 +1,6 @@
 ﻿using Kingmaker.Blueprints.Classes;
-
+using ModMaker.Utility;
+using System.Collections.Generic;
 using UnityModManagerNet;
 
 namespace RandomEnemies
@@ -30,6 +31,9 @@ namespace RandomEnemies
         public static float PowerfulEncounterModifier = 1.1f;
         public static float RareEncounterModifier = 1.1f;
 
+        public string localizationFileName;
+        public SerializableDictionary<string, HashSet<string>> containersChecked;
+        public SerializableDictionary<string, HashSet<string>> itemsGiven;
 
     }
 }

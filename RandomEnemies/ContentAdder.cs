@@ -53,8 +53,6 @@ namespace RandomEnemies
 
                 //Mechanics.DamageBuffs.AddRandomEnemyAbility();
                 Mechanics.AreaEdits.SetupAndEditAreas();
-                Units.UnitLists.ChangeUnitBPs();
-                Units.UnitLists.UpdateCR();
 
             }
 

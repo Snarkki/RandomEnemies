@@ -33,12 +33,12 @@ namespace RandomEnemies.Mechanics
         public static int OrigUnitCR = 0;
         public static List<string> createdUnitID = new List<string>();
 
-        public static void CalculateCRs(string encounterType, UnitEntityData origUnit)
+        public static void CalculateCRs(string encounterType, int origUnitCR)
         {
-            OrigUnitCR = origUnit.CR;
+            OrigUnitCR = origUnitCR;
             MinCR = SpawnUnitHelper.CalculateMinSingleCR(encounterType, OrigUnitCR, PlayerLevel);
             MaxCR = SpawnUnitHelper.CalculateMaxSingleCR(encounterType, OrigUnitCR, PlayerLevel);
-            Main.LogDebug("For BP" + origUnit + "MinMax CR:" + MinCR + " " + MaxCR + " With encounter Type: " + encounterType);
+            Main.LogDebug("For BP" + origUnitCR + "MinMax CR:" + MinCR + " " + MaxCR + " With encounter Type: " + encounterType);
             if (MinCR > MaxCR) { MinCR = MaxCR; }
         }
 
