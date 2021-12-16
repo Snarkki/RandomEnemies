@@ -121,12 +121,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit AreshkagalBoss_ShadowCopy = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("53292043b0a34835a9c0cf997a35de9c");
         public static BlueprintUnit AreshkagalBoss_ShadowCopy_ArenaFight = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("0147f4d2006c457da499947b3065a8f9");
         public static BlueprintUnit AreshkagalBoss_ShadowCopy_GlobalPuzzle = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a90e29409ada4968b207ae41bbb62bd6");
-        public static BlueprintUnit ArmyCultist_FighterTank = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("37a49639abfe0fb41b37b8ffa3cc21f8");
-        public static BlueprintUnit ArmyLilitu = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c0c03b5924c64ee7b7406808714c1c90");
-        public static BlueprintUnit ArmyLocustSwarmStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("bdf6c58bdaf74978b51b423993a6c9a0");
-        public static BlueprintUnit ArmySpiderSwarmStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("48f0c472e5cd4beda4afdb1b6c39c344");
-        public static BlueprintUnit ArmyVavakiaStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1badd32c3e1941289a9bd60ef5e68d47");
-        public static BlueprintUnit ArmyVescavorSwarmStandard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c148c12cb7914a50b2fccc39fa880b73");
         public static BlueprintUnit Arsinoe = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("459aba8a61a75514fbf0495545cd52d1");
         public static BlueprintUnit ArueshalaeImprisoned = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("48fc622c39f1faa44b245cd1596b76d1");
         public static BlueprintUnit ArueshalaeRedoubt_Cultist_Slayer_Ranged = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("cd73a15a1ea1a204f87adae3c7a30581");
@@ -2417,9 +2411,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit TTD_SuccubusSinner = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("c3142a543ce2be74b8cd64656d79d03b");
         public static BlueprintUnit TTD_SuccubusSinner2 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("92906177191e43f9bef44ec0d265522c");
         public static BlueprintUnit TTD_VrolikaiPatron = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d4331534554bbe449a2b4e4a95d9fa15");
-        public static BlueprintUnit TutorialTestAbilityDamage = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e6a197c9ff28afc4389e5112007271d4");
-        public static BlueprintUnit TutorialTestISpellResistance = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("03c31b70bd5ebfb478efb36460803f6e");
-        public static BlueprintUnit TutorialTestISwarm = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8a33ef2cb27957e4bb20543683cade50");
         public static BlueprintUnit UffrandirLinnorm22 = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("4015eb0cbb361a04a968885d807ea820");
         public static BlueprintUnit UndeadKingAlberie = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("e5caa5b83dc2fdf49ada60b93fcba66b");
         public static BlueprintUnit UnhallowedBodakRogue = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("417b08395754c1c4ba9d910dddb40655");
@@ -2438,7 +2429,6 @@ namespace RandomEnemies.Units
         public static BlueprintUnit Vellexia_CambionToughMelee_WithLoot = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("40e5f14437d74763a3c51ef7988c6bc5");
         public static BlueprintUnit Vellexia_Default = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("a32a07903e428d34cb0e98a804d40569");
         public static BlueprintUnit VeryOptionalGlabrezu_Miniboss = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7a5501ce11c3a2f4d8a99e2c71476eee");
-        public static BlueprintUnit VescavorSwarmPassive = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("204a57cdfd30fdc4da930a05f87b5a0b");
         public static BlueprintUnit Villodus = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("8362463e9ec87a54bbcc276a3007a253");
         public static BlueprintUnit Voetiel = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("d75ee7e088ea2d64b8b602e2e59ad6a5");
         public static BlueprintUnit Vollard = ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("1ae1ec8b0857d0c4797f11dacd0da269");
@@ -2509,9 +2499,6 @@ namespace RandomEnemies.Units
 
         public static List<BlueprintUnit> AnimalList = new List<BlueprintUnit>()
         {
-            ArmyLocustSwarmStandard,
-            ArmySpiderSwarmStandard,
-            ArmyVescavorSwarmStandard,
             BuletteSummonedInfested,
             CR0_25_GiantCentipedeRanged_NoPoison,
             CR0_25_GiantCentipedeStandard_NoPoison,
@@ -2554,14 +2541,12 @@ namespace RandomEnemies.Units
             CR12_SmilodonTreant,
             CR13_EnragedGiantOwlbearTreant,
             CR13_GiantFlytrapBloomInfused,
-            CR13_MandragoraSwarm,
             CR13_RetrieverColdForged,
             CR14_Ankou,
             CR14_OwlbearBoss,
             CR14_RetrieverElite,
             CR14_RetrieverElite_RE,
             CR16_GiantFlytrapPoisonous,
-            CR18_VescavorSwarm,
             CR1_GiantFlyFiendish,
             CR1_GiantFlyFiendish_RE_high,
             CR1_GiantFlyFiendish_RE_low,
@@ -2572,7 +2557,6 @@ namespace RandomEnemies.Units
             CR1_GiantSpiderStandard,
             CR1_GiantSpiderStandard_RE_high,
             CR1_GiantSpiderStandard_RE_low,
-            CR1_SpiderSwarm,
             CR1_WolfStandard,
             CR20_TaintedRetriever,
             CR20_TaintedRetriever_RE,
@@ -2588,7 +2572,6 @@ namespace RandomEnemies.Units
             CR2_MonitorLizardStandart,
             CR2_MonitorLizardStandart_NoPoison,
             CR2_MonitorLizardStandart_RE,
-            CR2_RatSwarm,
             CR2_TatzlwyrmStandard,
             CR2_WereratStandard,
             CR2_WolfAdvanced,
@@ -2604,8 +2587,6 @@ namespace RandomEnemies.Units
             CR3_MonitorLizardAdvanced,
             CR3_MonitorLizardAdvanced_NoPoison,
             CR3_MonitorLizardAdvanced_RE,
-            CR3_RatSwarmAdvanced,
-            CR3_RavenSwarm,
             CR4_BearStandard,
             CR4_DireBoar,
             CR4_GiantCentipedeHuge,
@@ -2621,8 +2602,6 @@ namespace RandomEnemies.Units
             CR5_HellhoundAdvanced,
             CR5_ManticoreStandard,
             CR5_MonitorLizard,
-            CR5_QuickSpiderSwarm,
-            CR5_VescavorSwarm,
             CR5_WolfAlpha,
             CR6_BloomInfusedSpider,
             CR6_DireWolfVenomous,
@@ -2661,13 +2640,11 @@ namespace RandomEnemies.Units
             CR9_SmilodonAdvanced,
             CR9_TriceratopsAdvanced,
             GiantSpiderBloomInfused,
-            LocustSwarm,
             MidnightFane_RetrieverColdForged1,
             PortalStoneSpiderRingSummonedSpider,
             SummonedAstralDeva,
             SummonedNightcrawler,
             SummonedRavener,
-            TutorialTestISwarm,
             WintersunBear,
         };
 
@@ -2829,7 +2806,6 @@ namespace RandomEnemies.Units
         public static List<BlueprintUnit> HumanoidList = new List<BlueprintUnit>()
         {
             AngelTargona,
-            ArmyCultist_FighterTank,
             ArueshalaeRedoubt_Cultist_Slayer_Ranged,
             ArueshalaeRedoubt_DamageFullCaster,
             ArueshalaeRedoubt_DamageFullCaster2,
@@ -3272,7 +3248,6 @@ namespace RandomEnemies.Units
             TemplarOfIvoryLabyrinth_CR8_Cultist_Baphomet_MeleeCaster,
             Torlek,
             TraitorCrusaderSupport,
-            TutorialTestAbilityDamage,
             WildHunt_ArcherSummon,
             WintersunSiabrae,
             Woljif_copy,
@@ -3298,8 +3273,6 @@ namespace RandomEnemies.Units
             Colyphyr_BloodyUrod,
             CR10_BlueDragonJuvenile,
             CR10_BogeymanStandard,
-            CR10_FiendishTickSwarm,
-            CR10_FiendishTickSwarm_RE_high,
             CR10_FiendishTriceratopsAdvanced,
             CR10_FiendishTriceratopsAdvanced_RE,
             CR10_NereidStandard,
@@ -3357,9 +3330,6 @@ namespace RandomEnemies.Units
             CR17_EcorcheAdvanced,
             CR17_EcorcheAdvanced_RE,
             CR17_PrimalTreant,
-            CR18_Artifact_LocustCloakLocustSwarm,
-            CR18_LocustSwarm,
-            CR18_LocustSwarm_RE,
             CR18_NahydrianCarnivorousCrystal,
             CR18_NahydrianPurpleWorm,
             CR18_Nightcrawler,
@@ -3380,8 +3350,6 @@ namespace RandomEnemies.Units
             CR22_IngerMaggor_CragLinnormhunting,
             CR23_AnimatedArmor_1,
             CR23_AnimatedArmor_2,
-            CR23_LocustSwarm,
-            CR23_LocustSwarm_RE,
             CR23_SalamanderLava,
             CR24_GreaterApocalypseLocust,
             CR24_GreaterApocalypseLocust_RE,
@@ -3400,8 +3368,6 @@ namespace RandomEnemies.Units
             CR4_ScarecrowStandard,
             CR5_HydraAdvanced,
             CR5_NightmareStandard,
-            CR6_CorruptedRatSwarm,
-            CR6_CorruptedRatSwarm_RE,
             CR6_HagAnnisStandard,
             CR6_HydraQuickling,
             CR6_HydraVenomous,
@@ -3423,7 +3389,6 @@ namespace RandomEnemies.Units
             CR7_MimicChestStandart,
             CR7_Nymph,
             CR7_SoulEaterStandart,
-            CR7_TickSwarm_RE_low,
             CR7_WorgPackLeader,
             CR7_WyvernAdvanced,
             CR8_AxiomiteStandard,
@@ -3431,7 +3396,6 @@ namespace RandomEnemies.Units
             CR8_DweomercatAdvanced,
             CR8_FiendishBuletteStandart,
             CR8_FiendishBuletteStandart_RE,
-            CR8_FiendishTickSwarm_RE_low,
             CR8_MimicChestAdvanced,
             CR8_QuickwoodStandard,
             CR8_VescavorGuardStandard,
@@ -3447,15 +3411,12 @@ namespace RandomEnemies.Units
             CR9_RiftDrakeStandard_RE,
             CR9_ShamblingMoundPoisonous,
             CR9_SoulEater,
-            CR9_TickSwarm,
-            CR9_TickSwarm_RE_high,
             CR_22MythicShadow_Aeon,
             CR_22MythicShadow_Angel,
             CR_22MythicShadow_Azata,
             CR_22MythicShadow_Demon,
             CR_22MythicShadow_Lich,
             CR_22MythicShadow_Trickster,
-            DaeranAlienSwarm,
             DarkForestWillOWisp,
             DemonLordDeskari,
             Deradnu,
@@ -3470,25 +3431,21 @@ namespace RandomEnemies.Units
             Jarunnika,
             LocustVescavorQueen,
             MercenaryCaster,
-            MidnightFane_LocustSwarm,
             MimicChestIron,
             MimicChestStandart,
             MutasafenLair_CarnivorousCrystalMiniboss,
             MythicNightcrawlerBoss28,
             Ravener,
-            RavenousVescavorSwarm,
             RedDragon,
             RedDragon_Sanctum,
             Sevalros,
             Sosiel_Q2_PurpleWormBoss,
             SoulsCloakAstradaemonSummoned,
-            SummonCR3LocustSwarm,
             Svendack22,
             Svendack22_WithTiara,
             UffrandirLinnorm22,
             WintersunWhiteDragon,
             WoundWormsLair_BlackDragon,
-            XantirOnlySwarm_MidnightFaneInThePast,
             YouOnlyMortalsLeader_Ecorche,
         };
 
@@ -3510,7 +3467,6 @@ namespace RandomEnemies.Units
                 AreeluLab_Derakni,
                 AreeluLab_Nalfeshnee,
                 AreeluLab_ShadowDemon,
-                ArmyVavakiaStandard,
                 BabauAlarmer,
                 BabauWithShortspear,
                 BalorLeader,
@@ -3974,7 +3930,6 @@ namespace RandomEnemies.Units
                 TavernDretch,
                 TempleDretch,
                 ToughMinaghoCambion,
-                TutorialTestISpellResistance,
                 VavakiaAdvanced_Tazgarodd,
                 Vellexia_CambionToughMelee_WithLoot,
                 VeryOptionalGlabrezu_Miniboss,
@@ -4214,8 +4169,6 @@ namespace RandomEnemies.Units
             CR10_FiendishFireElementalGreater_RE,
             CR10_FiendishMinotaur_Guard,
             CR10_FiendishMinotaur_TwoAxes,
-            CR10_FiendishTickSwarm,
-            CR10_FiendishTickSwarm_RE_high,
             CR10_FiendishTriceratopsAdvanced,
             CR10_FiendishTriceratopsAdvanced_RE,
             CR10_FiendishWaterElementalGreat,
@@ -4574,8 +4527,6 @@ namespace RandomEnemies.Units
             CR18_IvoryLabyrinthDemodandKineticist,
             CR18_LilituAdvanced,
             CR18_LilituAdvanced_RE,
-            CR18_LocustSwarm,
-            CR18_LocustSwarm_RE,
             CR18_MarilithAdvanced,
             CR18_MarilithAdvanced_RE,
             CR18_NahydrianCarnivorousCrystal,
@@ -4770,8 +4721,6 @@ namespace RandomEnemies.Units
             CR23_AnimatedArmor_2,
             CR23_AreshkagalRetriever,
             CR23_GolemAdamantine,
-            CR23_LocustSwarm,
-            CR23_LocustSwarm_RE,
             CR23_MythicMarilithRogue,
             CR23_MythicNalfeshneeShaman,
             CR23_SalamanderLava,
@@ -5055,8 +5004,6 @@ namespace RandomEnemies.Units
             CR6_Bandit_Human_Transmuter_Male,
             CR6_Bandit_Tiefling_Caster_Male,
             CR6_BloomInfusedSpider,
-            CR6_CorruptedRatSwarm,
-            CR6_CorruptedRatSwarm_RE,
             CR6_Cultist_ArcherHuman_Ranged,
             CR6_Cultist_ArcherHuman_Ranged_RE,
             CR6_Cultist_Baphomet_MeleeCaster,
@@ -5160,7 +5107,6 @@ namespace RandomEnemies.Units
             CR7_SuccubusStandardNaked,
             CR7_SuccubusStandard_RE_high,
             CR7_TheruksSpawn,
-            CR7_TickSwarm_RE_low,
             CR7_WaterElementalHuge,
             CR7_Werewolf,
             CR7_WorgPackLeader,
@@ -5204,7 +5150,6 @@ namespace RandomEnemies.Units
             CR8_FiendishEarthElementalHuge_RE,
             CR8_FiendishFireElementalHuge,
             CR8_FiendishFireElementalHuge_RE,
-            CR8_FiendishTickSwarm_RE_low,
             CR8_FiendishWaterElementalHuge,
             CR8_FiendishWaterElementalHuge_RE,
             CR8_GargoyleHalfFiendCleric,
@@ -5266,8 +5211,6 @@ namespace RandomEnemies.Units
             CR9_ShadowGreaterAdvanced_RE_high,
             CR9_ShamblingMoundPoisonous,
             CR9_SoulEater,
-            CR9_TickSwarm,
-            CR9_TickSwarm_RE_high,
             CR9_UnhallowedBodak,
             CR9_UnhallowedBodak_RE_high,
             CR9_VrockStandard,
@@ -5288,8 +5231,6 @@ namespace RandomEnemies.Units
             TemplarOfIvoryLabyrinth_CR4_Cultist_Baphomet_MeleeCaster,
             TemplarOfIvoryLabyrinth_CR6_Cultist_Baphomet_MeleeCaster,
             TemplarOfIvoryLabyrinth_CR8_Cultist_Baphomet_MeleeCaster,
-            CR5_VescavorSwarm
-
         };
 
         public static List<List<BlueprintUnit>> allLists = new List<List<BlueprintUnit>>(){

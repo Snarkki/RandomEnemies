@@ -36,7 +36,7 @@ namespace RandomEnemies.Mechanics
             SpawnUnitHelper.PlayerLevel = Game.Instance.Player.MainCharacter.Value.Descriptor.Progression.CharacterLevel;
             if (SpawnUnitHelper.PlayerLevel > 20) { SpawnUnitHelper.PlayerLevel = 20; } // For legend -> scaling stops at lvl20
             string encounterType = SpawnUnitHelper.getEncounterType();
-            SpawnUnitHelper.CalculateCRs(encounterType, entityData);
+            SpawnUnitHelper.CalculateCRs(encounterType, entityData.CR);
 
             if (SpawnUnitHelper.MaxCR == 0) { return null; }
             UnitEntityData newUnit = createNewUnit(entityData);
@@ -65,6 +65,42 @@ namespace RandomEnemies.Mechanics
 
         }
 
+        public static BlueprintUnit TryChangeBp(BlueprintUnit OrigEntity)
+        {
+            bool rollForEncounter = SpawnUnitHelper.rollForEncounter();
+            if (!rollForEncounter) { return null; }
+
+            SpawnUnitHelper.PlayerLevel = Game.Instance.Player.MainCharacter.Value.Descriptor.Progression.CharacterLevel;
+            if (SpawnUnitHelper.PlayerLevel > 20) { SpawnUnitHelper.PlayerLevel = 20; } // For legend -> scaling stops at lvl20
+            string encounterType = SpawnUnitHelper.getEncounterType();
+            SpawnUnitHelper.CalculateCRs(encounterType, OrigEntity.CR);
+
+            if (SpawnUnitHelper.MaxCR == 0) { return null; }
+            BlueprintUnit result = chooseResultUnit(chosenTheme, backupTheme, MinCR, MaxCR);
+            if (result == null) { return null; }
+
+            return result;
+            //newUnit.GroupId = entityData.GroupId;
+            //entityData.Group.Add(newUnit);
+
+            //newUnit.Descriptor.SwitchFactions(Factions.FactionMobs);
+            //newUnit.Descriptor.Faction = Factions.FactionMobs;
+
+            // give guaranteed loot on harder encounters. (we are missing inventories of original mobs so some additional loot should be fine)
+            //if (encounterType == Settings.RareEncounterName || encounterType == Settings.PowerfulEncounterName) 
+            //{
+            //    TryCreateLoot(newUnit, true);
+            //}
+
+
+
+            //entityData.Unsubscribe();
+            //entityData.MarkForDestroy();
+            //entityData.Descriptor.State.IsFinallyDead = true;
+
+
+        }
+
         public static UnitEntityData createNewUnit(UnitEntityData OriginalUnit)
         {
             BlueprintUnit result = chooseResultUnit(chosenTheme, backupTheme, MinCR, MaxCR);
@@ -88,21 +124,22 @@ namespace RandomEnemies.Mechanics
             }
         }
 
-    //public static void TryCreateLoot(UnitEntityData entityData, bool skipLootCheck = false)
-    //    {
+        public static void TryCreateLoot(UnitEntityData entityData, bool skipLootCheck = false)
+        {
+            //Kingmaker.EntitySystem.Persistence.JsonUtility.BlueprintConverter.ReadJson
+            LootType loottype = LootHandler.RollForLootType(skipLootCheck);
+            
+            if (loottype == LootType.None) { return; }
 
-    //            LootType loottype = LootHandler.RollForLootType(skipLootCheck);
-    //            if (loottype == LootType.None) { return; }
-
-    //            RangeInt range = LootHandler.CreateRangeForLoot(entityData);
-    //            BlueprintItem Loot = LootHandler.CreateLootItem(loottype, range);
-    //            Main.LogDebug("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName);
-    //            if (Loot != null)
-    //            {
-    //                entityData.Inventory.Add(Loot);
-    //                Main.SpawnedUnitsLoots.Add(entityData.UniqueId, Loot);
-    //            }
-    //    }
+            RangeInt range = LootHandler.CreateRangeForLoot(entityData);
+            BlueprintItem Loot = LootHandler.TryToCreateLootItem(loottype, range);
+            Main.LogDebug("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName + " with range " + range.start + range.end + " with loottype " + loottype + " cost " + Loot.Cost);
+            if (Loot != null)
+            {
+                 entityData.Inventory.Add(Loot);
+                 Main.SpawnedUnitsLoots.Add(entityData.UniqueId, Loot);
+            }
+        }
 
     }
 }

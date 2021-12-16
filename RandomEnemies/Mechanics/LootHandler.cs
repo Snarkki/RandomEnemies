@@ -5,6 +5,7 @@ using Kingmaker.Blueprints.Items.Equipment;
 using Kingmaker.Blueprints.Items.Shields;
 using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.EntitySystem.Entities;
+using Kingmaker.Items;
 using RandomEnemies.Utilities;
 using System;
 using System.Collections.Generic;
@@ -19,10 +20,11 @@ namespace RandomEnemies.Mechanics
     {
         public static LootType RollForLootType(bool skipLootCheck = false)
         {
-            if (skipLootCheck)
+            if (!skipLootCheck)
             {
                 int lootCheck = UnityEngine.Random.Range(1, 100);
                 if (lootCheck > (int)Main.settings.ChanceForLootDrop)
+                Main.LogDebug("Returning with LootType.None, roll " + lootCheck + " " + (int)Main.settings.ChanceForLootDrop);
                 { return LootType.None; }
             }
             // rolls for what kind of loot - NONE is valid here, if none -> no loot created.
@@ -45,23 +47,40 @@ namespace RandomEnemies.Mechanics
             // note min range stays same!! highend items should require multiplier roll + high char lvl and then random roll from list (multipleir chance can be littl higher as it just means the items are on list, 
             // but list still contains mostly low lvl items
             int rangeRoll = UnityEngine.Random.Range(1, 100);
-            if (rangeRoll <= 60) { multiplier = 1; }
+            if (rangeRoll <= 60) { multiplier = 2; }
             else if (rangeRoll <= 80) { multiplier = 10; }
             else if (rangeRoll <= 90) { multiplier = 20; }
             else if (rangeRoll <= 99) { multiplier = 50; }
             else if (rangeRoll <= 100) { multiplier = 150; }
 
-            int minRange = entityData.CR * 10 * multiplier;
+            int minRange = entityData.CR * 50 * multiplier;
             int maxRange = entityData.CR * 100 * multiplier;
             resultRange = new UnityEngine.RangeInt(minRange, maxRange);
             return resultRange;
         }
+
+        public static BlueprintItem TryToCreateLootItem(LootType lootType, UnityEngine.RangeInt range)
+        {
+            BlueprintItem Loot = null;
+            int i = 0;
+            do
+            {
+                Loot = LootHandler.CreateLootItem(lootType, range);
+                i++;
+                if (Loot != null)
+                {
+                    break;
+                }
+            } while (i < 10);
+            return Loot;
+        }
+
         public static BlueprintItem CreateLootItem(LootType lootType, UnityEngine.RangeInt range)
         {
             // Create the actual loot based on the type & range, range meaning min/ max gold of item.
             int costBottom = range.start;
             int costTop = range.end;
-
+            
             BlueprintItem result;
 
             switch (lootType)
@@ -76,6 +95,7 @@ namespace RandomEnemies.Mechanics
                         finalSelectedItems = modFinalItems.ToArray();
                         bool itemCheck = finalSelectedItems.Length != 0;
                         if (itemCheck) { result = finalSelectedItems.Random<BlueprintItemWeapon>().ToReference<BlueprintItemReference>(); }
+
                     };
                     break;
                 case LootType.Armors:
@@ -265,7 +285,7 @@ namespace RandomEnemies.Mechanics
                     break;
             }
             // Lower the cost so player doesnt get shit ton of money from these items. The cost is divided later by multiplier by the game. 
-            if (result != null) { result.m_Cost = 500; }
+            //if (result != null) { result.m_Cost = 500; }
             if (result == null) { result = Equipment.Weapons.AmiriSword; }
 
             return result;
