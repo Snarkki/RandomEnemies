@@ -77,6 +77,7 @@ namespace RandomEnemies.Mechanics
 
             if (SpawnUnitHelper.MaxCR == 0) { return null; }
             BlueprintUnit result = chooseResultUnit(chosenTheme, backupTheme, MinCR, MaxCR);
+            Main.LogDebug("Choose result result" + result + " Theme " + chosenTheme.ToString() + " backuptheme " + backupTheme.ToString() + " mincr " + MinCR + " MaxCr " + MaxCR);
             if (result == null) { return null; }
 
             return result;
@@ -114,7 +115,7 @@ namespace RandomEnemies.Mechanics
             {
                 //UnitEntityData newUnit = Game.Instance.EntityCreator.SpawnUnit(result, vector, UnityEngine.Quaternion.LookRotation(OriginalUnit.OrientationDirection), Game.Instance.State.LoadedAreaState.MainState, null);
                 UnitEntityData newUnit = Game.Instance.EntityCreator.ChangeUnitBlueprint(OriginalUnit, result, false);
-                Main.LogDebug("Created enemy" + newUnit.CharacterName + " in area: " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
+                Main.Log("Created enemy" + newUnit.CharacterName + " in area: " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
                 return newUnit;
             }
             catch (Exception ex)
@@ -128,17 +129,19 @@ namespace RandomEnemies.Mechanics
         {
             //Kingmaker.EntitySystem.Persistence.JsonUtility.BlueprintConverter.ReadJson
             LootType loottype = LootHandler.RollForLootType(skipLootCheck);
-            
+            Main.LogDebug("Returned from rollforloot type with" + loottype);
             if (loottype == LootType.None) { return; }
 
             RangeInt range = LootHandler.CreateRangeForLoot(entityData);
             BlueprintItem Loot = LootHandler.TryToCreateLootItem(loottype, range);
-            Main.LogDebug("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName + " with range " + range.start + range.end + " with loottype " + loottype + " cost " + Loot.Cost);
-            if (Loot != null)
+            Main.Log("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName + " with range " + range.start + range.end + " with loottype " + loottype + " cost " + Loot.Cost);
+            if (Loot == null || Loot.Name == "")
             {
-                 entityData.Inventory.Add(Loot);
-                 Main.SpawnedUnitsLoots.Add(entityData.UniqueId, Loot);
+                Main.Log("Loottype was null" + Loot.Name);
+                return;
             }
+            entityData.Inventory.Add(Loot, 1);
+            Main.SpawnedUnitsLoots.Add(entityData.UniqueId, Loot);
         }
 
     }

@@ -14,6 +14,8 @@ namespace RandomEnemies
         }
 
 
+        public static bool UseRandomEncounters = false;
+
         public float ChanceForRandomEncounter = 75;
         public float ChanceForLootDrop = 10;
 

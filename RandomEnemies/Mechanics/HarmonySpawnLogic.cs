@@ -29,6 +29,12 @@ using Owlcat.Runtime.Core.Utils;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using Xunit.Sdk;
+using Kingmaker.UnitLogic.FactLogic;
+using Kingmaker.ElementsSystem;
+using Kingmaker.Controllers.Combat;
+using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Facts;
+using Kingmaker.EntitySystem;
 
 namespace RandomEnemies.Mechanics
 {
@@ -63,23 +69,68 @@ namespace RandomEnemies.Mechanics
             //    }
             //}
         }
-        [HarmonyPatch(typeof(RuleInitiativeRoll), "OnTrigger")]
+        //[HarmonyPatch(typeof(RuleInitiativeRoll), "OnTrigger")]
+        //internal static class UnitQuit_Patch
+        //{
+        //    public static void Postfix(RuleInitiativeRoll __instance)
+        //    {
+        //        bool flag0 = (__instance.Initiator != null);
+        //        if (flag0)
+        //        {
+        //            UnitEntityData entityData = __instance.Initiator;
+        //            bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs);
+        //            if (factionCheck)
+        //            {
+        //                bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5) && !entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable); 
+        //                if (unitCheck)
+        //                {
+        //                    RandomSpawnLogic.TryCreateLoot(entityData);
+
+        //                } else { Main.LogDebug("Unitcheck for loot failed "); }
+        //            }
+        //        }
+        //    }
+        //}
+
+        [HarmonyPatch(typeof(UnitCombatState), "JoinCombat")]
         internal static class UnitQuit_Patch
         {
-            public static void Postfix(RuleInitiativeRoll __instance)
+            public static void Postfix(UnitCombatState __instance)
             {
-                bool flag0 = (__instance.Initiator != null);
-                if (flag0)
+
+
+                if (__instance.m_InCombat == false)
                 {
-                    UnitEntityData entityData = __instance.Initiator;
+                    return;
+                }
+
+                UnitEntityData eData = __instance.Unit;
+                if (Main.unitGroupId.Contains(eData.GroupId))
+                {
+                    return;
+                }
+                Main.unitGroupId.Add(eData.GroupId);
+                foreach (UnitEntityData entityData in eData.Group)
+                {
+                    Main.LogDebug("In postfix " + entityData.Descriptor.Faction);
+
                     bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs);
                     if (factionCheck)
                     {
-                        bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && !entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable));
+                        bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && !entityData.IsPet) ;
                         if (unitCheck)
                         {
+                            if (entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable) && !entityData.IsSummoned())
+                            {
+                                Main.LogDebug("Removed condition unlootable ");
+                                entityData.Descriptor.State.RemoveCondition(UnitCondition.Unlootable);
+                            }
+                            Main.LogDebug("Trying to create loot ");
                             RandomSpawnLogic.TryCreateLoot(entityData);
+
+
                         }
+                        else { Main.LogDebug("Unitcheck for loot failed "); }
                     }
                 }
             }
@@ -96,16 +147,14 @@ namespace RandomEnemies.Mechanics
         //    }
         //}
 
-        //[HarmonyPatch(typeof(Game), "LoadGame")]
-        //internal static class UnitLoad_Patch
-        //{
-        //    public static void Prefix()
-        //    {
-        //        DestroyAddedLoots();
-
-
-        //    }
-        //}
+        [HarmonyPatch(typeof(Game), "LoadGame")]
+        internal static class UnitLoad_Patch
+        {
+            public static void Prefix()
+            {
+                Main.unitGroupId.Clear();
+            }
+        }
 
 
         //static void DestroyAddedLoots()
@@ -188,12 +237,19 @@ namespace RandomEnemies.Mechanics
 
             public static void Prefix(UnitSpawnerBase __instance)
             { //            if (Game.Instance.CurrentlyLoadedArea.GetComponent<CombatRandomEncounterAreaSettings>() == null && (!HasSpawned || (SpawnedUnitHasDied && m_RespawnIfDead)) && m_SpawnOnSceneInit && CheckConditions())
+                if (!Settings.UseRandomEncounters)
+                {
+                    return;
+                }
+                
                 if (__instance.HasSpawned)
                 {
+                    Main.LogDebug("Unit has already spawned");
                     return;
                 }
                 if (__instance.m_Blueprint.IsEmpty())
                 {
+                    Main.LogDebug("BP is empty");
                     return;
                 }
 
@@ -210,18 +266,32 @@ namespace RandomEnemies.Mechanics
                 }
                 if (restrictionResult == UnitSpawnRestrictionResult.Delay)
                 {
+                    Main.LogDebug("Restriction result: Delay");
                     return;
                 }
                 if (restrictionResult == UnitSpawnRestrictionResult.Disable)
                 {
+                    Main.LogDebug("Restriction result: Disable");
                     return;
                 }
-
-                if (__instance.Blueprint.Faction == Factions.FactionMobs && !__instance.Blueprint.IsCheater && !__instance.Blueprint.IsFake && Units.UnitLists.allowedEnemiesList.Contains(__instance.Blueprint))
+                bool cutsceneCheck = !AreaEdits.ProceduralSpawnAreaBlacklist.Any((BlueprintArea x) => x.name == Game.Instance.CurrentlyLoadedArea.name);
+                if (cutsceneCheck)
                 {
-                    __instance.Blueprint = RandomSpawnLogic.TryChangeBp(__instance.Blueprint);
+                    if (__instance.Blueprint.Faction == Factions.FactionMobs && !__instance.Blueprint.IsCheater && !__instance.Blueprint.IsFake && Units.UnitLists.allowedEnemiesList.Contains(__instance.Blueprint))
+                    {
+                        BlueprintUnit originalBP = __instance.Blueprint;
+                        BlueprintUnit result = RandomSpawnLogic.TryChangeBp(__instance.Blueprint);
+                        if (result != null && result.Name != "<null>" && result.Name != "")
+                        {
+                            __instance.Blueprint = result;
+                            Main.LogDebug("Changed Bp from to " + originalBP + " " + __instance.Blueprint);
+                        }
+                        else Main.LogDebug("result BP was null");
+
+
+                    }
                 }
-                
+                return;
                 
             }
         }

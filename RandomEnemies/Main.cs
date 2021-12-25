@@ -65,6 +65,9 @@ namespace RandomEnemies
             settings.ChanceForLootDrop = GUILayout.HorizontalSlider(settings.ChanceForLootDrop, 0.0f, 100.0f, GUILayout.Width(100f));
             GUILayout.Label("Chance for additional loot: " + Math.Round(settings.ChanceForLootDrop, 0));
             GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal(Array.Empty<GUILayoutOption>());
+            Settings.UseRandomEncounters = GUILayout.Toggle(Settings.UseRandomEncounters, "Enable random encounters");
+            GUILayout.EndHorizontal();
 
 
         }

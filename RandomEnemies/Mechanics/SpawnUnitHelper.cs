@@ -53,7 +53,7 @@ namespace RandomEnemies.Mechanics
                 {
                     if (p == chosenTheme || p == backupTheme) { continue; }
                     result = chooseResultUnitByTheme(p, MinCR, MaxCR);
-                    if (!result) { break; }
+                    if (result != null) { break; }
                 }
             }
             return result;
@@ -173,7 +173,7 @@ namespace RandomEnemies.Mechanics
             // maximum CR for single unit in encounter
             int MaxSingleCR = 1;
             // just so early game wont be hell... 
-            if (bpCR == 1) { return MaxSingleCR; }
+
             switch (encounterType)
             {
                 case (Settings.EasyEncounterName):
@@ -191,6 +191,10 @@ namespace RandomEnemies.Mechanics
                 default:
                     MaxSingleCR = bpCR;
                     break;
+            }
+            if (MaxSingleCR < 2)
+            {
+                MaxSingleCR = 2;
             }
             return MaxSingleCR;
         }

@@ -20,21 +20,25 @@ namespace RandomEnemies.Mechanics
     {
         public static LootType RollForLootType(bool skipLootCheck = false)
         {
-            if (!skipLootCheck)
+            LootType result = LootType.None;
+            if (skipLootCheck == false)
             {
                 int lootCheck = UnityEngine.Random.Range(1, 100);
                 if (lootCheck > (int)Main.settings.ChanceForLootDrop)
-                Main.LogDebug("Returning with LootType.None, roll " + lootCheck + " " + (int)Main.settings.ChanceForLootDrop);
-                { return LootType.None; }
+                {
+                 Main.LogDebug("Returning with LootType.None, roll " + lootCheck + " " + (int)Main.settings.ChanceForLootDrop);
+                 return result; 
+                }
             }
             // rolls for what kind of loot - NONE is valid here, if none -> no loot created.
             int lootRoll = UnityEngine.Random.Range(1, 100);
+            Main.LogDebug("lootRoll roll " + lootRoll);
+            if (lootRoll <= 50) { result = LootType.Weapons; }
+            else if (lootRoll <= 70) { result = LootType.Armors; }
+            else if (lootRoll <= 100) { result = LootType.Equipment; }
+            //else if (lootRoll <= 100) { result = LootType.Shields; }
 
-            if (lootRoll <= 50) { return LootType.Weapons; }
-            else if (lootRoll <= 70) { return LootType.Armors; }
-            else if (lootRoll <= 95) { return LootType.Equipment; }
-            else if (lootRoll <= 100) { return LootType.Shields; }
-            else return LootType.None;
+            return result;
         }
 
         public static UnityEngine.RangeInt CreateRangeForLoot(UnitEntityData entityData)
@@ -67,7 +71,7 @@ namespace RandomEnemies.Mechanics
             {
                 Loot = LootHandler.CreateLootItem(lootType, range);
                 i++;
-                if (Loot != null)
+                if (Loot.Name != "" && Loot == null && Loot.Name == "<null>")
                 {
                     break;
                 }
@@ -82,7 +86,7 @@ namespace RandomEnemies.Mechanics
             int costTop = range.end;
             
             BlueprintItem result;
-
+            Main.LogDebug("Finding BP for Loot, lootType: " + lootType + " " + costBottom + " " + costTop);
             switch (lootType)
             {
                 case LootType.Weapons:
@@ -95,9 +99,10 @@ namespace RandomEnemies.Mechanics
                         finalSelectedItems = modFinalItems.ToArray();
                         bool itemCheck = finalSelectedItems.Length != 0;
                         if (itemCheck) { result = finalSelectedItems.Random<BlueprintItemWeapon>().ToReference<BlueprintItemReference>(); }
-
+                        Main.LogDebug("Trying equipment weapon, result: " + result + " " + costBottom + " " + costTop);
+                        return result;
                     };
-                    break;
+
                 case LootType.Armors:
                     result = Helpers.Create<BlueprintItem>();
                     {
@@ -108,8 +113,9 @@ namespace RandomEnemies.Mechanics
                         finalSelectedItems = modFinalItems.ToArray();
                         bool itemCheck = finalSelectedItems.Length != 0;
                         if (itemCheck) { result = finalSelectedItems.Random<BlueprintItemArmor>().ToReference<BlueprintItemReference>(); }
+                        Main.LogDebug("Trying equipment armor, result: " + result + " " + costBottom + " " + costTop);
+                        return result;
                     };
-                    break;
                 case LootType.Equipment:
                     result = Helpers.Create<BlueprintItem>();
                     {
@@ -129,6 +135,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheck)
                                     {
                                         result = finalSelectedItemsShoulders.Random<BlueprintItemEquipmentShoulders>().ToReference<BlueprintItemEquipmentShouldersReference>();
+                                        Main.LogDebug("Trying equipment shoulder, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -142,6 +149,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckBelt)
                                     {
                                         result = finalSelectedItemsBelt.Random<BlueprintItemEquipmentBelt>().ToReference<BlueprintItemEquipmentBeltReference>();
+                                        Main.LogDebug("Trying equipment belt, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -155,6 +163,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckWrist)
                                     {
                                         result = finalSelectedItemsWrist.Random<BlueprintItemEquipmentWrist>().ToReference<BlueprintItemEquipmentWristReference>();
+                                        Main.LogDebug("Trying equipment wrist, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -168,6 +177,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckFeet)
                                     {
                                         result = finalSelectedItemsFeet.Random<BlueprintItemEquipmentFeet>().ToReference<BlueprintItemEquipmentFeetReference>();
+                                        Main.LogDebug("Trying equipment feet, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -181,6 +191,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckGlasses)
                                     {
                                         result = finalSelectedItemsGlasses.Random<BlueprintItemEquipmentGlasses>().ToReference<BlueprintItemEquipmentGlassesReference>();
+                                        Main.LogDebug("Trying equipment glasses, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -194,6 +205,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckGloves)
                                     {
                                         result = finalSelectedItemsGloves.Random<BlueprintItemEquipmentGloves>().ToReference<BlueprintItemEquipmentGlovesReference>();
+                                        Main.LogDebug("Trying equipment gloves, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -207,6 +219,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckHead)
                                     {
                                         result = finalSelectedItemsHead.Random<BlueprintItemEquipmentHead>().ToReference<BlueprintItemEquipmentHeadReference>();
+                                        Main.LogDebug("Trying equipment head, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -220,6 +233,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckShirt)
                                     {
                                         result = finalSelectedItemsShirt.Random<BlueprintItemEquipmentShirt>().ToReference<BlueprintItemEquipmentShirtReference>();
+                                        Main.LogDebug("Trying equipment shirt, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -233,6 +247,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckRing)
                                     {
                                         result = finalSelectedItemsRing.Random<BlueprintItemEquipmentRing>().ToReference<BlueprintItemEquipmentRingReference>();
+                                        Main.LogDebug("Trying equipment ring, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -246,6 +261,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckNeck)
                                     {
                                         result = finalSelectedItemsNeck.Random<BlueprintItemEquipmentNeck>().ToReference<BlueprintItemEquipmentNeckReference>();
+                                        Main.LogDebug("Trying equipment neck, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -259,6 +275,7 @@ namespace RandomEnemies.Mechanics
                                     if (itemCheckUsable)
                                     {
                                         result = finalSelectedItemsUsable.Random<BlueprintItemEquipmentUsable>().ToReference<BlueprintItemEquipmentUsableReference>();
+                                        Main.LogDebug("Trying equipment usable, result: " + result + " " + costBottom + " " + costTop);
                                         return result;
                                     }
                                     break;
@@ -278,8 +295,9 @@ namespace RandomEnemies.Mechanics
                         finalSelectedItems = modFinalItems.ToArray();
                         bool itemCheck = finalSelectedItems.Length != 0;
                         if (itemCheck) { result = finalSelectedItems.Random<BlueprintItemShield>().ToReference<BlueprintItemReference>(); }
+                        Main.LogDebug("Trying equipment shield, result: " + result + " " + costBottom + " " + costTop);
+                        return result;
                     };
-                    break;
                 default:
                     result = Equipment.Weapons.AmiriSword;
                     break;
