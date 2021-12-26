@@ -125,24 +125,26 @@ namespace RandomEnemies.Mechanics
             }
         }
 
-        public static void TryCreateLoot(UnitEntityData entityData, bool skipLootCheck = false)
-        {
-            //Kingmaker.EntitySystem.Persistence.JsonUtility.BlueprintConverter.ReadJson
-            LootType loottype = LootHandler.RollForLootType(skipLootCheck);
-            Main.LogDebug("Returned from rollforloot type with" + loottype);
-            if (loottype == LootType.None) { return; }
+        //public static void TryCreateLoot(UnitEntityData entityData, bool skipLootCheck = false)
+        //{
+        //    //Kingmaker.EntitySystem.Persistence.JsonUtility.BlueprintConverter.ReadJson
+        //    LootType loottype = LootHandler.RollForLootType(skipLootCheck);
+        //    Main.LogDebug("Returned from rollforloot type with" + loottype);
+        //    if (loottype == LootType.None) { return; }
 
-            RangeInt range = LootHandler.CreateRangeForLoot(entityData);
-            BlueprintItem Loot = LootHandler.TryToCreateLootItem(loottype, range);
-            Main.Log("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName + " with range " + range.start + range.end + " with loottype " + loottype + " cost " + Loot.Cost);
-            if (Loot == null || Loot.Name == "")
-            {
-                Main.Log("Loottype was null" + Loot.Name);
-                return;
-            }
-            entityData.Inventory.Add(Loot, 1);
-            Main.SpawnedUnitsLoots.Add(entityData.UniqueId, Loot);
-        }
+            
+        //    //RangeInt range = LootHandler.CreateRangeForLoot(entityData);
+        //    //BlueprintItem Loot = LootHandler.TryToCreateLootItem(loottype, range);
+        //    BlueprintItem Loot = LootHandler.GiveRandom(entityData, entityData.CR);
+        //    Main.Log("Trying to add loot " + Loot.Name + "to entity " + entityData.CharacterName + " with range " + range.start + range.end + " with loottype " + loottype + " cost " + Loot.Cost);
+        //    if (Loot == null || Loot.Name == "")
+        //    {
+        //        Main.Log("Loottype was null" + Loot.Name);
+        //        return;
+        //    }
+        //    entityData.Inventory.Add(Loot, 1);
+        //    Main.SpawnedUnitsLoots.Add(entityData.UniqueId, Loot);
+        //}
 
     }
 }

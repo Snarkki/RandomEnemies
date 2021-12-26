@@ -33,6 +33,7 @@ namespace RandomEnemies
         public static float PowerfulEncounterModifier = 1.1f;
         public static float RareEncounterModifier = 1.1f;
 
+        public string lastModVersion;
         public string localizationFileName;
         public SerializableDictionary<string, HashSet<string>> containersChecked;
         public SerializableDictionary<string, HashSet<string>> itemsGiven;

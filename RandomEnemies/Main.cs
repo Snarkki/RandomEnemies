@@ -22,6 +22,7 @@ namespace RandomEnemies
 {
     public class Main
     {
+        public static string ModPath;
         private const string CombatSpeed = "Change Combat Speed";
         private static bool Load(UnityModManager.ModEntry modEntry)
         {
@@ -30,6 +31,7 @@ namespace RandomEnemies
 
             Main.settings = UnityModManager.ModSettings.Load<Settings>(modEntry);
             ModSettings.ModEntry = modEntry;
+            ModPath = modEntry.Path;
             ModSettings.LoadAllSettings();
             modEntry.OnGUI = new Action<UnityModManager.ModEntry>(Main.OnGUI);
             modEntry.OnSaveGUI = new Action<UnityModManager.ModEntry>(Main.OnSaveGUI);
@@ -86,6 +88,7 @@ namespace RandomEnemies
         public static List<BlueprintUnit> unitBlackListBP = new List<BlueprintUnit>();
         public static List<string> SpawnedUnitId = new List<string>();
         public static Dictionary<string, BlueprintItem> SpawnedUnitsLoots = new Dictionary<string, BlueprintItem>();
+
         public static void Log(string msg)
         {
             ModSettings.ModEntry.Logger.Log(msg);

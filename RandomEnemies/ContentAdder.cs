@@ -53,6 +53,7 @@ namespace RandomEnemies
 
                 //Mechanics.DamageBuffs.AddRandomEnemyAbility();
                 Mechanics.AreaEdits.SetupAndEditAreas();
+                Loot.Fixes.Fix();
 
             }
 

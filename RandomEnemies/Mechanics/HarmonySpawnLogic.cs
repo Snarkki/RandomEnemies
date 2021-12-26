@@ -92,49 +92,49 @@ namespace RandomEnemies.Mechanics
         //    }
         //}
 
-        [HarmonyPatch(typeof(UnitCombatState), "JoinCombat")]
-        internal static class UnitQuit_Patch
-        {
-            public static void Postfix(UnitCombatState __instance)
-            {
+        //[HarmonyPatch(typeof(UnitCombatState), "JoinCombat")]
+        //internal static class UnitQuit_Patch
+        //{
+        //    public static void Postfix(UnitCombatState __instance)
+        //    {
 
 
-                if (__instance.m_InCombat == false)
-                {
-                    return;
-                }
+        //        if (__instance.m_InCombat == false)
+        //        {
+        //            return;
+        //        }
 
-                UnitEntityData eData = __instance.Unit;
-                if (Main.unitGroupId.Contains(eData.GroupId))
-                {
-                    return;
-                }
-                Main.unitGroupId.Add(eData.GroupId);
-                foreach (UnitEntityData entityData in eData.Group)
-                {
-                    Main.LogDebug("In postfix " + entityData.Descriptor.Faction);
+        //        UnitEntityData eData = __instance.Unit;
+        //        if (Main.unitGroupId.Contains(eData.GroupId))
+        //        {
+        //            return;
+        //        }
+        //        Main.unitGroupId.Add(eData.GroupId);
+        //        foreach (UnitEntityData entityData in eData.Group)
+        //        {
+        //            Main.LogDebug("In postfix " + entityData.Descriptor.Faction);
 
-                    bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs);
-                    if (factionCheck)
-                    {
-                        bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && !entityData.IsPet) ;
-                        if (unitCheck)
-                        {
-                            if (entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable) && !entityData.IsSummoned())
-                            {
-                                Main.LogDebug("Removed condition unlootable ");
-                                entityData.Descriptor.State.RemoveCondition(UnitCondition.Unlootable);
-                            }
-                            Main.LogDebug("Trying to create loot ");
-                            RandomSpawnLogic.TryCreateLoot(entityData);
+        //            bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs);
+        //            if (factionCheck)
+        //            {
+        //                bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && !entityData.IsPet) ;
+        //                if (unitCheck)
+        //                {
+        //                    if (entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable) && !entityData.IsSummoned())
+        //                    {
+        //                        Main.LogDebug("Removed condition unlootable ");
+        //                        entityData.Descriptor.State.RemoveCondition(UnitCondition.Unlootable);
+        //                    }
+        //                    Main.LogDebug("Trying to create loot ");
+        //                    RandomSpawnLogic.TryCreateLoot(entityData);
 
 
-                        }
-                        else { Main.LogDebug("Unitcheck for loot failed "); }
-                    }
-                }
-            }
-        }
+        //                }
+        //                else { Main.LogDebug("Unitcheck for loot failed "); }
+        //            }
+        //        }
+        //    }
+        //}
 
         //[HarmonyPatch(typeof(Game), "HandleQuit")]
         //internal static class UnitQuit_Patch
@@ -147,14 +147,14 @@ namespace RandomEnemies.Mechanics
         //    }
         //}
 
-        [HarmonyPatch(typeof(Game), "LoadGame")]
-        internal static class UnitLoad_Patch
-        {
-            public static void Prefix()
-            {
-                Main.unitGroupId.Clear();
-            }
-        }
+        //[HarmonyPatch(typeof(Game), "LoadGame")]
+        //internal static class UnitLoad_Patch
+        //{
+        //    public static void Prefix()
+        //    {
+        //        Main.unitGroupId.Clear();
+        //    }
+        //}
 
 
         //static void DestroyAddedLoots()
@@ -177,23 +177,15 @@ namespace RandomEnemies.Mechanics
         //[HarmonyPatch(typeof(UnitSpawnerBase), "Spawn")]
         //internal static class UnitSpawner2_Spawn_Patch
         //{
-
         //    public static void Postfix(UnitSpawnerBase __instance)
-        //    { //            if (Game.Instance.CurrentlyLoadedArea.GetComponent<CombatRandomEncounterAreaSettings>() == null && (!HasSpawned || (SpawnedUnitHasDied && m_RespawnIfDead)) && m_SpawnOnSceneInit && CheckConditions())
+        //    {
         //        if (__instance == null) { return; }
 
         //        UnitEntityData entityData = __instance.Data.SpawnedUnit.Value;
-        //        if (entityData != null && !__instance.Data.HasDied && __instance.Data.IsInGame &&  !__instance.SpawnedUnitHasDied && __instance.Data.HasSpawned && !__instance.m_Blueprint.IsEmpty()) 
-        //        Main.LogDebug("__instance.Data.HasDied " + __instance.Data.HasDied + " __instance.Data.IsInGame " + __instance.Data.IsInGame 
-        //            + " !__instance.SpawnedUnitHasDied " + !__instance.SpawnedUnitHasDied + " __instance.Data.HasSpawned " + __instance.Data.HasSpawned);
-        //        {
-
-        //            bool cutsceneCheck = !Game.Instance.CutsceneLock.Active && !AreaEdits.ProceduralSpawnAreaBlacklist.Any((BlueprintArea x) => x.name == Game.Instance.CurrentlyLoadedArea.name);
-        //            Main.LogDebug(" Loaded area" + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key);
-        //            if (cutsceneCheck)
-        //            {
+        //        if (entityData != null && !__instance.Data.HasDied && __instance.Data.IsInGame && !__instance.SpawnedUnitHasDied && __instance.Data.HasSpawned && !__instance.m_Blueprint.IsEmpty())
+        //        { 
         //                // Main.LogDebug("Passed CutsCeneCheck");
-        //                bool factionCheck = (entityData.Faction == Factions.FactionMobs || entityData.Faction == Factions.FactionWildAnimals) && entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null;
+        //                bool factionCheck = (entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null);
         //                if (factionCheck)
         //                {
 
@@ -202,37 +194,24 @@ namespace RandomEnemies.Mechanics
         //                    bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5);
         //                    if (unitCheck)
         //                    {
-        //                        //Main.LogDebug("Passed unitCheck");
-        //                        // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
+        //                        Main.LogDebug("Trying to create loot ");
+        //                        RandomSpawnLogic.TryCreateLoot(entityData);
 
-        //                        if (Units.UnitLists.allowedEnemiesList.Contains(entityData.Blueprint) && !Main.SpawnedUnitId.Contains(entityData.UniqueId)) // 
-        //                        {
+        //                    //Main.LogDebug("Passed unitCheck");
+        //                    // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
 
-        //                            // Main.LogDebug("Passed listChecks");
-        //                            UnitEntityData result = RandomSpawnLogic.TryCreateEncounter(entityData);
-        //                            if (result != null)
-        //                            {
-        //                                Main.LogDebug(entityData + " CR: " + entityData.CR + " changed blueprint to " + result + " , CR: " + result.CR);
-        //                                //RandomSpawnLogic.TryCreateLoot(result);
-        //                            }
-
-        //                        }
-        //                        else {
-        //                            //RandomSpawnLogic.TryCreateLoot(entityData);
-        //                            Main.LogDebug(entityData + "Not valid unit blueprint"); 
-        //                        }
-        //                    }
-        //                    else { Main.LogDebug(entityData + "Unit bp was fake/cheater"); }
+        //                }
+        //                else { Main.LogDebug(entityData + "Unit bp was fake/cheater"); }
         //                }
         //                else { Main.LogDebug(entityData + "Faction is not mobs, they are " + __instance.Blueprint.Faction); }
         //            }
         //            else { Main.LogDebug(entityData + "Cutscene active or blacklisted area " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key); }
-        //        }
+                
         //    }
         //}
 
         [HarmonyPatch(typeof(UnitSpawnerBase), "Spawn")]
-        internal static class UnitSpawner2_Spawn_Patch
+        internal static class UnitSpawner3_Spawn_Patch
         {
 
             public static void Prefix(UnitSpawnerBase __instance)
