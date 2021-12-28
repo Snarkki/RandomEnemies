@@ -28,55 +28,33 @@ using Kingmaker.Blueprints.Root;
 
 namespace RandomEnemies.Mechanics
 {
-    class LootHandler : IModEventHandler, IAreaLoadingStagesHandler, IAreaPartHandler
+    class LootHandler
     {
-        public int Priority => 100;
 
-        public UnusedLootDict RegLoot = LootJSON.LoadJSON(File.ReadAllText($"{ModPath}/regular.json"));
+        public static UnusedLootDict RegLoot = LootJSON.LoadJSON(File.ReadAllText($"{ModPath}/regular.json"));
 
-        public void PrepareAreaLootRoll()
-        {
-            SetWrap.EnsureContainersChecked();
-
-            foreach (var container in LootHelper.GetEntitiesCurrentArea())
-            {
-                var roll = RulebookEvent.Dice.D100;
-                if (roll >= 95 || (roll <= Main.settings.ChanceForRandomEncounter && !container.InteractionLoot.AlreadyUnlocked))
-                {
-                    GiveRandom(container, CalculateLevel());
-                }
-                if (!SetWrap.ContainersChecked[Game.Instance.Player.GameId].Contains(container.InteractionLoot.Owner.UniqueId))
-                    SetWrap.ContainersChecked[Game.Instance.Player.GameId].Add(container.InteractionLoot.Owner.UniqueId);
-            }
-        }
-
-        public int Cost2Level(int cost)
-        {
-            return (int)(Math.Sqrt(cost / 160));
-        }
-
-        public int Level2Cost(int level)
+        public static int Level2Cost(int level)
         {
             return (int)(Math.Pow(level, 2) * 160);
         }
 
-        public void GiveRandom(LootWrapper container, int level)
+        public static void GiveRandom(UnitEntityData entityData, int level)
         {
             SetWrap.EnsureItemsGiven();
             var blueprint = RegLoot.LootDict.Where(p => p.Value.CR >= (level - 5 >= 1 ? level - 5 : 1) && p.Value.CR <= level && p.Value.Cost <= Level2Cost(level))?.Random().Key;
             if (blueprint.IsNullOrEmpty() || SetWrap.ItemsGiven[Game.Instance.Player.GameId].Contains(blueprint))
             {
                 if (3 < level && level < 20)
-                    GiveRandom(container, level + 1);
+                    GiveRandom(entityData, level + 1);
                 return;
             }
             if (!SetWrap.ItemsGiven[Game.Instance.Player.GameId].Contains(blueprint))
                 SetWrap.ItemsGiven[Game.Instance.Player.GameId].Add(blueprint);
-            Main.LogDebug($"Gave: {blueprint}");
-            container.InteractionLoot.Loot.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItem>(blueprint));
+            Main.LogDebug($"Gave: {blueprint} to entity {entityData}");
+            entityData.Inventory.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItem>(blueprint));
         }
 
-        public int CalculateLevel()
+        public static int CalculateLevel()
         {
             var roll = RulebookEvent.Dice.D100;
             var level = Game.Instance.Player.PartyLevel;
@@ -117,29 +95,6 @@ namespace RandomEnemies.Mechanics
                 level = 1;
 
             return level;
-        }
-        public void HandleModDisable()
-        {
-            EventBus.Unsubscribe(this);
-        }
-
-        public void HandleModEnable()
-        {
-            EventBus.Subscribe(this);
-        }
-
-        public void OnAreaLoadingComplete()
-        {
-            PrepareAreaLootRoll();
-        }
-
-        public void OnAreaPartChanged(BlueprintAreaPart previous)
-        {
-            PrepareAreaLootRoll();
-        }
-
-        public void OnAreaScenesLoaded()
-        {
         }
     }
 }

@@ -273,6 +273,38 @@ namespace RandomEnemies.Mechanics
                 return;
                 
             }
+            public static void Postfix(UnitSpawnerBase __instance)
+            {
+                if (__instance == null) { return; }
+
+                UnitEntityData entityData = __instance.Data.SpawnedUnit.Value;
+                if (entityData != null && !__instance.Data.HasDied && __instance.Data.IsInGame && !__instance.SpawnedUnitHasDied && __instance.Data.HasSpawned && !__instance.m_Blueprint.IsEmpty())
+                {
+                    // Main.LogDebug("Passed CutsCeneCheck");
+                    bool factionCheck = (entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null);
+                    if (factionCheck)
+                    {
+
+                        //(Descriptor.State.IsFinallyDead && !entityData.Descriptor.State.Features.SuppressedDecomposition && !IsDeadAndHasLoot && !IsPlayerFaction && !Descriptor.State.Features.Immortality)
+                        // Main.LogDebug("Passed factionCheck");
+                        bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5);
+                        if (unitCheck)
+                        {
+                            Main.LogDebug("Trying to create loot ");
+                            int level = LootHandler.CalculateLevel();
+                            LootHandler.GiveRandom(entityData, level);
+
+                            //Main.LogDebug("Passed unitCheck");
+                            // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
+
+                        }
+                        else { Main.LogDebug(entityData + "Unit bp was fake/cheater"); }
+                    }
+                    else { Main.LogDebug(entityData + "Faction is not mobs, they are " + __instance.Blueprint.Faction); }
+                }
+                else { Main.LogDebug(entityData + "Cutscene active or blacklisted area " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key); }
+
+            }
         }
     }
-}
+    }
