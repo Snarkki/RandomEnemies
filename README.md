@@ -1,5 +1,7 @@
 # Random Enemies & Loot
 
+Update on 31.12.2021: Save game crash issues fixed. Random loot had issues spawning nulls which ended up crashing game. Ended up moving to use parts of random equipment by Hambeard. 
+
 Update on 16.12.2021: Hopefully fixed all the issues with saves corrupting. Loot logic changed, took performance hit but no idea how to implement it on load area without issues with saves.
 
 PLEASE NOTE THIS IS VERY EARLY VERSION - it is highly likely that it will cause issue of replacing some important NPC! Toybox can most likely fix that. 
@@ -24,6 +26,8 @@ You can contact me on Discord Pathfinder channel with name Ode
 4. Install the mod by dragging the zip file from step 5 into the Unity Mod Manager window under the Mods tab
 
 **Thanks**
+
+Hambeard for creating Random equipment mod. This uses part of it for random loots. 
 
 Vek17 and their Tabletop Tweaks mod, couldn't understand how to actually do some of this stuff I couldn't dissect and take apart how your mod worked. 
 Bubbles and rest of the discord <3
