@@ -141,19 +141,12 @@
     <Compile Include="Config\IUpdatableSettings.cs" />
     <Compile Include="Config\ModSettings.cs" />
     <Compile Include="Config\SettingGroup.cs" />
-    <Compile Include="Equipment\Armors.cs" />
-    <Compile Include="Equipment\Equipment.cs" />
-    <Compile Include="Equipment\Shields.cs" />
-    <Compile Include="Equipment\Weapons.cs" />
     <Compile Include="Extensions\ExtentionMethods.cs" />
-    <Compile Include="Loot\UnusedLootItem.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Mechanics\AreaEdits.cs" />
-    <Compile Include="Mechanics\DamageBuffs.cs" />
     <Compile Include="Mechanics\HarmonySpawnLogic.cs" />
     <Compile Include="Loot\Loot.cs" />
     <Compile Include="Loot\LootHandler.cs" />
-    <Compile Include="Loot\LootHelper.cs" />
     <Compile Include="Mechanics\RandomSpawnLogic.cs" />
     <Compile Include="Mechanics\SpawnUnitHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -161,13 +154,10 @@
     <Compile Include="Settings.cs" />
     <Compile Include="Utilities\AssetLoader.cs" />
     <Compile Include="Utilities\Attributes.cs" />
-    <Compile Include="Utilities\Common.cs" />
     <Compile Include="Utilities\DescriptionTools.cs" />
     <Compile Include="Utilities\Factions.cs" />
     <Compile Include="Utilities\Helpers.cs" />
     <Compile Include="Utilities\ILUtils.cs" />
-    <Compile Include="Utilities\Items.cs" />
-    <Compile Include="Equipment\LootTypes.cs" />
     <Compile Include="Units\UnitLists.cs" />
     <Compile Include="Utilities\SetWrap.cs" />
   </ItemGroup>
@@ -175,6 +165,9 @@
     <EmbeddedResource Include="Config\Blueprints.json" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="regular.json" />
   </ItemGroup>

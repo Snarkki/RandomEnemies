@@ -21,7 +21,6 @@ using Kingmaker.Items;
 using Kingmaker.Blueprints.Items;
 using Kingmaker.Controllers.Units;
 using Kingmaker.UnitLogic.Groups;
-using static RandomEnemies.Equipment.LootTypes;
 using Kingmaker.Blueprints.JsonSystem;
 using Kingmaker.View.Spawners;
 using Kingmaker.Blueprints.Area;
@@ -49,166 +48,7 @@ namespace RandomEnemies.Mechanics
                 SpawnUnitHelper.chosenTheme = SpawnUnitHelper.ChooseTheme();
                 SpawnUnitHelper.backupTheme = SpawnUnitHelper.ChooseBackupTheme(SpawnUnitHelper.chosenTheme);
             }
-            //public static void Postfix()
-            //{
-            //    // luo lootit
-            //    foreach (UnitGroup unitgroup in Game.Instance.UnitGroups)
-            //    {
-            //        foreach (UnitEntityData entityData in unitgroup)
-            //        {
-            //            bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs);
-            //            if (factionCheck)
-            //            {
-            //                bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && !entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable));
-            //                if (unitCheck)
-            //                {
-            //                    RandomSpawnLogic.TryCreateLoot(entityData);
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
         }
-        //[HarmonyPatch(typeof(RuleInitiativeRoll), "OnTrigger")]
-        //internal static class UnitQuit_Patch
-        //{
-        //    public static void Postfix(RuleInitiativeRoll __instance)
-        //    {
-        //        bool flag0 = (__instance.Initiator != null);
-        //        if (flag0)
-        //        {
-        //            UnitEntityData entityData = __instance.Initiator;
-        //            bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs);
-        //            if (factionCheck)
-        //            {
-        //                bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5) && !entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable); 
-        //                if (unitCheck)
-        //                {
-        //                    RandomSpawnLogic.TryCreateLoot(entityData);
-
-        //                } else { Main.LogDebug("Unitcheck for loot failed "); }
-        //            }
-        //        }
-        //    }
-        //}
-
-        //[HarmonyPatch(typeof(UnitCombatState), "JoinCombat")]
-        //internal static class UnitQuit_Patch
-        //{
-        //    public static void Postfix(UnitCombatState __instance)
-        //    {
-
-
-        //        if (__instance.m_InCombat == false)
-        //        {
-        //            return;
-        //        }
-
-        //        UnitEntityData eData = __instance.Unit;
-        //        if (Main.unitGroupId.Contains(eData.GroupId))
-        //        {
-        //            return;
-        //        }
-        //        Main.unitGroupId.Add(eData.GroupId);
-        //        foreach (UnitEntityData entityData in eData.Group)
-        //        {
-        //            Main.LogDebug("In postfix " + entityData.Descriptor.Faction);
-
-        //            bool factionCheck = (entityData.Descriptor.Faction == Factions.FactionMobs);
-        //            if (factionCheck)
-        //            {
-        //                bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && !entityData.IsPet) ;
-        //                if (unitCheck)
-        //                {
-        //                    if (entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable) && !entityData.IsSummoned())
-        //                    {
-        //                        Main.LogDebug("Removed condition unlootable ");
-        //                        entityData.Descriptor.State.RemoveCondition(UnitCondition.Unlootable);
-        //                    }
-        //                    Main.LogDebug("Trying to create loot ");
-        //                    RandomSpawnLogic.TryCreateLoot(entityData);
-
-
-        //                }
-        //                else { Main.LogDebug("Unitcheck for loot failed "); }
-        //            }
-        //        }
-        //    }
-        //}
-
-        //[HarmonyPatch(typeof(Game), "HandleQuit")]
-        //internal static class UnitQuit_Patch
-        //{
-        //    public static void Prefix()
-        //    {
-        //        DestroyAddedLoots();
-
-
-        //    }
-        //}
-
-        //[HarmonyPatch(typeof(Game), "LoadGame")]
-        //internal static class UnitLoad_Patch
-        //{
-        //    public static void Prefix()
-        //    {
-        //        Main.unitGroupId.Clear();
-        //    }
-        //}
-
-
-        //static void DestroyAddedLoots()
-        //{
-        //    foreach (UnitGroup unitgroup in Game.Instance.UnitGroups)
-        //    {
-        //        foreach (UnitEntityData entityData in unitgroup)
-        //        {
-        //            foreach (KeyValuePair<string, BlueprintItem> entry in Main.SpawnedUnitsLoots)
-        //            {
-        //                if (entityData.UniqueId == entry.Key)
-        //                {
-        //                    entityData.Inventory.Remove(entry.Value);
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
-
-        //[HarmonyPatch(typeof(UnitSpawnerBase), "Spawn")]
-        //internal static class UnitSpawner2_Spawn_Patch
-        //{
-        //    public static void Postfix(UnitSpawnerBase __instance)
-        //    {
-        //        if (__instance == null) { return; }
-
-        //        UnitEntityData entityData = __instance.Data.SpawnedUnit.Value;
-        //        if (entityData != null && !__instance.Data.HasDied && __instance.Data.IsInGame && !__instance.SpawnedUnitHasDied && __instance.Data.HasSpawned && !__instance.m_Blueprint.IsEmpty())
-        //        { 
-        //                // Main.LogDebug("Passed CutsCeneCheck");
-        //                bool factionCheck = (entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null);
-        //                if (factionCheck)
-        //                {
-
-        //                    //(Descriptor.State.IsFinallyDead && !entityData.Descriptor.State.Features.SuppressedDecomposition && !IsDeadAndHasLoot && !IsPlayerFaction && !Descriptor.State.Features.Immortality)
-        //                    // Main.LogDebug("Passed factionCheck");
-        //                    bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5);
-        //                    if (unitCheck)
-        //                    {
-        //                        Main.LogDebug("Trying to create loot ");
-        //                        RandomSpawnLogic.TryCreateLoot(entityData);
-
-        //                    //Main.LogDebug("Passed unitCheck");
-        //                    // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
-
-        //                }
-        //                else { Main.LogDebug(entityData + "Unit bp was fake/cheater"); }
-        //                }
-        //                else { Main.LogDebug(entityData + "Faction is not mobs, they are " + __instance.Blueprint.Faction); }
-        //            }
-        //            else { Main.LogDebug(entityData + "Cutscene active or blacklisted area " + Game.Instance.CurrentlyLoadedArea.AreaName + " " + Game.Instance.CurrentlyLoadedArea.AreaName.Key); }
-                
-        //    }
-        //}
 
         [HarmonyPatch(typeof(UnitSpawnerBase), "Spawn")]
         internal static class UnitSpawner3_Spawn_Patch
@@ -260,7 +100,7 @@ namespace RandomEnemies.Mechanics
                     {
                         BlueprintUnit originalBP = __instance.Blueprint;
                         BlueprintUnit result = RandomSpawnLogic.TryChangeBp(__instance.Blueprint);
-                        if (result != null && result.Name != "<null>" && result.Name != "")
+                        if (result != null)
                         {
                             __instance.Blueprint = result;
                             Main.LogDebug("Changed Bp from to " + originalBP + " " + __instance.Blueprint);
@@ -275,6 +115,10 @@ namespace RandomEnemies.Mechanics
             }
             public static void Postfix(UnitSpawnerBase __instance)
             {
+                if (!Settings.UseRandomLoot)
+                {
+                    return;
+                }
                 if (__instance == null) { return; }
 
                 UnitEntityData entityData = __instance.Data.SpawnedUnit.Value;
@@ -284,19 +128,16 @@ namespace RandomEnemies.Mechanics
                     bool factionCheck = (entityData.IsPlayersEnemy && entityData.CutsceneControlledUnit == null);
                     if (factionCheck)
                     {
-
-                        //(Descriptor.State.IsFinallyDead && !entityData.Descriptor.State.Features.SuppressedDecomposition && !IsDeadAndHasLoot && !IsPlayerFaction && !Descriptor.State.Features.Immortality)
-                        // Main.LogDebug("Passed factionCheck");
-                        bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5);
+                        bool unitCheck = (!entityData.IsDeadAndHasLoot && !entityData.m_IsDeathRevealed && entityData.MaxHP > 5 && !entityData.Descriptor.State.HasCondition(UnitCondition.Unlootable));
                         if (unitCheck)
                         {
-                            Main.LogDebug("Trying to create loot ");
-                            int level = LootHandler.CalculateLevel();
-                            LootHandler.GiveRandom(entityData, level);
-
-                            //Main.LogDebug("Passed unitCheck");
-                            // blacklist already handled groups & allowed enemy lists & blacklisted unitgroup names (these are added as some are used for cinematic triggers)
-
+                            bool rollForLoot = LootHandler.RollForLoot();
+                            if (rollForLoot)
+                            {
+                                Main.LogDebug("Trying to create loot ");
+                                int level = LootHandler.CalculateLevel();
+                                LootHandler.GiveRandom(entityData, level);
+                            } else { Main.LogDebug("RollForLoot was false "); }
                         }
                         else { Main.LogDebug(entityData + "Unit bp was fake/cheater"); }
                     }

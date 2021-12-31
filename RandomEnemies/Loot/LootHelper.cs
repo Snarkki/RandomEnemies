@@ -3,7 +3,6 @@ using Kingmaker.EntitySystem;
 using Kingmaker.Utility;
 using Kingmaker.View.MapObjects;
 using RandomEnemies.Utilities;
-using ModMaker.Utility;
 using Owlcat.Runtime.Core.Utils;
 using System;
 using System.Collections.Generic;

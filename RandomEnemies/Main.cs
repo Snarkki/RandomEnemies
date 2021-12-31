@@ -23,7 +23,7 @@ namespace RandomEnemies
     public class Main
     {
         public static string ModPath;
-        private const string CombatSpeed = "Change Combat Speed";
+
         private static bool Load(UnityModManager.ModEntry modEntry)
         {
             modEntry.OnToggle = new Func<UnityModManager.ModEntry, bool, bool>(Main.OnToggle);
@@ -69,6 +69,9 @@ namespace RandomEnemies
             GUILayout.EndHorizontal();
             GUILayout.BeginHorizontal(Array.Empty<GUILayoutOption>());
             Settings.UseRandomEncounters = GUILayout.Toggle(Settings.UseRandomEncounters, "Enable random encounters");
+            GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal(Array.Empty<GUILayoutOption>());
+            Settings.UseRandomLoot = GUILayout.Toggle(Settings.UseRandomLoot, "Enable random loot");
             GUILayout.EndHorizontal();
 
 

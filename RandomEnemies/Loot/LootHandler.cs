@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ModMaker;
 using static RandomEnemies.Main;
 using Kingmaker.PubSubSystem;
 using Kingmaker;
@@ -20,7 +19,6 @@ using Kingmaker.Blueprints.Items;
 using Kingmaker.Blueprints;
 using Kingmaker.Items;
 using Kingmaker.Blueprints.Loot;
-using ModMaker.Utility;
 using Kingmaker.RuleSystem;
 using Kingmaker.Blueprints.Items.Equipment;
 using Kingmaker.Dungeon.Blueprints;
@@ -95,6 +93,13 @@ namespace RandomEnemies.Mechanics
                 level = 1;
 
             return level;
+        }
+        public static bool RollForLoot()
+        {
+            int roll = UnityEngine.Random.Range(1, 100);
+            if (roll <= (int)Main.settings.ChanceForLootDrop)
+            { return true; }
+            else return false;
         }
     }
 }
