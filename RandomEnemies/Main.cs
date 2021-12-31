@@ -22,7 +22,8 @@ namespace RandomEnemies
 {
     public class Main
     {
-        private const string CombatSpeed = "Change Combat Speed";
+        public static string ModPath;
+
         private static bool Load(UnityModManager.ModEntry modEntry)
         {
             modEntry.OnToggle = new Func<UnityModManager.ModEntry, bool, bool>(Main.OnToggle);
@@ -30,6 +31,7 @@ namespace RandomEnemies
 
             Main.settings = UnityModManager.ModSettings.Load<Settings>(modEntry);
             ModSettings.ModEntry = modEntry;
+            ModPath = modEntry.Path;
             ModSettings.LoadAllSettings();
             modEntry.OnGUI = new Action<UnityModManager.ModEntry>(Main.OnGUI);
             modEntry.OnSaveGUI = new Action<UnityModManager.ModEntry>(Main.OnSaveGUI);
@@ -65,6 +67,12 @@ namespace RandomEnemies
             settings.ChanceForLootDrop = GUILayout.HorizontalSlider(settings.ChanceForLootDrop, 0.0f, 100.0f, GUILayout.Width(100f));
             GUILayout.Label("Chance for additional loot: " + Math.Round(settings.ChanceForLootDrop, 0));
             GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal(Array.Empty<GUILayoutOption>());
+            Settings.UseRandomEncounters = GUILayout.Toggle(Settings.UseRandomEncounters, "Enable random encounters");
+            GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal(Array.Empty<GUILayoutOption>());
+            Settings.UseRandomLoot = GUILayout.Toggle(Settings.UseRandomLoot, "Enable random loot");
+            GUILayout.EndHorizontal();
 
 
         }
@@ -83,6 +91,7 @@ namespace RandomEnemies
         public static List<BlueprintUnit> unitBlackListBP = new List<BlueprintUnit>();
         public static List<string> SpawnedUnitId = new List<string>();
         public static Dictionary<string, BlueprintItem> SpawnedUnitsLoots = new Dictionary<string, BlueprintItem>();
+
         public static void Log(string msg)
         {
             ModSettings.ModEntry.Logger.Log(msg);

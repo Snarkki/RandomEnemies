@@ -5231,6 +5231,7 @@ namespace RandomEnemies.Units
             TemplarOfIvoryLabyrinth_CR4_Cultist_Baphomet_MeleeCaster,
             TemplarOfIvoryLabyrinth_CR6_Cultist_Baphomet_MeleeCaster,
             TemplarOfIvoryLabyrinth_CR8_Cultist_Baphomet_MeleeCaster,
+            CR5_VescavorSwarm,
         };
 
         public static List<List<BlueprintUnit>> allLists = new List<List<BlueprintUnit>>(){

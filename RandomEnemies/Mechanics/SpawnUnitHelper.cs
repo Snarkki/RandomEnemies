@@ -14,7 +14,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using static RandomEnemies.Equipment.LootTypes;
 
 namespace RandomEnemies.Mechanics
 {
@@ -53,26 +52,15 @@ namespace RandomEnemies.Mechanics
                 {
                     if (p == chosenTheme || p == backupTheme) { continue; }
                     result = chooseResultUnitByTheme(p, MinCR, MaxCR);
-                    if (!result) { break; }
+                    if (result != null) { break; }
                 }
             }
             return result;
         }
 
-        public static BlueprintUnit chooseResultUnitByTheme(List<BlueprintUnit> chosenTheme, int MinCR, int MaxCR) //, bool useMaxCR = default
+        public static BlueprintUnit chooseResultUnitByTheme(List<BlueprintUnit> chosenTheme, int MinCR, int MaxCR)
         {
             BlueprintUnit[] finalSelectedUnits = null;
-            //if (useMaxCR == true)
-            //{
-            //    // idea is to try to get a unit from higher end of the CR pool so we dont spawn shit ton of small things. 
-            //    int minCRDummy = (int)Math.Round(MaxCR * 0.95f);
-            //    bool predicate(BlueprintUnit b) => b.CR >= minCRDummy && b.CR <= MaxCR;
-            //    finalSelectedUnits = chosenTheme.Where(predicate).ToArray<BlueprintUnit>();
-            //}
-            //if (finalSelectedUnits == null || finalSelectedUnits.Length == 0)
-            //{
-
-            //}
 
             // Fetches a unit from selected unit list (theme) with CR restrictions
             bool predicate(BlueprintUnit b) => b.CR >= MinCR && b.CR <= MaxCR;
@@ -173,7 +161,7 @@ namespace RandomEnemies.Mechanics
             // maximum CR for single unit in encounter
             int MaxSingleCR = 1;
             // just so early game wont be hell... 
-            if (bpCR == 1) { return MaxSingleCR; }
+
             switch (encounterType)
             {
                 case (Settings.EasyEncounterName):
@@ -192,6 +180,10 @@ namespace RandomEnemies.Mechanics
                     MaxSingleCR = bpCR;
                     break;
             }
+            if (MaxSingleCR < 2)
+            {
+                MaxSingleCR = 2;
+            }
             return MaxSingleCR;
         }
 
@@ -202,20 +194,5 @@ namespace RandomEnemies.Mechanics
             { return true; }
             else return false;
         }
-        public static UnityEngine.Vector3 FindRandomPositionNearbyWithSelector(UnityEngine.Vector3 startPosition, UnitEntityData entityData, float roll1, float roll2)
-        {
-            UnityEngine.Vector3 test = new UnityEngine.Vector3(roll1, 0, roll2);
-            UnityEngine.Vector3 vector = startPosition + test;//new UnityEngine.Vector3((float)UnityEngine.Random.Range(-distance, distance), 0f, -1f);
-            UnitEntityView unitEntityView = entityData.Blueprint.Prefab.Load(false);
-            float radius = 1.0f;
-            bool flag = unitEntityView != null;
-            if (flag)
-            {
-                radius = unitEntityView.Corpulence;
-            }
-            FreePlaceSelector.PlaceSpawnPlaces(3, radius, vector);
-            return ObstacleAnalyzer.GetNearestNode(vector, null).position;
-        }
     }
-    
 }

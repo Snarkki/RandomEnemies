@@ -14,6 +14,9 @@ namespace RandomEnemies
         }
 
 
+        public static bool UseRandomEncounters = true;
+        public static bool UseRandomLoot = true;
+        
         public float ChanceForRandomEncounter = 75;
         public float ChanceForLootDrop = 10;
 
@@ -31,6 +34,7 @@ namespace RandomEnemies
         public static float PowerfulEncounterModifier = 1.1f;
         public static float RareEncounterModifier = 1.1f;
 
+        public string lastModVersion;
         public string localizationFileName;
         public SerializableDictionary<string, HashSet<string>> containersChecked;
         public SerializableDictionary<string, HashSet<string>> itemsGiven;
