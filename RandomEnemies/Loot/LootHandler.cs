@@ -54,8 +54,10 @@ namespace RandomEnemies.Mechanics
 
         public static int CalculateLevel()
         {
-            var roll = RulebookEvent.Dice.D100;
+            int roll = UnityEngine.Random.Range(1, 100);
             var level = Game.Instance.Player.PartyLevel;
+            
+
             if (0 <= roll && roll < 10)
             {
                 level -= 3;
@@ -101,6 +103,8 @@ namespace RandomEnemies.Mechanics
             { return true; }
             else return false;
         }
+
+
     }
 }
 
