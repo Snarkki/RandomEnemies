@@ -39,7 +39,7 @@ namespace RandomEnemies.Mechanics
 {
     internal class HarmonySpawnLogic// : IUnitSpawnHandler, ISubscriber, IGlobalSubscriber
     {
-        [HarmonyPatch(typeof(Game), "OnAreaLoaded")]
+        [HarmonyPatch(typeof(Player), "OnAreaLoaded")]
         internal static class UnitSpawner1_Spawn_Patch
         {
             public static void Prefix()

@@ -14,10 +14,10 @@ namespace RandomEnemies
         }
 
 
-        public static bool UseRandomEncounters = false;
+        public static bool UseRandomEncounters = true;
         public static bool UseRandomLoot = true;
         
-        public float ChanceForRandomEncounter = 75;
+        public float ChanceForRandomEncounter = 25;
         public float ChanceForLootDrop = 10;
 
         public static int EasierEncounterChance = 20;
